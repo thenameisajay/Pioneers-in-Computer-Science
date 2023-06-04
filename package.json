@@ -1,0 +1,11 @@
+{
+  "name": "pioneers-in-computer-science",
+  "version": "1.0.0",
+  "description": "CS5099 Dissertation Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay Pradeep Mahadeven",
+  "license": "ISC"
+}
