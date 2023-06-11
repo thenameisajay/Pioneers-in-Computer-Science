@@ -1,3 +1,41 @@
-h1 {
-    color: red;
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tinos', serif;
+    font-size: 16px;
+    background-color: white;
 }
+
+
+/* Development Message header starts here - to be removed after website is completed */
+
+.header__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+    
+}
+
+.header__top p {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* You need to specify a height for vertical alignment. It can be any value depending on your design */
+}
+
+
+/* Development Message header ends here  - to be removed after website is completed*/
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+

@@ -22,11 +22,12 @@
         <meta name="theme-color" content="#ffffff">
 
         <!--- Fonts --->
-
+        <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet"> 
 
 
 
        <!--- Stylesheets --->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index_style.css" />
 
 
@@ -45,6 +46,25 @@
         </title>
     </head>
     <body>
-      <h1>Welcome to the Starting Page </h1>  
+        <div class="header__top">
+            <p> This webpage is a work-in-progress, and elements such as graphics, text-area, and functionalites may change significantly in the final product.</p> 
+           </div>
+       
+             <div class="header__content">
+                 <div class="header__content--start">
+                   <slot name="start"> <img src="images/Pioneers-in-computer-science-logo-v1.png" alt="Pioneers in Computer Science LOGO" style="height: 100px; width: 100px;" class = "logo"></slot>
+                 </div>
+                 <div class="header__content--center">
+                   <slot name="center"></slot>
+                 </div>
+                 <div class="header__content--end-top">
+                   <slot name="end-top"></slot>
+                 </div>
+                 <div class="header__content--end-bottom">
+                   <slot name="end-bottom"></slot>
+                 </div>
+          
+          
+         </div>
     </body>
 </html>
