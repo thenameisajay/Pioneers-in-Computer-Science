@@ -46,9 +46,17 @@ body,html {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    height: 110px;         /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
+    height: 105px;         /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
     border-bottom: 1px solid #e5e5e5;
 
+}
+
+.header__content--right {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
 }
 
 
