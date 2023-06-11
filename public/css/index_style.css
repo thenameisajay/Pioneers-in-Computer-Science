@@ -33,9 +33,23 @@ body,html {
 
 /* Development Message header ends here  - to be removed after website is completed*/
 
+
+/* Header content starts here - Basically navigation bar*/
+
 .logo {
     width: 100px;
     height: 100px;
     margin: 0;
 }
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 110px;         /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+
 
