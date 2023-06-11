@@ -1,11 +1,29 @@
 {
   "name": "pioneers-in-computer-science",
   "version": "1.0.0",
-  "description": "CS5099 Dissertation Project",
-  "main": "index.js",
+  "description": "CS5099 - DISSERTATION IN COMPUTER SCIENCE",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ajay Pradeep Mahadeven",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenameisajay/Pioneers-in-Computer-Science.git"
+  },
+  "keywords": [
+    "pioneers",
+    "computer-science",
+    "pioneers-in-computer-science"
+  ],
+  "author": "AJAY PRADEEP MAHADEVEN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenameisajay/Pioneers-in-Computer-Science/issues"
+  },
+  "homepage": "https://github.com/thenameisajay/Pioneers-in-Computer-Science#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
 }
