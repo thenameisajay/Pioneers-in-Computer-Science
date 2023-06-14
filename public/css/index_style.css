@@ -1,8 +1,8 @@
 body,
 html {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Tinos", serif;
   font-size: 16px;
   background-color: white;
 }
@@ -15,6 +15,7 @@ html {
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 30px;
+  
 }
 
 .header__top p {
@@ -22,7 +23,7 @@ html {
   padding: 0;
   margin-top: 20px;
   font-size: 20px;
-  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +35,8 @@ html {
 /* Header content starts here - Basically navigation bar*/
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   margin: 0;
 }
 .header__content {
@@ -43,7 +44,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px;
-  height: 105px; /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
+  height: 80px; /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -52,5 +53,63 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 250px;
+}
+
+ /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
+a { 
+  font-family: 'GT America', sans-serif; 
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/*Creating an hovering effect if  the user hovers over the links*/
+
+.header__content--right--link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.header__content--right--link:hover {
+  color: #990001;
+  background-color: #F2F1EC;
+}
+
+.header__content--right--link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color:#F2F1EC;
+  transition: width 0.3s;
+}
+
+.header__content--right--link:hover::before {
+  width: 100%;
+}
+
+/*End of index link ref styling - end of navigation bar styles*/
+
+
+/*Start of the content styling which includes TBC*/
+
+.content-container{
+  position: relative;
+  margin-top: 50px;
+  border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  margin-left: 90px;
+  margin-right: 90px;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
 }
