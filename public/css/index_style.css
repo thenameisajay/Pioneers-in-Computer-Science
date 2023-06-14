@@ -168,3 +168,99 @@ h1 {
   background-color: #f2f1ec;
   color: #990001;
 }
+
+/*End of the styling for the search function found on the index page*/
+
+/*Start of the styling for the image container found on the index page*/
+
+.image-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 421px;
+  width: 1540px;
+  border: 5px solid #990001;
+  margin-top: 0px;
+}
+
+.image-container--image{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/*End of the styling for the image container found on the index page*/
+
+/*Start of the styling for the footer container found on the index page*/
+
+footer{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100px;
+  background-color: #1A1A19;
+  color: white;
+  height: auto;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto; 
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between; /* This will add space between your columns */
+}
+
+.column-container-1 {
+  position: relative;
+  margin-top: 100px;
+}
+
+.column-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.column-container-2 {
+  position: relative;
+  margin-top: 100px;
+}
+
+.column-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+footer h2 {
+  position: relative;
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 2.3rem !important;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+footer li {
+  position: relative;
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 1.2rem !important;
+  text-align: left;
+  margin-left: 50px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
