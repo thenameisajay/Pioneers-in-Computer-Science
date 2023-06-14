@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -9,7 +9,7 @@ html {
 
 /* Development Message header starts here - to be removed after website is completed */
 
-.header__top {
+.header-top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +18,11 @@ html {
   
 }
 
-.header__top p {
+.header-top p {
   margin: 0;
   padding: 0;
   margin-top: 20px;
   font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +38,7 @@ html {
   height: 90px;
   margin: 0;
 }
-.header__content {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,38 +47,39 @@ html {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.header__content--right {
+.header-content--right {
   margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 250px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
  /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
 a { 
-  font-family: 'GT America', sans-serif; 
-  color: #000000;
-  font-size: 20px;
-  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
 }
 
 /*Creating an hovering effect if  the user hovers over the links*/
 
-.header__content--right--link {
+.header-content--right--link {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
 }
 
-.header__content--right--link:hover {
+.header-content--right--link:hover {
   color: #990001;
   background-color: #F2F1EC;
 }
 
-.header__content--right--link::before {
+.header-content--right--link::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -90,7 +90,7 @@ a {
   transition: width 0.3s;
 }
 
-.header__content--right--link:hover::before {
+.header-content--right--link:hover::before {
   width: 100%;
 }
 
@@ -105,11 +105,11 @@ a {
   border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
   margin-left: 90px;
   margin-right: 90px;
-  justify-content: center;
-  text-align: center;
 }
 
 h1 {
-  font-size: 20px;
-  font-weight: bold;
+  font-family: 'Staatliches', cursive;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
 }
