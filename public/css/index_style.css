@@ -102,14 +102,69 @@ a {
 .content-container{
   position: relative;
   margin-top: 50px;
-  border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+ /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
   margin-left: 90px;
   margin-right: 90px;
 }
 
 h1 {
+  position: relative;
   font-family: 'Staatliches', cursive;
   color: black;
-  font-size: 3rem;
+  font-size: 5rem !important;
   text-align: center;
+}
+
+/*Start of the styling for the search function found on the index page*/
+.search-container {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 0.5px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-form input {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  width: 700px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+
+.search-form button {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+}
+
+#search-button-custom{
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #000000;
+  font-size: 1.6rem;
+  padding: 0 10px;
+  cursor: pointer;
+ 
+}
+
+
+#search-button-custom:hover {
+  background-color: #f2f1ec;
+  color: #990001;
 }
