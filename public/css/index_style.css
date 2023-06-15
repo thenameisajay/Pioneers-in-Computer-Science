@@ -174,13 +174,14 @@ h1 {
 /*Start of the styling for the Carousel  container found on the index page*/
 
 .carousel-container {
+  
   position: relative;
   margin-top: 50px;
-  margin-left: 450px;
+  margin-left: 350px;
   margin-right: 90px;
   margin-bottom: 50px;
-  height: 500px;
-  width: 1000px;
+  height: 800px;
+  width: 1200px;
   overflow: hidden; /* Prevents the inner content from overflowing. */
 }
 
@@ -195,6 +196,26 @@ h1 {
 .carousel img {
   height: 100%; /* Make the images occupy the full height of the carousel. */
   object-fit: cover; /* Adjusts the size of the image within its box, cropping if necessary. */
+}
+
+.carousel h5 {
+  font-family: 'Staatliches', cursive;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 4rem !important;
+  margin-top: -200px !important;
+}
+
+.carousel p {
+  position: absolute;
+  font-family: 'Staatliches', cursive;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 1.6rem !important;
+  margin-top: -9px;
+
 }
 
 /*End of the styling for the Carousel container found on the index page*/
