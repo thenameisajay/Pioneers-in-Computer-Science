@@ -171,27 +171,30 @@ h1 {
 
 /*End of the styling for the search function found on the index page*/
 
-/*Start of the styling for the image container found on the index page*/
+/*Start of the styling for the Carousel  container found on the index page*/
 
-.image-container {
+.carousel-container {
+
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  height: 421px;
-  width: 1540px;
-  border: 5px solid #990001;
-  margin-top: 0px;
+
+  margin-top: 50px;
+  margin-left: 450px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+  height : 500px;
+  width: 1000px;
+  border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
 }
 
-.image-container--image{
+.carousel {
   position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%
 }
 
-
-/*End of the styling for the image container found on the index page*/
+/*End of the styling for the Carousel container found on the index page*/
 
 /*Start of the styling for the footer container found on the index page*/
 
