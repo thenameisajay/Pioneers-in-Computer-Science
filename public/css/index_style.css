@@ -174,24 +174,27 @@ h1 {
 /*Start of the styling for the Carousel  container found on the index page*/
 
 .carousel-container {
-
   position: relative;
-
   margin-top: 50px;
   margin-left: 450px;
   margin-right: 90px;
   margin-bottom: 50px;
-  height : 500px;
+  height: 500px;
   width: 1000px;
-  border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  overflow: hidden; /* Prevents the inner content from overflowing. */
 }
 
 .carousel {
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  height: 70%
+  height: 100%; /* Make the carousel occupy the full height of the carousel-container. */
+}
+
+.carousel img {
+  height: 100%; /* Make the images occupy the full height of the carousel. */
+  object-fit: cover; /* Adjusts the size of the image within its box, cropping if necessary. */
 }
 
 /*End of the styling for the Carousel container found on the index page*/
