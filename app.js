@@ -13,8 +13,15 @@ app.get("/", (req, res) => {
 
 app.route("/search").post((req, res) => {
   const name = req.body.search;
-  console.log(`Search Function has been initiated and the query is: ${name}`);
-  res.redirect("/"); // Redirect to home page for now , until the data collection is done and react is implemented.
+  if(name === ""){
+    console.log("Search Function has been initiated but the query is empty");
+    res.redirect("/"); // Redirect to home page for now , until the data collection is done and react is implemented.
+    return;
+  } else {
+    console.log(`Search Function has been initiated and the query is: ${name}`);
+    res.redirect("/"); // Redirect to home page for now , until the data collection is done and react is implemented.
+  }
+ 
 });
 
 const port = process.env.PORT || 3000;
