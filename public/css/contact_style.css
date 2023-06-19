@@ -246,8 +246,16 @@ input::placeholder, textarea::placeholder {
 
 textarea {
     height: 100px;
-    resize: vertical;
+    resize: none;
     border-radius: 5px;
+}
+
+.content-paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
 }
     
 
@@ -359,5 +367,6 @@ margin-top: 20px;
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
+/*End of button styling for Github , mail and My own website */
 
 /*End of the styling for the Contact Form Container*/
