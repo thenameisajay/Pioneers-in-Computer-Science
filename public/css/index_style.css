@@ -108,6 +108,7 @@ a {
 
 /*Start of the content styling which includes TBC*/
 
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -126,6 +127,7 @@ h1 {
   color: black;
   font-size: 5rem !important;
   text-align: center;
+  margin: 50% auto;
 }
 
 /*Start of the styling for the search function found on the index page*/
