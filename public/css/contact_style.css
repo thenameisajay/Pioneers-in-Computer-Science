@@ -1,0 +1,363 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #dcd9d4;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+
+}
+
+#body {
+  transition: opacity 2s ease-in-out;
+}
+
+/* Development Message header starts here - to be removed after website is completed */
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+}
+
+.header-top p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* You need to specify a height for vertical alignment. It can be any value depending on your design */
+}
+
+/* Development Message header ends here  - to be removed after website is completed*/
+
+/* Header content starts here - Basically navigation bar*/
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin: 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  height: 80px; /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-content--right {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
+a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Creating an hovering effect if  the user hovers over the links*/
+
+.header-content--right--link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.header-content--right--link:hover {
+  color: #990001;
+  background-color: #f2f1ec;
+}
+
+.header-content--right--link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f2f1ec;
+  transition: width 0.3s;
+}
+
+.header-content--right--link:hover::before {
+  width: 100%;
+}
+
+/*End of index link ref styling - end of navigation bar styles*/
+
+
+/*Start of the styling for the footer container found on the contact page*/
+
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+    background-color: #1a1a19;
+    color: white;
+    height: auto;
+  }
+  
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .column-container {
+    display: flex;
+    justify-content: space-between; /* This will add space between your columns */
+  }
+  
+  .column-container-1 {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .column-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .column-container-2 {
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .column-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  footer h2 {
+    position: relative;
+    font-family: "Staatliches", cursive;
+    color: white;
+    font-size: 2.3rem !important;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  
+  footer li {
+    position: relative;
+    font-family: "Staatliches", cursive;
+    color: white;
+    font-size: 1.2rem !important;
+    text-align: left;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 100% auto;
+  }
+
+  /*End of the styling for the footer container found on the contact page*/
+
+/*Start of the styling for the contact form found on the contact page*/
+
+/* The content container */
+
+.content-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+
+}
+
+h1 {
+font-family: "Staatliches", cursive;
+font-size: 5rem !important;
+margin-top: -50px !important;
+margin-bottom: 20px !important;
+}
+
+/* Start of the styling for the Contact Form Container*/
+
+.form-container{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height : 550px;
+    width: 700px;
+}
+
+/* Start of the styling for the Contact Form */
+form {
+    width: 50%;
+    padding: 20px;
+    height: 400px auto;
+   
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid #ccc;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+
+textarea {
+    height: 100px;
+    resize: vertical;
+    border-radius: 5px;
+}
+    
+
+
+
+/*Start of button style for the contact form */
+
+
+/* CSS */
+.button-53 {
+margin-top: 20px;
+  background-color: #000000;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+/*End of button style for the contact form */
+
+
+
+/*Start of button styling for Github , mail and My own website */
+/* CSS */
+.button-55 {
+   
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+/*End of the styling for the Contact Form Container*/
