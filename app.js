@@ -1,12 +1,10 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const { default: mongoose } = require("mongoose");
 
 const app = express();
-
-
-
-
 
 app.set("view engine", "ejs");
 
@@ -31,34 +29,49 @@ app.route("/search").post((req, res) => {
 
 // Contact Page Backend Code is here.
 
-app.route("/contact").get((req, res) => {
-  res.render(__dirname + "/views/contact.ejs");
-  console.log("Contact Page has been requested");
-}).post((req, res) => {
+app
+  .route("/contact")
+  .get((req, res) => {
+    res.render(__dirname + "/views/contact.ejs");
+    console.log("Contact Page has been requested");
+  })
+  .post((req, res) => {
+
+    // Initializing the database connection
+    mongoose.connect(process.env.MONGO_URL_CONTACT, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
 
 
+// Creating the database schema
+    const contactSchema = new mongoose.Schema({
+      name: String,
+      email: String,
+      message: String,
+    });
 
 
+// Creating the database model
+    const Contact = mongoose.model("Contact", contactSchema);
 
-
-
-
-
-
-
-  const name = req.body.name;
-  const email = req.body.email;
-  const message = req.body.message;
-  console.log(`Name: ${name} Email: ${email} Message: ${message}`);
-  res.redirect("/contact");
-});
-
-
-
+    
+     // Creating the database document
+    const contact = new Contact({
+      name: req.body.name,
+      email: req.body.email,
+      message: req.body.message,
+    });
+    contact
+      .save()
+      .then(() => {
+        console.log("Contact Form Data has been saved to the database");
+        res.redirect("/contact");
+      })
+      .catch((err) => console.log(err));
+  });
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
-
