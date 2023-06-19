@@ -1,18 +1,22 @@
 body,
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #DCD9D4;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
- background-blend-mode: screen;
+  background-color: #dcd9d4;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
 }
 
 #body {
   transition: opacity 2s ease-in-out;
 }
-
 
 /* Development Message header starts here - to be removed after website is completed */
 
@@ -22,7 +26,6 @@ html {
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 30px;
-  
 }
 
 .header-top p {
@@ -64,8 +67,8 @@ html {
   margin-bottom: 5px;
 }
 
- /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
-a { 
+/*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
+a {
   color: black;
   font-size: 1.5rem;
   font-weight: bold;
@@ -83,7 +86,7 @@ a {
 
 .header-content--right--link:hover {
   color: #990001;
-  background-color: #F2F1EC;
+  background-color: #f2f1ec;
 }
 
 .header-content--right--link::before {
@@ -93,7 +96,7 @@ a {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color:#F2F1EC;
+  background-color: #f2f1ec;
   transition: width 0.3s;
 }
 
@@ -103,20 +106,23 @@ a {
 
 /*End of index link ref styling - end of navigation bar styles*/
 
-
 /*Start of the content styling which includes TBC*/
 
-.content-container{
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   position: relative;
   margin-top: 50px;
- /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
   margin-left: 90px;
   margin-right: 90px;
 }
 
 h1 {
   position: relative;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: black;
   font-size: 5rem !important;
   text-align: center;
@@ -129,13 +135,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-width: 100%;
-  
-  
+  width: 100%;
 }
-
-
-
 
 .search-form {
   display: flex;
@@ -156,7 +157,6 @@ width: 100%;
   font-size: 1rem;
 }
 
-
 .search-form button {
   border: none;
   outline: none;
@@ -164,7 +164,7 @@ width: 100%;
   height: 50px;
 }
 
-#search-button-custom{
+#search-button-custom {
   border: none;
   outline: none;
   background-color: white;
@@ -172,9 +172,7 @@ width: 100%;
   font-size: 1.6rem;
   padding: 0 10px;
   cursor: pointer;
- 
 }
-
 
 #search-button-custom:hover {
   background-color: #f2f1ec;
@@ -186,16 +184,14 @@ width: 100%;
 /*Start of the styling for the Carousel  container found on the index page*/
 
 .carousel-container {
-  
   position: relative;
-  margin-top: 50px;
-  margin-left: 350px;
-  margin-right: 90px;
-  margin-bottom: 50px;
+  margin: 50px auto;
   height: 800px;
   width: 1200px;
   overflow: hidden; /* Prevents the inner content from overflowing. */
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .carousel {
@@ -212,7 +208,7 @@ width: 100%;
 }
 
 .carousel h5 {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: white;
   background-color: black;
   opacity: 0.8;
@@ -222,20 +218,19 @@ width: 100%;
 
 .carousel p {
   position: absolute;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   background-color: black;
   opacity: 0.8;
   color: white;
   font-size: 1.6rem !important;
   margin-top: -9px;
-
 }
 
 /*End of the styling for the Carousel container found on the index page*/
 
 /*Start of the styling for the footer container found on the index page*/
 
-footer{
+footer {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -243,7 +238,7 @@ footer{
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 100px;
-  background-color: #1A1A19;
+  background-color: #1a1a19;
   color: white;
   height: auto;
 }
@@ -252,7 +247,7 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: auto; 
+  height: auto;
 }
 
 .column-container {
@@ -286,7 +281,7 @@ footer{
 
 footer h2 {
   position: relative;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: white;
   font-size: 2.3rem !important;
   text-align: left;
@@ -296,7 +291,7 @@ footer h2 {
 
 footer li {
   position: relative;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: white;
   font-size: 1.2rem !important;
   text-align: left;
