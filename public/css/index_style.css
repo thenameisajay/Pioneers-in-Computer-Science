@@ -116,10 +116,9 @@ a {
   align-items: center;
   width: 100%;
   position: relative;
-  margin-top: 50px;
+  margin: 50% auto
   /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
-  margin-left: 90px;
-  margin-right: 90px;
+
 }
 
 h1 {
