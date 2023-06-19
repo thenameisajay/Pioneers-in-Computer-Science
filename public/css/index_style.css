@@ -12,7 +12,6 @@ html {
       rgba(0, 0, 0, 0.5) 100%
     );
   background-blend-mode: screen;
-  overflow-x: hidden;
 }
 
 #body {
@@ -116,16 +115,17 @@ a {
   align-items: center;
   width: 100%;
   position: relative;
-  margin: 50% auto
+  margin-top: 50px;
   /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
-
+  margin-left: 50% auto;
+  margin-right: 50% auto;
 }
 
 h1 {
   position: relative;
   font-family: "Staatliches", cursive;
   color: black;
-  font-size: 4.5rem !important;
+  font-size: 5rem !important;
   text-align: center;
   margin: 50% auto;
 }
