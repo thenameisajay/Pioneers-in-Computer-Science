@@ -12,6 +12,7 @@ html {
       rgba(0, 0, 0, 0.5) 100%
     );
   background-blend-mode: screen;
+  overflow-x: hidden;
 }
 
 #body {
