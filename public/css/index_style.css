@@ -63,7 +63,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  margin-right: 10px;
+  margin-right: 160px;
   margin-bottom: 5px;
 }
 
@@ -103,6 +103,77 @@ a {
 .header-content--right--link:hover::before {
   width: 100%;
 }
+
+
+
+.btn {
+  background-color: #FAFAFA;
+  border-style: hidden;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  color: #990001;
+  background-color: #f2f1ec;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f2f1ec;
+  transition: width 0.3s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+
+
+
+/* add a custom arrow */
+.btn.dropdown-toggle::after {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(45deg);
+  margin-left: .255em;
+  vertical-align: .255em;
+
+}
+
+.btn.dropdown-toggle:hover::after {
+  border-color: #990001;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+  pointer-events: none;
+}
+
+
+
+
+
 
 /*End of index link ref styling - end of navigation bar styles*/
 
@@ -180,6 +251,15 @@ h1 {
   background-color: #f2f1ec;
   color: #990001;
 }
+
+
+.search-form input::placeholder {
+  font-family: "Roboto", monospace;
+  color: #000000;
+  font-weight: bold;
+}
+
+
 
 /*End of the styling for the search function found on the index page*/
 
