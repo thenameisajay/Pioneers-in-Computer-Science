@@ -71,6 +71,20 @@ app
       .catch((err) => console.log(err));
   });
 
+
+
+// About Page Backend Code is here.
+
+app.route("/about").get((req, res) => {
+  res.render(__dirname + "/views/about.ejs");
+  console.log("About Page has been requested");
+});
+
+
+
+
+
+// Opening the server on port 3000 and logging the port number to the console.  
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
