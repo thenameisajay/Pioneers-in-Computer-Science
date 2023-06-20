@@ -325,7 +325,6 @@ margin-top: 20px;
 /*Start of button styling for Github , mail and My own website */
 /* CSS */
 .button-55 {
-   
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -356,6 +355,7 @@ margin-top: 20px;
   touch-action: manipulation;
   margin-top: 20px;
   font-weight: 700;
+  
 }
 
 .button-55:hover {
