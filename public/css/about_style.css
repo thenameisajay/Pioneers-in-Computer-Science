@@ -182,3 +182,53 @@ footer {
   }
 
   /*End of the styling for the footer container found on the about page*/
+
+
+  /*Start of the styling for the content container*/
+
+ 
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 50% auto;
+        margin-right: 50% auto;
+        margin-top: 100px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 50% auto;
+        margin-right: 50% auto;
+        margin-top: 50px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+h1 {
+    font-family: "Staatliches", cursive;
+    font-size: 5rem !important;
+    margin-top: -85px !important;
+    margin-bottom: 20px !important;
+    text-decoration-line: underline;
+    }
+
+ h2{
+    font-family: "Staatliches", cursive;
+    font-size: 2rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    color: black;
+    text-align: center;
+    text-decoration-line: underline;
+    }
+ 
+   
