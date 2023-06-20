@@ -15,6 +15,6 @@ window.onload = function() {
         spacing: 53.0,
         showLines: false,
       });
-    }, 2500); 
+    }); 
   };
   
