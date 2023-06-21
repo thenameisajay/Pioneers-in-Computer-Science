@@ -11,6 +11,21 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+
+
+// Initializing the database connection
+try {
+  mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  console.log("Database connection has been established");
+} catch (err) {
+  console.log(err);
+  process.exit(1);
+}
+
+
 app.get("/", (req, res) => {
   res.render(__dirname + "/views/index.ejs");
   console.log("Home Page has been requested");
@@ -30,11 +45,6 @@ app.route("/search").post((req, res) => {
 
 // Contact Page Backend Code is here.
 
-// Initializing the database connection
-mongoose.connect(process.env.MONGO_URL_CONTACT, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
 
 // Creating the database schema
 const contactSchema = new mongoose.Schema({
