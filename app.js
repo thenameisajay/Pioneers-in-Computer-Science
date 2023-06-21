@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -29,6 +29,22 @@ app.route("/search").post((req, res) => {
 
 // Contact Page Backend Code is here.
 
+// Initializing the database connection
+mongoose.connect(process.env.MONGO_URL_CONTACT, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+// Creating the database schema
+const contactSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  message: String,
+});
+
+// Creating the database model
+const Contact = mongoose.model("Contact", contactSchema);
+
 app
   .route("/contact")
   .get((req, res) => {
@@ -36,27 +52,7 @@ app
     console.log("Contact Page has been requested");
   })
   .post((req, res) => {
-
-    // Initializing the database connection
-    mongoose.connect(process.env.MONGO_URL_CONTACT, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-
-
-// Creating the database schema
-    const contactSchema = new mongoose.Schema({
-      name: String,
-      email: String,
-      message: String,
-    });
-
-
-// Creating the database model
-    const Contact = mongoose.model("Contact", contactSchema);
-
-    
-     // Creating the database document
+    // Creating the database document
     const contact = new Contact({
       name: req.body.name,
       email: req.body.email,
@@ -71,8 +67,6 @@ app
       .catch((err) => console.log(err));
   });
 
-
-
 // About Page Backend Code is here.
 
 app.route("/about").get((req, res) => {
@@ -80,11 +74,7 @@ app.route("/about").get((req, res) => {
   console.log("About Page has been requested");
 });
 
-
-
-
-
-// Opening the server on port 3000 and logging the port number to the console.  
+// Opening the server on port 3000 and logging the port number to the console.
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
