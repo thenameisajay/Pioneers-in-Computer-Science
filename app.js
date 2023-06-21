@@ -11,8 +11,6 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-
-
 // Initializing the database connection
 try {
   mongoose.connect(process.env.MONGO_URL, {
@@ -25,7 +23,7 @@ try {
   process.exit(1);
 }
 
-
+//
 app.get("/", (req, res) => {
   res.render(__dirname + "/views/index.ejs");
   console.log("Home Page has been requested");
@@ -44,7 +42,6 @@ app.route("/search").post((req, res) => {
 });
 
 // Contact Page Backend Code is here.
-
 
 // Creating the database schema
 const contactSchema = new mongoose.Schema({
@@ -84,6 +81,27 @@ app.route("/about").get((req, res) => {
   res.render(__dirname + "/views/about.ejs");
   console.log("About Page has been requested");
 });
+
+// By Name Page Backend Code is here.
+
+app
+  .route("/by_name")
+  .get((req, res) => {
+    res.render(__dirname + "/views/by_name.ejs");
+
+    console.log("By Name Page has been requested");
+  })
+  .post((req, res) => {
+    // Capture the button press and log it to the console
+    const alphabet = "";
+    for (let key in req.body) {
+      console.log(`Button ${key} was pressed.`);
+      alphabet = key;
+    }
+    // TODO: Redirect the user to the page with the alphabet as the query
+
+
+  });
 
 // Opening the server on port 3000 and logging the port number to the console.
 const port = process.env.PORT || 3000;
