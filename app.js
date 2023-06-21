@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.render(__dirname + "/views/index.ejs");
+  console.log("Home Page has been requested");
 });
 
 app.route("/search").post((req, res) => {

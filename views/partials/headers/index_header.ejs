@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Contact of the Pioneers in Computer Science."
+      content="Home Page of the Pioneers in Computer Science."
     />
     <!--- Author --->
     <meta name="author" content="Ajay Pradeep Mahadeven" />
@@ -69,7 +69,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/contact_style.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
 
     <!-- reset css link -->
     <link
@@ -81,28 +81,51 @@
     />
     <title>Pioneers in Computer Science</title>
   </head>
-<body>
-    <body id="body" class="body">
-        <div class="header-top">
-          <p>
-            This webpage is under development ⚠️ 🚧 🛠, and elements such as
-            graphics, text-area, and functionalites may change significantly in the
-            final product.
-          </p>
+  <body id="body" class="body">
+    <div class="header-top">
+      <p>
+        This webpage is under development ⚠️ 🚧 🛠, and elements such as
+        graphics, text-area, and functionalites may change significantly in the
+        final product.
+      </p>
+    </div>
+    <div class="header-content">
+      <div class="header-content--start">
+        <a href="/">
+          <img
+            src="images/Pioneers-in-computer-science-logo-v1.png"
+            alt="Pioneers in Computer Science LOGO"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="header-content--right">
+        <!--Drop Down Menu for expanded Functionlities starts here-->
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle dropdown"
+            type="button"
+            id="dropdownMenu2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Browse
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li>
+              <button class="dropdown-btn"><a href="/biographies">Biographies</a></button>
+            </li>
+            <li>
+              <button class="dropdown-btn"><a href="/fields">Field</a></button>
+            </li>
+            <li>
+              <button class="dropdown-btn"><a href="/countries">Countries</a></button>
+            </li>
+          </ul>
         </div>
-        <div class="header-content">
-          <div class="header-content--start">
-            <a href="/">
-              <img
-                src="images/Pioneers-in-computer-science-logo-v1.png"
-                alt="Pioneers in Computer Science LOGO"
-                class="logo"
-              />
-            </a>
-          </div>
-          <div class="header-content--right">
-            <a href="/" class="header-content--right--link">Home</a>
-            <a href="/about" class="header-content--right--link">About</a>
-            <a href="/contact" class="header-content--right--link">Contact</a>
-          </div>
-        </div>
+        <!--Drop Down Menu for expanded Functionlities starts here-->
+        <a href="/" class="header-content--right--link">Home</a>
+        <a href="/about" class="header-content--right--link">About</a>
+        <a href="/contact" class="header-content--right--link">Contact</a>
+      </div>
+    </div>
