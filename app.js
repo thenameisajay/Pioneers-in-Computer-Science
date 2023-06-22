@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { default: mongoose } = require("mongoose");
 const _ = require('lodash');
+const { faker } = require('@faker-js/faker');
 
 
 const app = express();
@@ -36,25 +37,34 @@ app.get("/", (req, res) => {
 app.route("/search").post((req, res) => {
   // Assuming you receive the search term from the frontend in a variable called search
   const name = req.body.search;
-  const formattedName = _.toLower(_.replace(name, ' ', '_'));
-  console.log(`Search Function has been initiated and the query is: ${formattedName}`);
-  // To find the data in the database and render it to the page
-  Pioneer.findOne({ search_id: formattedName }).exec()
-  .then((pioneer) => {
-    if (pioneer) {
-      res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
-      console.log("Pioneer Page has been requested and the pioneer is " + pioneer.name + ".");
-    } else {
+  const formattedName = _.toLower(name.trim().replace(/\s+/g, ' ')); // Convert to lowercase and replace spaces with underscores to match the search_id
+ console.log(`Search Function has been initiated and the query is: ${formattedName}`);
+  Pioneer.find({ name: { $regex: '.*' + formattedName + '.*', $options: 'i' } }).exec()
+  .then((pioneers) => {
+     
+    if (pioneers && pioneers.length > 0) {
+      var pioneerArray = [];
+      pioneers.forEach(pioneer => {
+        pioneerArray.push(pioneer);
+        console.log("Pioneer " + pioneer.name + " has been added to the array.");
+      });
+      // Now you can use pioneerArray for whatever you need
+      res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneers[0]});
+     
+      // Push the array to the search Results page and based on the user selection, render the pioneer page. so that the user can select the pioneer from the list.
 
-     // res.render(__dirname + "/views/not_found.ejs");
-      console.log("Not Found Page has been requested");
+    } else {
+      res.render(__dirname + "/views/error.ejs");
+      console.log("No pioneers found that match the search term.");
     }
   })
   .catch((err) => {
     console.log(err);
   });
-
 });
+
+
+
 
 // Create a new Schema for the database
 const pioneerSchema = new mongoose.Schema({
@@ -87,11 +97,57 @@ app.route("/create").get((req, res) => {
     .save()
     .then(() => console.log("Pioneer Data has been saved to the database"))
     .catch((err) => console.log(err));
-    res.redirect("/");
+  res.redirect("/");
   console.log(
     "Pioneer Page has been requested and the pioneer is " + pioneer.name + "."
   );
 });
+
+
+
+// const NUM_PIONEERS = 100;
+
+
+
+
+// app.get('/create', (req, res) => {
+//   let savedPioneers = 0;
+
+//   // Create pioneers in a loop
+//   for(let i = 0; i < NUM_PIONEERS; i++) {
+//     const pioneer = new Pioneer({
+//       search_id: faker.string.uuid(),
+//       name: faker.internet.userName(),
+//       description: faker.lorem.paragraph(),
+//       image: faker.image.avatar(),
+//       link: faker.internet.url(),
+//     });
+
+//     pioneer
+//       .save()
+//       .then(() => {
+//         savedPioneers++;
+//         console.log(`Pioneer #${savedPioneers} has been saved to the database`);
+
+//         // If we have saved all the pioneers, redirect the client
+//         if(savedPioneers === NUM_PIONEERS) {
+//           console.log(`All ${NUM_PIONEERS} pioneers have been saved`);
+//           res.redirect('/');
+//         }
+//       })
+//       .catch(err => {
+//         console.log(err);
+//         res.status(500).send(err);
+//       });
+//   }
+// });
+
+
+
+
+
+
+
 
 
 // End of the static data for pioneer page.
@@ -99,6 +155,11 @@ app.route("/create").get((req, res) => {
 // Contact Page Backend Code is here.
 
 // Creating the database schema
+
+
+
+
+
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -120,6 +181,7 @@ app
       name: req.body.name,
       email: req.body.email,
       message: req.body.message,
+      date: Date.now(),
     });
     contact
       .save()
