@@ -223,7 +223,6 @@ app
 // Error code 404   route can be found here.
 app.route("/error").get((req, res) => {
   res.render(__dirname + "/views/error.ejs");
-  console.log("Not Found Page has been requested");
 })
 
 
@@ -235,7 +234,10 @@ app.route("/error").get((req, res) => {
 
 
 
-
+// Capture all unknown routes and redirect to the error page
+app.get("*", (req, res) => {
+  res.redirect("/error");
+});
 
 
 
