@@ -29,16 +29,48 @@ app.get("/", (req, res) => {
   console.log("Home Page has been requested");
 });
 
+// Search Function (Main) Backend Code is here.
+
 app.route("/search").post((req, res) => {
   const name = req.body.search;
-  if (name === "") {
-    console.log("Search Function has been initiated but the query is empty");
-    res.redirect("/"); // Redirect to home page for now , until the data collection is done and react is implemented.
-    return;
-  } else {
-    console.log(`Search Function has been initiated and the query is: ${name}`);
-    res.redirect("/"); // Redirect to home page for now , until the data collection is done and react is implemented.
-  }
+  console.log(`Search Function has been initiated and the query is: ${name}`);
+
+  // To find the data in the database and render it to the page
+});
+
+// Create a new Schema for the database
+const pioneerSchema = new mongoose.Schema({
+  name: String,
+  description: String,
+  image: String,
+  link: String,
+});
+
+// Create a new model for the database
+const Pioneer = mongoose.model("Pioneer", pioneerSchema);
+
+
+
+
+// Create a static data for pioneer page for example and customise purpose for the frontend.
+
+app.route("/alan_turing").get((req, res) => {
+  const pioneer = new Pioneer({
+    name: "Alan Turing",
+    description:
+      "Alan Mathison Turing OBE FRS was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/220px-Alan_Turing_Aged_16.jpg",
+    link: "https://en.wikipedia.org/wiki/Alan_Turing",
+  });
+  pioneer
+    .save()
+    .then(() => console.log("Pioneer Data has been saved to the database"))
+    .catch((err) => console.log(err));
+  //  res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
+  console.log(
+    "Pioneer Page has been requested and the pioneer is " + pioneer.name + "."
+  );
 });
 
 // Contact Page Backend Code is here.
@@ -99,8 +131,6 @@ app
       alphabet = key;
     }
     // TODO: Redirect the user to the page with the alphabet as the query
-
-
   });
 
 // Opening the server on port 3000 and logging the port number to the console.
