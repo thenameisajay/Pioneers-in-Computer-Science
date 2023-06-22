@@ -39,7 +39,7 @@ app.route("/search").post((req, res) => {
   const formattedName = _.toLower(_.replace(name, ' ', '_'));
   console.log(`Search Function has been initiated and the query is: ${formattedName}`);
   // To find the data in the database and render it to the page
-  Pioneer.findOne({ name: "Alan Turing" }).exec() // ok this is a static value at the moment due to the fact that the name is hardcoded.
+  Pioneer.findOne({ search_id: formattedName }).exec()
   .then((pioneer) => {
     if (pioneer) {
       res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
@@ -58,6 +58,7 @@ app.route("/search").post((req, res) => {
 
 // Create a new Schema for the database
 const pioneerSchema = new mongoose.Schema({
+  search_id: String,
   name: String,
   description: String,
   image: String,
@@ -72,8 +73,9 @@ const Pioneer = mongoose.model("Pioneer", pioneerSchema);
 
 // Create a static data for pioneer page for example and customise purpose for the frontend.
 
-app.route("/alan_turing").get((req, res) => {
+app.route("/create").get((req, res) => {
   const pioneer = new Pioneer({
+    search_id: "alan_turing",
     name: "Alan Turing",
     description:
       "Alan Mathison Turing OBE FRS was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist.",
@@ -85,11 +87,14 @@ app.route("/alan_turing").get((req, res) => {
     .save()
     .then(() => console.log("Pioneer Data has been saved to the database"))
     .catch((err) => console.log(err));
-  res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
+    res.redirect("/");
   console.log(
     "Pioneer Page has been requested and the pioneer is " + pioneer.name + "."
   );
 });
+
+
+// End of the static data for pioneer page.
 
 // Contact Page Backend Code is here.
 

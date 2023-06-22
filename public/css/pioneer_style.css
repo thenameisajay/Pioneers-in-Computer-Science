@@ -314,4 +314,33 @@ h1 {
   margin: 50% auto;
 }
 
-/*Start of the styling for the search function found on the index page*/
+/*Start of the styling for the content container found on the by pioneer page*/
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+ /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  margin-left: 50% auto;
+  margin-right: 50% auto;
+}
+
+h1 {
+  position: relative;
+   margin-top: -20px !important;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+  position: relative;
+  margin-top: -20px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

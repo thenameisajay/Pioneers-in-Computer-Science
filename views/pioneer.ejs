@@ -3,6 +3,12 @@
  <header>
    <h1> <%= pioneer.name %> </h1>
  </header>   
-
+ <div class = "image-container">
+   <img src = "<%= pioneer.image %>">
+   </div>
+  <div class = "description-container">
+    <h2>Description:</h2>
+    <p> <%= pioneer.description %> </p>
+</div>
 </div>
 <%-include('partials/footers/footer'); -%>
