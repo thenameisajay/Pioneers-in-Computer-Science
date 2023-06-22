@@ -38,29 +38,29 @@ app.route("/search").post((req, res) => {
   // Assuming you receive the search term from the frontend in a variable called search
   const name = req.body.search;
   const formattedName = _.toLower(name.trim().replace(/\s+/g, ' ')); // Convert to lowercase and replace spaces with underscores to match the search_id
- console.log(`Search Function has been initiated and the query is: ${formattedName}`);
+  console.log(`Search Function has been initiated and the query is: ${formattedName}`);
   Pioneer.find({ name: { $regex: '.*' + formattedName + '.*', $options: 'i' } }).exec()
-  .then((pioneers) => {
-     
-    if (pioneers && pioneers.length > 0) {
-      var pioneerArray = [];
-      pioneers.forEach(pioneer => {
-        pioneerArray.push(pioneer);
-        console.log("Pioneer " + pioneer.name + " has been added to the array.");
-      });
-      // Now you can use pioneerArray for whatever you need
-      res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneers[0]});
-     
-      // Push the array to the search Results page and based on the user selection, render the pioneer page. so that the user can select the pioneer from the list.
+    .then((pioneers) => {
 
-    } else {
-      res.render(__dirname + "/views/error.ejs");
-      console.log("No pioneers found that match the search term.");
-    }
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+      if (pioneers && pioneers.length > 0) {
+        var pioneerArray = [];
+        pioneers.forEach(pioneer => {
+          pioneerArray.push(pioneer);
+          console.log("Pioneer " + pioneer.name + " has been added to the array.");
+        });
+        // Now you can use pioneerArray for whatever you need
+        res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneers[0] });
+
+        // Push the array to the search Results page and based on the user selection, render the pioneer page. so that the user can select the pioneer from the list.
+
+      } else {
+        res.render(__dirname + "/views/error.ejs");
+        console.log("No pioneers found that match the search term.");
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
 
