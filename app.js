@@ -156,6 +156,27 @@ app
     // TODO: Redirect the user to the page with the alphabet as the query
   });
 
+
+
+// Error code 404   route can be found here.
+app.route("/error").get((req, res) => {
+  res.render(__dirname + "/views/error.ejs");
+  console.log("Not Found Page has been requested");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Opening the server on port 3000 and logging the port number to the console.
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
