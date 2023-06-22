@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { default: mongoose } = require("mongoose");
 const _ = require('lodash');
-const { faker } = require('@faker-js/faker');
+//const { faker } = require('@faker-js/faker');
 
 
 const app = express();

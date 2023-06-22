@@ -34,8 +34,5 @@
   "engines": {
     "node": "16.9.1",
     "npm": "8.1.0"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^8.0.2"
   }
 }
