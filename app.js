@@ -3,6 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { default: mongoose } = require("mongoose");
+const _ = require('lodash');
+
 
 const app = express();
 
@@ -32,10 +34,26 @@ app.get("/", (req, res) => {
 // Search Function (Main) Backend Code is here.
 
 app.route("/search").post((req, res) => {
+  // Assuming you receive the search term from the frontend in a variable called search
   const name = req.body.search;
-  console.log(`Search Function has been initiated and the query is: ${name}`);
-
+  const formattedName = _.toLower(_.replace(name, ' ', '_'));
+  console.log(`Search Function has been initiated and the query is: ${formattedName}`);
   // To find the data in the database and render it to the page
+  Pioneer.findOne({ name: "Alan Turing" }).exec() // ok this is a static value at the moment due to the fact that the name is hardcoded.
+  .then((pioneer) => {
+    if (pioneer) {
+      res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
+      console.log("Pioneer Page has been requested and the pioneer is " + pioneer.name + ".");
+    } else {
+
+     // res.render(__dirname + "/views/not_found.ejs");
+      console.log("Not Found Page has been requested");
+    }
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 });
 
 // Create a new Schema for the database
@@ -67,7 +85,7 @@ app.route("/alan_turing").get((req, res) => {
     .save()
     .then(() => console.log("Pioneer Data has been saved to the database"))
     .catch((err) => console.log(err));
-  //  res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
+  res.render(__dirname + "/views/pioneer.ejs", { pioneer: pioneer });
   console.log(
     "Pioneer Page has been requested and the pioneer is " + pioneer.name + "."
   );
