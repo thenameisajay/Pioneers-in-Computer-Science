@@ -6,11 +6,12 @@ const path = require('path');
 
 router.post("/", (req, res) => {
   const name = req.body.search;
-  const formattedName = _.toLower(name.trim().replace(/\s+/g, " ")); // Convert to lowercase and replace spaces with underscores to match the search_id
+  const formattedName = _.toLower(name.trim().replace(/[-\s]+/g, "[\\s-]*"));
+
 
   console.log(`Search Function has been initiated and the query is: ${formattedName}`);
 
-  Pioneer.find({ name: { $regex: ".*" + formattedName + ".*", $options: "i" } })
+  Pioneer.find({ name: { $regex: new RegExp(".*" + formattedName + ".*", "i") } })
     .exec()
     .then((pioneers) => {
       if (pioneers && pioneers.length === 1) {

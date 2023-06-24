@@ -26,6 +26,7 @@ const aboutRouter = require("./routes/about");
 const errorRouter = require('./routes/error');
 const byNameRouter = require('./routes/by_name');
 const catchAllRouter = require('./routes/catchAll');
+const deleteRouter = require('./routes/delete');
 
 
 
@@ -40,6 +41,7 @@ app.use("/contact", contactRouter);
 app.use("/about", aboutRouter);
 app.use("/error", errorRouter);
 app.use("/by_name", byNameRouter);
+app.use("/delete", deleteRouter);
 app.use(catchAllRouter);
 
 

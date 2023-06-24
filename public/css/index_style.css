@@ -298,6 +298,24 @@ h1 {
   font-weight: bold;
 }
 
+
+.search-results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  margin-left: 50% auto;
+  margin-right: 50% auto;
+}
+
+
+.hide {
+  display: none;
+}
+
 /*End of the styling for the search function found on the index page*/
 
 /*Start of the styling for the Carousel  container found on the index page*/
