@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 // Create a new Schema for the database
 const pioneerSchema = new mongoose.Schema({
-    search_id: String,
     name: String,
     description: String,
     image: String,
