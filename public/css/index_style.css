@@ -179,7 +179,7 @@ a {
 }
 
 .dropdown-menu a {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   font-size: 1rem !important;
   padding: 5px 10px;
   color: black;
@@ -194,8 +194,6 @@ a {
   background-color: #f2f1ec;
   color: #990001;
 }
-
-
 
 .dropdown-btn {
   background-color: #f9f9f9;
@@ -298,8 +296,7 @@ h1 {
   font-weight: bold;
 }
 
-
-.search-results{
+.search-results {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,7 +307,6 @@ h1 {
   margin-left: 50% auto;
   margin-right: 50% auto;
 }
-
 
 .hide {
   display: none;
