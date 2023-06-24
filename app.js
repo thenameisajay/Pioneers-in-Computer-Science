@@ -95,41 +95,6 @@ app.route("/create").get((req, res) => {
   );
 });
 
-// const NUM_PIONEERS = 100;
-
-// app.get('/create', (req, res) => {
-//   let savedPioneers = 0;
-
-//   // Create pioneers in a loop
-//   for(let i = 0; i < NUM_PIONEERS; i++) {
-//     const pioneer = new Pioneer({
-//       search_id: faker.string.uuid(),
-//       name: faker.internet.userName(),
-//       description: faker.lorem.paragraph(),
-//       image: faker.image.avatar(),
-//       link: faker.internet.url(),
-//     });
-
-//     pioneer
-//       .save()
-//       .then(() => {
-//         savedPioneers++;
-//         console.log(`Pioneer #${savedPioneers} has been saved to the database`);
-
-//         // If we have saved all the pioneers, redirect the client
-//         if(savedPioneers === NUM_PIONEERS) {
-//           console.log(`All ${NUM_PIONEERS} pioneers have been saved`);
-//           res.redirect('/');
-//         }
-//       })
-//       .catch(err => {
-//         console.log(err);
-//         res.status(500).send(err);
-//       });
-//   }
-// });
-
-// End of the static data for pioneer page.
 
 // Contact Page Backend Code is here.
 
