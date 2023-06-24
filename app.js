@@ -4,7 +4,8 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { default: mongoose } = require("mongoose");
 const _ = require("lodash");
-//const { faker } = require('@faker-js/faker');
+const Contact = require("./models/contact");
+const Pioneer = require("./models/pioneer");
 
 const app = express();
 
@@ -71,23 +72,12 @@ app.route("/search").post((req, res) => {
     });
 });
 
-// Create a new Schema for the database
-const pioneerSchema = new mongoose.Schema({
-  search_id: String,
-  name: String,
-  description: String,
-  image: String,
-  link: String,
-});
 
-// Create a new model for the database
-const Pioneer = mongoose.model("Pioneer", pioneerSchema);
 
 // Create a static data for pioneer page for example and customise purpose for the frontend.
 
 app.route("/create").get((req, res) => {
   const pioneer = new Pioneer({
-    search_id: "alan_turing",
     name: "Alan Turing",
     description:
       "Alan Mathison Turing OBE FRS was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist.",
@@ -142,17 +132,6 @@ app.route("/create").get((req, res) => {
 // End of the static data for pioneer page.
 
 // Contact Page Backend Code is here.
-
-// Creating the database schema
-
-const contactSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  message: String,
-});
-
-// Creating the database model
-const Contact = mongoose.model("Contact", contactSchema);
 
 app
   .route("/contact")
