@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const { default: mongoose } = require("mongoose");
 const _ = require("lodash");
+const connectDB = require("./config/db");
+
+// Importing the database models
 const Contact = require("./models/contact");
 const Pioneer = require("./models/pioneer");
 
@@ -14,19 +17,12 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// Initializing the database connection
-try {
-  mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  console.log("Database connection has been established");
-} catch (err) {
-  console.log(err);
-  process.exit(1);
-}
 
-//
+// Initializing the database connection
+connectDB();
+
+
+// Home Page Backend Code is here.
 app.get("/", (req, res) => {
   res.render(__dirname + "/views/index.ejs");
   console.log("Home Page has been requested");
@@ -98,13 +94,10 @@ app.route("/create").get((req, res) => {
 
 // Contact Page Backend Code is here.
 
-app
-  .route("/contact")
-  .get((req, res) => {
+app.route("/contact").get((req, res) => {
     res.render(__dirname + "/views/contact.ejs");
     console.log("Contact Page has been requested");
-  })
-  .post((req, res) => {
+  }).post((req, res) => {
     // Creating the database document
     const contact = new Contact({
       name: req.body.name,
