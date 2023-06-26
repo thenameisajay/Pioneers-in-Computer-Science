@@ -4,6 +4,7 @@ const path = require('path');
 const Pioneer = require('../models/pioneer');  // assuming the models directory is at the root level
 
 const router = express.Router();
+let pioneerArray = []; // global variable to store the search results
 
 router.post("/", (req, res, next) => {
   const name = req.body.search;
@@ -13,8 +14,12 @@ router.post("/", (req, res, next) => {
     .exec()
     .then((pioneers) => {
       if (pioneers && pioneers.length === 1) {
+        const name = pioneers[0].name;
+        /// res.render(path.join(__dirname, '../views/pioneer.ejs'), { pioneer: pioneerArray[0] }); // this works
+        res.redirect(`/pioneer/${name}`); // encode the data to be passed in the url
       } else if (pioneers && pioneers.length > 0) {
-        const pioneerArray = pioneers.map(pioneer => pioneer);
+        pioneerArray = pioneers.map(pioneer => pioneer);
+        console.log("The search result was: " + pioneerArray);
         res.redirect(`/searchResults?data=${encodeURIComponent(JSON.stringify(pioneerArray))}`); // encode the data to be passed in the url
 
       } else {

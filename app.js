@@ -28,8 +28,7 @@ const byNameRouter = require('./routes/by_name');
 const catchAllRouter = require('./routes/catchAll');
 const deleteRouter = require('./routes/delete');
 const searchResultsRouter = require('./routes/searchResults');
-//const pioneerRouter = require('./routes/pioneer');
-
+const pioneerRouter = require('./routes/pioneer');
 
 
 
@@ -45,8 +44,8 @@ app.use("/about", aboutRouter);
 app.use("/error", errorRouter);
 app.use("/by_name", byNameRouter);
 app.use("/delete", deleteRouter);
-// app.use("/pioneer", pioneerRouter);
 app.use("/searchResults", searchResultsRouter);
+app.use("/pioneer", pioneerRouter);
 
 app.use(catchAllRouter);
 
