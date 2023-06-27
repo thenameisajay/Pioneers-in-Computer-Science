@@ -265,6 +265,7 @@ h3 {
   border-radius: 10px;
   margin-left: 200px;
   margin-right: 200px;
+  margin-bottom: 30px;
 }
 
 .pioneer-container {
@@ -276,6 +277,7 @@ h3 {
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 60px;
+  margin-bottom: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -295,13 +297,13 @@ h3 {
   width: 200px;
 }
 
-p {
+.pioneer-container p {
   font-family: "Special Elite", cursive !important;
   font-weight: 700;
   font-size: 1.5rem !important;
   margin-left: 20px;
 }
 
-p a {
+.pioneer-container p a {
   color: crimson;
 }
