@@ -1,17 +1,24 @@
 <%- include('partials/headers/by_name_header'); -%>
+
 <div class="content-container">
   <h1>Search By Name</h1>
   <div class="search-container">
-    <div class="alphabet-container">
-      <form action="/by_name" method="post">
-        <button type="submit" name = "A">A</button>
-        </form>
-    </div>
-    <div class="alphabet-container">
+
+    <% for (let i = 0; i < 26; i++) { %>
+      <div class="alphabet-container">
         <form action="/by_name" method="post">
-          <button type="submit" name = "B">B</button>
-          </form>
+          <button class="button-82-pushable" role="button" name="<%= String.fromCharCode(65 + i) %>" type="submit">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+              <%= String.fromCharCode(65 + i) %>
+            </span>
+          </button>
+        </form>
       </div>
+    <% } %>
+
   </div>
 </div>
+
 <%- include('partials/footers/footer'); -%>
