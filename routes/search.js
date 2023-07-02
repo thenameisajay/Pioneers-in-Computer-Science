@@ -2,8 +2,8 @@ const express = require('express');
 const _ = require('lodash');
 const path = require('path');
 const Pioneer = require('../models/pioneer');  // assuming the models directory is at the root level
-
 const router = express.Router();
+
 let pioneerArray = []; // global variable to store the search results
 
 router.post("/", (req, res, next) => {

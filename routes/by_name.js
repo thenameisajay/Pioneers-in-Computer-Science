@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
+const Pioneer = require('../models/pioneer');  // assuming the models directory is at the root level
+const _ = require('lodash');
+
+let pioneerArray = []; // global variable to store the search results
 
 router
   .route("/")
@@ -15,7 +19,22 @@ router
       console.log(`Button ${key} was pressed.`);
       alphabet = key;
     }
-    // TODO: Redirect the user to the page with the alphabet as the query
+    // Search in the database for all names that start with the letter that was pressed
+    Pioneer.find({ name: { $regex: new RegExp("^" + alphabet, "i") } }).exec()
+      .then((pioneers) => {
+        if (pioneers && pioneers.length > 0) {
+        pioneerArray = pioneers.map(pioneer => pioneer);
+        console.log("The search result was: " + pioneerArray);
+        res.redirect(`/searchResults?data=${encodeURIComponent(JSON.stringify(pioneerArray))}`); // encode the data to be passed in the url
+        } else {
+          res.render(path.join(__dirname, '../views/error.ejs'));
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        next(err); // pass error to express error handler
+      });
   });
+
 
 module.exports = router;
