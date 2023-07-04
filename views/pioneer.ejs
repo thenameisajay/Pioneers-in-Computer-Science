@@ -40,7 +40,8 @@
       <p>Latitude: <%= pioneer.latitude%></p>
       <p>Longitude: <%= pioneer.longitude%></p>
       <a
-        href="https://www.google.com/maps/place/<%= pioneer.latitude%>,<%= pioneer.longitude%>"
+      href ="https://maps.google.com/?q=<%= pioneer.latitude%>,<%= pioneer.longitude%>&ll=<%= pioneer.latitude%>,<%= pioneer.longitude%>&z=6"
+
         target="_blank"
       >
         <button class="button-54" role="button">
