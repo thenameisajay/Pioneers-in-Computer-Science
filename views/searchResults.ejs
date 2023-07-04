@@ -6,7 +6,11 @@
         <% pioneers.forEach(function(pioneer){ %>
             <div class="pioneer-container">
                 <div class="pioneer-image-container">
-                    <img src="<%= pioneer.image %>" alt="<%= pioneer.name %>" class="pioneer-image">
+                    <% if (!pioneer.image || pioneer.image.trim() === '') { %>
+                        <img src="/default/image/path.jpg" alt="<%= pioneer.name %>" class="pioneer-not found">
+                      <% } else { %>
+                        <img src="<%= pioneer.image %>" alt="<%= pioneer.name %>" class="pioneer-image">
+                      <% } %>                      
                 </div>
                 <div class="pioneer-info-container">
                     <h3><%= pioneer.Name %></h3>
