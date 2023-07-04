@@ -19,5 +19,13 @@
             </div>
         <% }); %>
     </div>
+    <div class="pagination-container" style="display: flex; justify-content: center;">
+        <ul class="pagination" style="list-style-type: none; display: flex;">
+            <% for(let i = 1; i <= Math.ceil(totalPioneers / pioneersPerPage); i++) { %>
+                <li style="margin: 0 10px;"><a href="?page=<%= i %>"><%= i %></a></li>
+            <% } %>
+        </ul>
+    </div>
+    
 </div>
 <%- include('partials/footers/searchResults_footer.ejs') %>
