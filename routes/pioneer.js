@@ -16,9 +16,10 @@ router.get("/:name", (req, res) => {
     const formattedName = _.toLower(name.trim().replace(/[-\s]+/g, "[\\s-]*")); // format the name to be used in the regex
 
 
-    Pioneer.find({ name: { $regex: new RegExp(".*" + formattedName + ".*", "i") } }).exec()
+    Pioneer.find({ Name: { $regex: new RegExp(".*" + formattedName + ".*", "i") } }).exec()
         .then((pioneers) => {
             const pioneer = pioneers[0];
+            console.log("The search result was: " + pioneer);
             res.render(path.join(__dirname, "../views/pioneer.ejs"), { pioneer: pioneer }); // css and js files are in the public directory but css is not loading.
         })
         .catch((err) => {

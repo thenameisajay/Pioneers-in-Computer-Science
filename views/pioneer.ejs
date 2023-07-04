@@ -1,7 +1,7 @@
 <%- include('partials/headers/pioneer_header'); -%>
 <div class="content-container">
   <header>
-    <h1><%= pioneer.name %></h1>
+    <h1><%= pioneer.Name %></h1>
   </header>
   <div class="image-container">
     <img src="<%= pioneer.image %>" />
@@ -105,8 +105,7 @@
     </div>
     <div class="inner-container">
       <h2>References</h2>
-      <ul>
-        <li><a href="<%= pioneer.acmUrl%>">ACM Library</a></li>
+      <ul style="list-style: none;">
         <li><a href="<%= pioneer.image%>">Image Source</a></li>
       </ul>
     </div>

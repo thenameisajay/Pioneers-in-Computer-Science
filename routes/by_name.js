@@ -20,7 +20,7 @@ router
       alphabet = key;
     }
     // Search in the database for all names that start with the letter that was pressed
-    Pioneer.find({ name: { $regex: new RegExp("^" + alphabet, "i") } }).exec()
+    Pioneer.find({ Name: { $regex: new RegExp("^" + alphabet, "i") } }).exec()
       .then((pioneers) => {
         if (pioneers && pioneers.length > 0) {
         pioneerArray = pioneers.map(pioneer => pioneer);

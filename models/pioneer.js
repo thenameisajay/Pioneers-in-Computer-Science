@@ -2,20 +2,23 @@ const mongoose = require("mongoose");
 
 // Create a new Schema for the database
 const pioneerSchema = new mongoose.Schema({
-    year: Number,
-    century: Number,
-    name: String,
-    achievement: String,
-    classification: [String],
-    wikiUrl: String,
-    birthCountry: String,
-    image: String,
-    latitude: Number,
-    longitude: Number,
-  });
-  
-  // Create a new model for the database
-  const Pioneer = mongoose.model("Pioneer", pioneerSchema);
+  Number: Number,
+  year: Number,
+  century: Number,
+  mactutorUrl: String,
+  Name: String,
+  intro: String,
+  classification: String,
+  achievement: String,
+  wikiUrl: String,
+  birthCountry: String,
+  latitude: Number,
+  longitude: Number,
+  image: String,
+});
+
+// Create a new model for the database
+const Pioneer = mongoose.model("Pioneer", pioneerSchema);
 
 
-  module.exports = Pioneer;
+module.exports = Pioneer;
