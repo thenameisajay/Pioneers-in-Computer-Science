@@ -5,10 +5,18 @@
   </header>
   <div class="image-container">
     <% if (!pioneer.image || pioneer.image.trim() === '') { %>
-      <img src="/images/image_not_found.webp" alt="<%= pioneer.name %>" class="pioneer-not found">
+    <img
+      src="/images/image_not_found.webp"
+      alt="<%= pioneer.name %>"
+      class="pioneer-not found"
+    />
     <% } else { %>
-      <img src="<%= pioneer.image %>" alt="<%= pioneer.name %>" class="pioneer-image">
-    <% } %>       
+    <img
+      src="<%= pioneer.image %>"
+      alt="<%= pioneer.name %>"
+      class="pioneer-image"
+    />
+    <% } %>
   </div>
   <div class="housing-container">
     <div class="mac-menu">
@@ -63,6 +71,10 @@
     </div>
     <div class="inner-container">
       <h2>Birth Place</h2>
+      <% if (!pioneer.birthCountry || pioneer.birthCountry.trim() === '' ||
+      !pioneer.latitude || !pioneer.longitude) { %>
+      <p>Country: <strong>Unknown</strong></p>
+      <% } else { %>
       <p><%= pioneer.birthCountry%></p>
       <p>Latitude: <%= pioneer.latitude%></p>
       <p>Longitude: <%= pioneer.longitude%></p>
@@ -94,6 +106,7 @@
         <strong>*</strong>The geographical coordinates associated with the
         birthplaces of the pioneers are accurate to the region level.
       </p>
+      <% } %>
     </div>
   </div>
   <div class="housing-container">
@@ -172,12 +185,12 @@
                   />
                 </svg>
 
-                 Image Source
+                Image Source
               </button>
             </a>
           </li>
-          <% } %>
-          <% if (pioneer.mactutorUrl && pioneer.mactutorUrl.trim() !== '') { %>
+          <% } %> <% if (pioneer.mactutorUrl && pioneer.mactutorUrl.trim() !==
+          '') { %>
           <li>
             <a href="<%= pioneer.mactutorUrl %>">
               <button class="button-81" role="button">
