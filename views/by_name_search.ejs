@@ -1,0 +1,23 @@
+<%- include('partials/headers/searchResults_header') %>
+<div class="content-container">
+    <h1>Search By Name</h1>
+    <h2><%= pioneers.length %> Results found for the Pioneers starting with the Alphabet: <%= alphabet %></h2>
+    <div class = "result-container">
+        <% pioneers.forEach(function(pioneer){ %>
+            <div class="pioneer-container">
+                <div class="pioneer-image-container">
+                    <% if (!pioneer.image || pioneer.image.trim() === '') { %>
+                        <img src="/images/image_not_found.webp" alt="<%= pioneer.name %>" class="pioneer-not found">
+                      <% } else { %>
+                        <img src="<%= pioneer.image %>" alt="<%= pioneer.name %>" class="pioneer-image">
+                      <% } %>                      
+                </div>
+                <div class="pioneer-info-container">
+                    <h3><%= pioneer.Name %></h3>
+                    <p><%= pioneer.achievement.substring(0,215)%> <a href="/pioneer/<%= pioneer.Name %>" class="pioneer-link">Learn More</a></p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+<%- include('partials/footers/searchResults_footer.ejs') %>

@@ -19,21 +19,8 @@ router
       console.log(`Button ${key} was pressed.`);
       alphabet = key;
     }
-    // Search in the database for all names that start with the letter that was pressed
-    Pioneer.find({ Name: { $regex: new RegExp("^" + alphabet, "i") } }).exec()
-      .then((pioneers) => {
-        if (pioneers && pioneers.length > 0) {
-        pioneerArray = pioneers.map(pioneer => pioneer);
-        console.log("The search result was: " + pioneerArray);
-        res.redirect(`/searchResults?data=${encodeURIComponent(JSON.stringify(pioneerArray))}`); // encode the data to be passed in the url
-        } else {
-          res.render(path.join(__dirname, '../views/error.ejs'));
-        }
-      })
-      .catch((err) => {
-        console.error(err);
-        next(err); // pass error to express error handler
-      });
+    // Send the alphabet to as a parameter to the search function
+    res.redirect("/by_name_search/" + alphabet);
   });
 
 

@@ -392,7 +392,8 @@ h1 {
   position: relative;
   padding: 12px 27px;
   border-radius: 12px;
-  font-size: 1.1rem;
+  font-size: 2rem !important;
+  font-weight: bold;
   color: white;
   background: hsl(345deg 100% 47%);
   will-change: transform;
