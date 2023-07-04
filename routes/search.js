@@ -7,9 +7,9 @@ const router = express.Router();
 
 
 // Get the search term from the search box
-router.post("/", (req, res, next) => { 
+router.post("/", (req, res, next) => {
   const searchTerm = req.body.search;  // Retrieve the search term from the form
-   res.redirect("/searchResults/" + searchTerm); // redirect to the search page
+  res.redirect("/searchResults/" + searchTerm); // redirect to the search page
 });
 
 

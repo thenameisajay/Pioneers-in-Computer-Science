@@ -18,7 +18,6 @@ app.use(express.static("public"));
 connectDB();
 
 // Importing the routes
-const createRouter = require("./routes/create");
 const homeRouter = require("./routes/home");
 const searchRouter = require("./routes/search");
 const contactRouter = require("./routes/contact");
@@ -38,7 +37,6 @@ const byNameSearchRouter = require('./routes/by_name_search');
 
 // Using the routes
 app.use("/", homeRouter);
-app.use("/create", createRouter);
 app.use("/search", searchRouter);
 app.use("/contact", contactRouter);
 app.use("/about", aboutRouter);

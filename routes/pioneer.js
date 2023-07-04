@@ -16,7 +16,7 @@ router.get("/:name", (req, res) => {
     const formattedName = _.toLower(name.trim().replace(/[-\s]+/g, "[\\s-]*")); // format the name to be used in the regex
 
 
-    Pioneer.find({ Name: { $regex: new RegExp(".*" + formattedName + ".*", "i") } }).exec()
+    Pioneer.find({ name: { $regex: new RegExp(".*" + formattedName + ".*", "i") } }).exec()
         .then((pioneers) => {
             const pioneer = pioneers[0];
             console.log("The search result was: " + pioneer);

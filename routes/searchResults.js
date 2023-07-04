@@ -15,22 +15,22 @@ router.get("/:searchTerm", (req, res) => {
     let skip = (page - 1) * pioneersPerPage;
 
     // Find all the pioneers whose names match the search term
-    Pioneer.find({ Name: { $regex: new RegExp(".*" + searchRegex + ".*", "i") } })
-    .skip(skip)
-    .limit(pioneersPerPage)
-    .exec()
-    .then((pioneers) => {
-        // Count total pioneers matching the search term for pagination
-        Pioneer.countDocuments({ Name: { $regex: new RegExp(".*" + searchRegex + ".*", "i") } })
-        .then((totalPioneers) => {
-            console.log("Found " + pioneers.length + " pioneers");
-            res.render("searchResults", { pioneers: pioneers, searchTerm: searchTerm, totalPioneers: totalPioneers, pioneersPerPage: pioneersPerPage });
+    Pioneer.find({ name: { $regex: new RegExp(".*" + searchRegex + ".*", "i") } })
+        .skip(skip)
+        .limit(pioneersPerPage)
+        .exec()
+        .then((pioneers) => {
+            // Count total pioneers matching the search term for pagination
+            Pioneer.countDocuments({ name: { $regex: new RegExp(".*" + searchRegex + ".*", "i") } })
+                .then((totalPioneers) => {
+                    console.log("Found " + pioneers.length + " pioneers");
+                    res.render("searchResults", { pioneers: pioneers, searchTerm: searchTerm, totalPioneers: totalPioneers, pioneersPerPage: pioneersPerPage });
+                });
+        })
+        .catch((err) => {
+            console.log("Error retrieving pioneers");
+            res.render("error");
         });
-    })
-    .catch((err) => {
-        console.log("Error retrieving pioneers");
-        res.render("error");
-    });
 });
 
 module.exports = router;

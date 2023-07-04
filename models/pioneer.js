@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 // Create a new Schema for the database
 const pioneerSchema = new mongoose.Schema({
-  Number: Number,
+  number: Number,
   year: Number,
   century: Number,
   mactutorUrl: String,
-  Name: String,
+  name: String,
   intro: String,
   classification: String,
   achievement: String,

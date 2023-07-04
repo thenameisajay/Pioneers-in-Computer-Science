@@ -15,22 +15,22 @@ router.get("/:alphabet", (req, res) => {
     let skip = (page - 1) * pioneersPerPage;
 
     // Find all the pioneers whose names match with the first letter of the alphabet.
-    Pioneer.find({ Name: { $regex: new RegExp("^" + searchRegex, "i") } })
-    .skip(skip)
-    .limit(pioneersPerPage)
-    .exec()
-    .then((pioneers) => {
-        // count the total number of pioneers
-        Pioneer.countDocuments({ Name: { $regex: new RegExp("^" + searchRegex, "i") } })
-        .then((totalPioneers) => {
-            console.log("Found " + pioneers.length + " pioneers");
-            res.render("by_name_search", { pioneers: pioneers, alphabet: searchRegex, totalPioneers: totalPioneers, pioneersPerPage: pioneersPerPage });
+    Pioneer.find({ name: { $regex: new RegExp("^" + searchRegex, "i") } })
+        .skip(skip)
+        .limit(pioneersPerPage)
+        .exec()
+        .then((pioneers) => {
+            // count the total number of pioneers
+            Pioneer.countDocuments({ name: { $regex: new RegExp("^" + searchRegex, "i") } })
+                .then((totalPioneers) => {
+                    console.log("Found " + pioneers.length + " pioneers");
+                    res.render("by_name_search", { pioneers: pioneers, alphabet: searchRegex, totalPioneers: totalPioneers, pioneersPerPage: pioneersPerPage });
+                });
+        })
+        .catch((err) => {
+            console.log("Error retrieving pioneers");
+            res.redirect("/error");
         });
-    })
-    .catch((err) => {
-        console.log("Error retrieving pioneers");
-        res.redirect("/error");
-    });
 });
 
 module.exports = router;
