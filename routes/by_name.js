@@ -4,7 +4,6 @@ const path = require('path');
 const Pioneer = require('../models/pioneer');  // assuming the models directory is at the root level
 const _ = require('lodash');
 
-let pioneerArray = []; // global variable to store the search results
 
 router
   .route("/")
