@@ -7,7 +7,7 @@
             <div class="pioneer-container">
                 <div class="pioneer-image-container">
                     <% if (!pioneer.image || pioneer.image.trim() === '') { %>
-                        <img src="/default/image/path.jpg" alt="<%= pioneer.name %>" class="pioneer-not found">
+                        <img src="/images/image_not_found.webp" alt="<%= pioneer.name %>" class="pioneer-not found">
                       <% } else { %>
                         <img src="<%= pioneer.image %>" alt="<%= pioneer.name %>" class="pioneer-image">
                       <% } %>                      
