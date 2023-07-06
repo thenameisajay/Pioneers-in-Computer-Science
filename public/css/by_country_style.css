@@ -314,128 +314,101 @@ h1 {
   margin: 50% auto;
 }
 
-/* Start of the search container styling */
 
+/*Start of the styling for the content container*/
+.content-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+/*End of the styling for the content container*/
+
+
+/*Start of the styling for the search container*/
 .search-container {
-  position: relative;
-  margin: 5px auto;
-  padding: 10px;
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 10px; /* adjust as needed */
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-  border-radius: 12px;
-}
-
-.alphabet-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* End of the search container styling*/
-
-/* Start of the button that hold the alphabets styling*/
-
-/* CSS */
-.button-82-pushable {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-82-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsl(0deg 0% 0% / 0.25);
-  will-change: transform;
-  transform: translateY(2px);
-  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
-.button-82-edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(
-    to left,
-    hsl(340deg 100% 16%) 0%,
-    hsl(340deg 100% 32%) 8%,
-    hsl(340deg 100% 32%) 92%,
-    hsl(340deg 100% 16%) 100%
-  );
-}
-
-.button-82-front {
-  display: block;
-  position: relative;
-  padding: 12px 27px;
-  border-radius: 12px;
-  font-size: 2rem !important;
-  font-weight: bold;
-  color: white;
-  background: hsl(345deg 100% 47%);
-  will-change: transform;
-  transform: translateY(-4px);
-  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
-@media (min-width: 768px) {
-  .button-82-front {
-    font-size: 1.25rem;
-    padding: 12px 42px;
+    position: relative;
+    margin: 5px auto;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px; /* adjust as needed */
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    border-radius: 12px;
+    margin-top: -50px;
   }
-}
 
-.button-82-pushable:hover {
-  filter: brightness(110%);
-  -webkit-filter: brightness(110%);
-}
 
-.button-82-pushable:hover .button-82-front {
-  transform: translateY(-6px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
+/*End of the styling for the search container*/
 
-.button-82-pushable:active .button-82-front {
-  transform: translateY(-2px);
-  transition: transform 34ms;
-}
 
-.button-82-pushable:hover .button-82-shadow {
-  transform: translateY(4px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
+/*Start of the stylig for the countries button*/
+/* CSS */
+.button-19 {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .button-19:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button-19:main,
+  .button-19:focus {
+    user-select: auto;
+  }
+  
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .button-19:disabled {
+    cursor: auto;
+  }
 
-.button-82-pushable:active .button-82-shadow {
-  transform: translateY(1px);
-  transition: transform 34ms;
-}
-
-.button-82-pushable:focus:not(:focus-visible) {
-  outline: none;
-}
-
-svg {
-   position: relative;
-   margin-top: -5px;
-}
-/* End of the button that hold the alphabets styling*/
+/*End of the stylig for the countries button*/

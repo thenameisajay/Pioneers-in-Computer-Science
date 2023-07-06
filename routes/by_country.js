@@ -29,10 +29,10 @@ router
   })
   .post((req, res) => {
     // Capture the button press and log it to the console
-    let countryName = "";
+    let country = "";
     for (let key in req.body) {
-      console.log(`Button ${countryName}} was pressed.`);
-      country = countryName;
+      console.log(`Button ${key} was pressed.`);
+      country = key;
     }
     // Send the alphabet to as a parameter to the search function
     res.redirect("/by_country_search/" + country);
