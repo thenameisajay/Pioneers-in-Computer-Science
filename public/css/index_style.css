@@ -372,10 +372,8 @@ footer {
   flex: 1;
   flex-direction: row;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: 100px;
-  background-color: #1a1a19;
+  background-color: #000000;
   color: white;
   height: auto;
 }
@@ -428,7 +426,7 @@ footer h2 {
 
 footer li {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: white;
   font-size: 1.2rem !important;
   text-align: left;
