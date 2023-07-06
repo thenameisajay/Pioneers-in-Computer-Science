@@ -338,7 +338,7 @@ p {
 
 h1 {
   position: relative;
-  margin-top: -20px !important;
+  margin-top: 30px !important;
   -webkit-animation: tracking-in-contract-bck 1s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -749,11 +749,12 @@ a:hover {
 /* CSS */
 .button-47 {
   align-items: center;
-  background: #FFFFFF;
-  border: 0 solid #E2E8F0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border: 0 solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  color: #1A202C;
+  color: #1a202c;
   display: inline-flex;
   font-family: Inter, sans-serif;
   font-size: 1rem;
@@ -775,10 +776,9 @@ a:hover {
 
 /* End of the styling of the btn - Which reroutes to the image source Page of the Pioneer*/
 
-
 /* Start of the styling of the refernce container - Which holds to the references for the Pioneer*/
 
-.reference-container{
+.reference-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -786,5 +786,43 @@ a:hover {
   width: 250px;
   position: relative;
   height: 200px;
-
+  
 }
+
+/* End of the styling of the refernce container - Which holds to the references for the Pioneer*/
+
+/* Start of the styling of the navbar (inside pioneer page) container - Which has quick links for the sections of the Pioneer*/
+.page-navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px solid brown; /* For - Refernce : to see the content container - will be removed after development. */
+  margin-top: -50px;
+  padding-bottom: -50px  !important;
+}
+
+.list-containers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.list-containers li {
+  position: relative;
+  font-family: "Staatliches", cursive;
+  color: black;
+  font-size: 1.2rem !important;
+  text-align: center;
+ justify-content: space-around;
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* End of the styling of the navbar (inside pioneer page) container - Which has quick links for the sections of the Pioneer*/
