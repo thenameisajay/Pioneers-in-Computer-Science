@@ -468,10 +468,10 @@
     idleState = false;
 
     idleTimer = setTimeout(function () {
-      // After 1 seconds of no mouse movement, hide the navbar
+      // After 2.5 seconds of no mouse movement, hide the navbar
       navbar.style.opacity = "0";
       idleState = true;
-    }, 1500);
+    }, 2500);
   });
 
   // Bring back navbar when scrolling
