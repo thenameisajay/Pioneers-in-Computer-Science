@@ -4,6 +4,7 @@ const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
   message: String,
+  date: { type: Date, default: Date.now }
 });
 
 // Creating the database model
