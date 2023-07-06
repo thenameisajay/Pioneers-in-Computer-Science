@@ -367,6 +367,7 @@ h1 {
 /*Start of the styling for the footer container found on the index page*/
 
 footer {
+  
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -417,7 +418,7 @@ footer {
 
 footer h2 {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: white;
   font-size: 2.3rem !important;
   text-align: left;
