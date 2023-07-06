@@ -24,11 +24,13 @@ const contactRouter = require("./routes/contact");
 const aboutRouter = require("./routes/about");
 const errorRouter = require('./routes/error');
 const byNameRouter = require('./routes/by_name');
+const byNameSearchRouter = require('./routes/by_name_search');
 const catchAllRouter = require('./routes/catchAll');
 const deleteRouter = require('./routes/delete');
 const searchResultsRouter = require('./routes/searchResults');
 const pioneerRouter = require('./routes/pioneer');
-const byNameSearchRouter = require('./routes/by_name_search');
+const byCountryRouter = require('./routes/by_country');
+//const byCountrySearchRouter = require('./routes/by_country_search');
 
 
 
@@ -42,11 +44,12 @@ app.use("/contact", contactRouter);
 app.use("/about", aboutRouter);
 app.use("/error", errorRouter);
 app.use("/by_name", byNameRouter);
+app.use("/by_name_search", byNameSearchRouter);
 app.use("/delete", deleteRouter);
 app.use("/searchResults", searchResultsRouter);
 app.use("/pioneer", pioneerRouter);
-app.use("/by_name_search", byNameSearchRouter);
-
+app.use("/by_country", byCountryRouter);
+//app.use("/by_country_search", byCountrySearchRouter);
 app.use(catchAllRouter);
 
 
