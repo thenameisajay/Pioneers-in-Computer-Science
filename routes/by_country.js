@@ -8,8 +8,24 @@ const _ = require('lodash');
 router
   .route("/")
   .get((req, res) => {
-    res.render(path.join(__dirname, '../views/by_country.ejs'));
-    console.log("By Country Page has been requested");
+
+     // Find all the pioneer birth countries in the database and add them to an array called countries (no duplicates).
+
+
+     Pioneer.distinct('birthCountry').exec()
+    .then(birthCountries => {
+        let countries = [];
+        for (let i = 0; i < birthCountries.length; i++) {
+            countries.push(birthCountries[i]);
+        }
+        console.log(countries);
+        console.log("By Country Page has been requested");
+        res.render(path.join(__dirname, '../views/by_country.ejs'), { countries: countries });
+        
+    })
+    .catch(err => {
+        console.log(err);
+    });
   })
   .post((req, res) => {
     // Capture the button press and log it to the console
