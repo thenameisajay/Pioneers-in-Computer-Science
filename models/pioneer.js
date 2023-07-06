@@ -8,7 +8,7 @@ const pioneerSchema = new mongoose.Schema({
   mactutorUrl: String,
   name: String,
   intro: String,
-  classification: String,
+  classification: Array,
   achievement: String,
   wikiUrl: String,
   birthCountry: String,
@@ -21,4 +21,7 @@ const pioneerSchema = new mongoose.Schema({
 const Pioneer = mongoose.model("Pioneer", pioneerSchema);
 
 
+
+
 module.exports = Pioneer;
+

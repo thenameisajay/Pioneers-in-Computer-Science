@@ -1,0 +1,393 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #dcd9d4;
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+}
+
+#body {
+  transition: opacity 2s ease-in-out;
+}
+
+/* Development Message header starts here - to be removed after website is completed */
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+}
+
+.header-top p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* You need to specify a height for vertical alignment. It can be any value depending on your design */
+}
+
+/* Development Message header ends here  - to be removed after website is completed*/
+
+/* Header content starts here - Basically navigation bar*/
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin: 0;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  height: 80px; /* Adjusted the container height according to the logo size - you can later vary it if the logo changes*/
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-content--right {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-right: 160px;
+  margin-bottom: 5px;
+}
+
+/*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
+a {
+  font-family: "Cabin Sketch", cursive !important;
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/*Creating an hovering effect if  the user hovers over the links*/
+
+.header-content--right--link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.header-content--right--link:hover {
+  color: #990001;
+  background-color: #f2f1ec;
+}
+
+.header-content--right--link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f2f1ec;
+  transition: width 0.3s;
+}
+
+.header-content--right--link:hover::before {
+  width: 100%;
+}
+
+.btn {
+  font-family: "Cabin Sketch", cursive !important;
+  background-color: #fafafa;
+  border-style: hidden;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  transition: color 0.3s, background-color 0.3s;
+  font-weight: 700;
+}
+
+.btn:hover {
+  color: #990001;
+  background-color: #f2f1ec;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f2f1ec;
+  transition: width 0.3s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+/* add a custom arrow */
+.btn.dropdown-toggle::after {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(45deg);
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+
+.btn.dropdown-toggle:hover::after {
+  border-color: #990001;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+  pointer-events: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0%;
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-menu a {
+  font-family: "Cabin Sketch", cursive !important;
+  font-size: 1.2rem !important;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f1ec;
+  color: #990001;
+}
+
+.dropdown-btn {
+  background-color: #f9f9f9;
+  border-style: hidden;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+}
+
+.dropdown-btn:hover {
+  color: #990001;
+  background-color: #f2f1ec;
+}
+
+/*End of index link ref styling - end of navigation bar styles*/
+
+/*Start of the styling for the footer container found on the index page*/
+
+footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  position: relative;
+  margin-top: 100px;
+  background-color: #000000;
+  color: white;
+  height: auto;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between; /* This will add space between your columns */
+}
+
+.column-container-1 {
+  position: relative;
+  margin-top: 100px;
+}
+
+.column-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.column-container-2 {
+  position: relative;
+  margin-top: 100px;
+}
+
+.column-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+footer h2 {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: white;
+  font-size: 2.3rem !important;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+footer li {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: white;
+  font-size: 1.2rem !important;
+  text-align: left;
+  margin-left: 50px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/*End of the styling for the footer container found on the index page*/
+
+/*Start of the content styling which includes TBC*/
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  margin-left: 50% auto;
+  margin-right: 50% auto;
+}
+
+h1 {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: black;
+  font-size: 5rem !important;
+  text-align: center;
+  margin: 50% auto;
+  margin-top: -30px !important;
+  padding-bottom: 25px;
+}
+
+/*Start of the styling for the content container*/
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+/*End of the styling for the content container*/
+
+/*Start of the styling for the search container*/
+.search-container {
+  position: relative;
+  margin: 5px auto;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px; /* adjust as needed */
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 12px;
+  margin-top: -50px;
+}
+
+/*Start of the styling for the buttons that hold the classification of the pioneers*/
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Space Mono", monospace;
+  font-size: 1.3rem;
+  line-height: 23px;
+  font-weight: 700;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 100px;
+  width: 300px;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+/**End of the styling for the buttons that hold the classification of the pioneers*/
