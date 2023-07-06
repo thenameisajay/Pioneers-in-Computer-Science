@@ -31,6 +31,7 @@ const searchResultsRouter = require('./routes/searchResults');
 const pioneerRouter = require('./routes/pioneer');
 const byCountryRouter = require('./routes/by_country');
 const byCountrySearchRouter = require('./routes/by_country_search');
+const byFieldRouter = require('./routes/by_field');
 
 
 
@@ -50,6 +51,7 @@ app.use("/searchResults", searchResultsRouter);
 app.use("/pioneer", pioneerRouter);
 app.use("/by_country", byCountryRouter);
 app.use("/by_country_search", byCountrySearchRouter);
+app.use("/by_field", byFieldRouter);
 app.use(catchAllRouter);
 
 
