@@ -235,7 +235,7 @@ a {
 
 h1 {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: black;
   font-size: 5rem !important;
   text-align: center;
@@ -294,9 +294,9 @@ h1 {
 }
 
 .search-form input::placeholder {
-  font-family: "Roboto", monospace;
+  font-family: 'Cabin Sketch', cursive !important;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .search-results {
