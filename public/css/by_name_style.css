@@ -69,9 +69,10 @@ html {
 
 /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
 a {
+  font-family: 'Cabin Sketch', cursive !important;
+  font-weight: 700 ;
   color: black;
   font-size: 1.5rem;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -105,16 +106,17 @@ a {
 }
 
 .btn {
+  font-family: 'Cabin Sketch', cursive !important;
   background-color: #fafafa;
   border-style: hidden;
   color: black;
   font-size: 1.5rem;
-  font-weight: bold;
   text-decoration: none;
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
+  font-weight: 700 ;
 }
 
 .btn:hover {
@@ -179,8 +181,8 @@ a {
 }
 
 .dropdown-menu a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
-  font-size: 1rem !important;
+  font-family: 'Cabin Sketch', cursive !important;
+  font-size: 1.2rem !important;
   padding: 5px 10px;
   color: black;
   text-decoration: none;
@@ -188,6 +190,7 @@ a {
   text-decoration: none;
   align-items: center;
   text-align: center;
+  font-weight: 700 ;
 }
 
 .dropdown-menu a:hover {
@@ -216,17 +219,17 @@ a {
 
 /*End of index link ref styling - end of navigation bar styles*/
 
-/*Start of the styling for the footer container found on the by name page*/
+
+/*Start of the styling for the footer container found on the index page*/
 
 footer {
+  
   display: flex;
   flex: 1;
   flex-direction: row;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: 100px;
-  background-color: #1a1a19;
+  background-color: #000000;
   color: white;
   height: auto;
 }
@@ -269,7 +272,7 @@ footer {
 
 footer h2 {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: white;
   font-size: 2.3rem !important;
   text-align: left;
@@ -279,17 +282,18 @@ footer h2 {
 
 footer li {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: white;
   font-size: 1.2rem !important;
   text-align: left;
   margin-left: 50px;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 100% auto;
 }
 
-/*End of the styling for the footer container found on the by name page*/
+/*End of the styling for the footer container found on the index page*/
+
+
 
 /*Start of the content styling which includes TBC*/
 
@@ -307,11 +311,11 @@ footer li {
 
 h1 {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: black;
   font-size: 5rem !important;
   text-align: center;
-  margin: 50% auto;
+
 }
 
 /* Start of the search container styling */
@@ -329,6 +333,7 @@ h1 {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 12px;
+  margin-top: -40px;
 }
 
 .alphabet-container {

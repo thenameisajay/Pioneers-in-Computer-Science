@@ -70,9 +70,10 @@ html {
 
 /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
 a {
+  font-family: 'Cabin Sketch', cursive !important;
+  font-weight: 700 ;
   color: black;
   font-size: 1.5rem;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -106,16 +107,17 @@ a {
 }
 
 .btn {
+  font-family: 'Cabin Sketch', cursive !important;
   background-color: #fafafa;
   border-style: hidden;
   color: black;
   font-size: 1.5rem;
-  font-weight: bold;
   text-decoration: none;
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
+  font-weight: 700 ;
 }
 
 .btn:hover {
@@ -171,7 +173,7 @@ a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0%;
-  z-index: 1;
+  z-index: 2;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -180,8 +182,8 @@ a {
 }
 
 .dropdown-menu a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
-  font-size: 1rem !important;
+  font-family: 'Cabin Sketch', cursive !important;
+  font-size: 1.2rem !important;
   padding: 5px 10px;
   color: black;
   text-decoration: none;
@@ -189,6 +191,7 @@ a {
   text-decoration: none;
   align-items: center;
   text-align: center;
+  font-weight: 700 ;
 }
 
 .dropdown-menu a:hover {
@@ -217,17 +220,17 @@ a {
 
 /*End of index link ref styling - end of navigation bar styles*/
 
-/*Start of the styling for the footer container found on the by name page*/
+
+/*Start of the styling for the footer container found on the index page*/
 
 footer {
+  
   display: flex;
   flex: 1;
   flex-direction: row;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: 100px;
-  background-color: #1a1a19;
+  background-color: #000000;
   color: white;
   height: auto;
 }
@@ -270,7 +273,7 @@ footer {
 
 footer h2 {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: white;
   font-size: 2.3rem !important;
   text-align: left;
@@ -280,17 +283,18 @@ footer h2 {
 
 footer li {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: white;
   font-size: 1.2rem !important;
   text-align: left;
   margin-left: 50px;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 100% auto;
 }
 
-/*End of the styling for the footer container found on the by name page*/
+/*End of the styling for the footer container found on the index page*/
+
+
 
 /*Start of the content styling which includes TBC*/
 
@@ -308,7 +312,7 @@ footer li {
 
 h1 {
   position: relative;
-  font-family: "Staatliches", cursive;
+  font-family: 'Cabin Sketch', cursive !important;
   color: black;
   font-size: 5rem !important;
   text-align: center;
@@ -417,11 +421,11 @@ h1 {
 
 h2 {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Cabin Sketch', cursive !important;
   color: black;
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* Start Styling of the pioneer container - which includes the pioneer name, image and description*/
@@ -676,6 +680,12 @@ a:hover {
   touch-action: manipulation;
 }
 
+.button-53 svg {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
 .button-53:focus {
   outline: 0;
 }
@@ -755,7 +765,7 @@ a:hover {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  color: #1a202c;
+  color: #000000;
   display: inline-flex;
   font-family: Inter, sans-serif;
   font-size: 1rem;
@@ -773,6 +783,15 @@ a:hover {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-bottom: 10px;
+}
+
+.button-47:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-47:hover svg {
+  color: white;
 }
 
 /* End of the styling of the btn - Which reroutes to the image source Page of the Pioneer*/
@@ -885,7 +904,86 @@ svg {
   color: #fff;
 }
 
-
-
-
 /* End of the styling of the navbar (inside pioneer page) container - Which has quick links for the sections of the Pioneer*/
+
+
+/*Start of styling for search by country button inside the pioneer page*/
+
+
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: 'Luckiest Guy', cursive; 
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17 svg {
+  margin-right: 8px;
+}
+
+.button-17:hover svg {
+  fill: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+/*End of styling for the search by country button in the pioneer page*/
