@@ -284,21 +284,18 @@
       <div class="inner-container">
         <h2>Classification (ACM Library)</h2>
         <div class="classification-fields-container">
-<% if (Array.isArray(pioneer.classification)) { %>
-    <% pioneer.classification.forEach(function(classificationString) { %>
-        <% let classificationWithoutQuotes = classificationString.replace(/"/g, ''); %>
-        <% let classifications = classificationWithoutQuotes.split(',').map(c => c.trim()); %>
-                <% classifications.forEach(function(classification) { %>
-                    <% let fields = classification; %>
-                    <% fields = fields.trim().replace(/['“”]/g, ''); %> 
-                    <% console.log(fields) %>
-                <a href="/by_field_search/<%= fields %>">
-                  <button class="button-59" role="button"><%= fields %></button>
-                </a>
-              <% }); %>
-            <% }); %>
-          <% } %>
-          
+          <% if (Array.isArray(pioneer.classification)) { %> <%
+          pioneer.classification.forEach(function(classificationString) { %> <%
+          let classificationWithoutQuotes = classificationString.replace(/"/g,
+          ''); %> <% let classifications =
+          classificationWithoutQuotes.split(',').map(c => c.trim()); %> <%
+          classifications.forEach(function(classification) { %> <% let fields =
+          classification; %> <% fields = fields.trim().replace(/['“”]/g, ''); %>
+          <% console.log(fields) %>
+          <a href="/by_field_search/<%= fields %>">
+            <button class="button-59" role="button"><%= fields %></button>
+          </a>
+          <% }); %> <% }); %> <% } %>
         </div>
       </div>
     </div>
