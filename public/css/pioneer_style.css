@@ -987,3 +987,66 @@ svg {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 /*End of styling for the search by country button in the pioneer page*/
+
+.classification-fields-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+/*Start of styling for the search by field button in the pioneer page*/
+/* CSS */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  font-weight: 400 !important;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+/*End of styling for the search by field button in the pioneer page*/
