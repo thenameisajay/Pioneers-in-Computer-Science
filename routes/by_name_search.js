@@ -23,7 +23,6 @@ router.get("/:alphabet", (req, res) => {
             // count the total number of pioneers
             Pioneer.countDocuments({ name: { $regex: new RegExp("^" + searchRegex, "i") } })
                 .then((totalPioneers) => {
-                    console.log("Found " + pioneers.length + " pioneers");
                     res.render("by_name_search", { pioneers: pioneers, alphabet: searchRegex, totalPioneers: totalPioneers, pioneersPerPage: pioneersPerPage });
                 });
         })

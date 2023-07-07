@@ -28,7 +28,6 @@ Pioneer.find({ birthCountry: { $regex: new RegExp("^" + searchTerm, "i") } })
 // count the total number of pioneers
 Pioneer.countDocuments({ birthCountry: { $regex: new RegExp("^" + searchTerm, "i") } })
 .then((totalPioneers) => {
-console.log("Found " + pioneers.length + " pioneers");
 res.render("by_country_search", { pioneers: pioneers, country: searchTerm, totalPioneers: totalPioneers, pioneersPerPage: pioneersPerPage });
 });
 })
