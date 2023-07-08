@@ -92,13 +92,7 @@
     <title>Pioneers in Computer Science</title>
   </head>
   <body id="body" class="body">
-    <div class="header-top">
-      <p>
-        This webpage is under development ⚠️ 🚧 🛠, and elements such as
-        graphics, text-area, and functionalites may change significantly in the
-        final product.
-      </p>
-    </div>
+
     <div class="header-content">
       <div class="header-content--start">
         <a href="/">
@@ -119,6 +113,10 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+            <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+          </svg>
             Browse
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -128,7 +126,9 @@
               </button>
             </li>
             <li>
-              <button class="dropdown-btn"><a href="/by_field">By Field</a></button>
+              <button class="dropdown-btn">
+                <a href="/by_field">By Field</a>
+              </button>
             </li>
             <li>
               <button class="dropdown-btn">
@@ -138,9 +138,33 @@
           </ul>
         </div>
         <!--Drop Down Menu for expanded Functionlities starts here-->
-        <a href="/" class="header-content--right--link">Home</a>
-        <a href="/about" class="header-content--right--link">About</a>
-        <a href="/contact" class="header-content--right--link">Contact</a>
+        <a href="/" class="header-content--right--link">
+          <button class="btn btn-secondary dropdown-toggle dropdown" type="button"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+          <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+        </svg>
+Home
+        </button>
+        </a>
+        <a href="/about" class="header-content--right--link">
+          <button class="btn btn-secondary dropdown-toggle dropdown" type="button"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+          <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+        </svg>
+          About</button></a>
+        <a href="/contact" class="header-content--right--link">
+          <button class="btn btn-secondary dropdown-toggle dropdown" type="button"
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          Contact
+          </button>
+        </a>
       </div>
     </div>
-<body>
+    <body>

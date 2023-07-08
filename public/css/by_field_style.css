@@ -5,7 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
-
+ overflow-x: hidden;
 }
 
 #body {
@@ -56,21 +56,21 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
-  margin-right: 160px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  
 }
 
 /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
 a {
-  font-family: "Cabin Sketch", cursive !important;
-  font-weight: 700;
+  font-family: 'Cabin Sketch', cursive !important;
+  font-weight: 700 ;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 
 /*Creating an hovering effect if  the user hovers over the links*/
+
 
 .header-content--right--link {
   position: relative;
@@ -79,10 +79,6 @@ a {
   transition: color 0.3s, background-color 0.3s;
 }
 
-.header-content--right--link:hover {
-  color: #990001;
-  background-color: #f2f1ec;
-}
 
 .header-content--right--link::before {
   content: "";
@@ -100,17 +96,18 @@ a {
 }
 
 .btn {
-  font-family: "Cabin Sketch", cursive !important;
+  font-family: 'Cabin Sketch', cursive !important;
   background-color: #fafafa;
-  border-style: hidden;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
-  font-weight: 700;
+  font-weight: 700 ;
+  margin-right: 20px;
 }
 
 .btn:hover {
@@ -135,15 +132,7 @@ a {
 
 /* add a custom arrow */
 .btn.dropdown-toggle::after {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #333;
-  border-left: 0;
-  border-top: 0;
-  transform: rotate(45deg);
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+display: none;
 }
 
 .btn.dropdown-toggle:hover::after {
@@ -175,8 +164,8 @@ a {
 }
 
 .dropdown-menu a {
-  font-family: "Cabin Sketch", cursive !important;
-  font-size: 1.2rem !important;
+  font-family: 'Cabin Sketch', cursive !important;
+  font-size: 1.4rem !important;
   padding: 5px 10px;
   color: black;
   text-decoration: none;
@@ -184,7 +173,7 @@ a {
   text-decoration: none;
   align-items: center;
   text-align: center;
-  font-weight: 700;
+  font-weight: 700 ;
 }
 
 .dropdown-menu a:hover {
@@ -209,6 +198,23 @@ a {
 .dropdown-btn:hover {
   color: #990001;
   background-color: #f2f1ec;
+}
+
+svg {
+  margin-top: -5px;
+}
+
+
+.header-content {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.header-content--start{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -20px;
+  margin-top: 5px;
 }
 
 /*End of index link ref styling - end of navigation bar styles*/
