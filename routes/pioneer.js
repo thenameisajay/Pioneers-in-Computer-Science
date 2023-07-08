@@ -19,12 +19,17 @@ router.get("/:name", (req, res) => {
     Pioneer.find({ name: { $regex: new RegExp(".*" + formattedName + ".*", "i") } }).exec()
         .then((pioneers) => {
             const pioneer = pioneers[0];
+            if (!pioneer) {
+                console.log("Pioneer not found");
+                res.render("error");
+            }
             console.log("The search result was: " + pioneer);
             res.render(path.join(__dirname, "../views/pioneer.ejs"), { pioneer: pioneer }); // css and js files are in the public directory but css is not loading.
         })
         .catch((err) => {
             console.error(err);
             next(err); // pass error to express error handler
+            res.redirect("/error");
 
         });
 

@@ -5,7 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
- 
+ overflow-x: hidden;
 }
 
 #body {
@@ -56,9 +56,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
-  margin-right: 160px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  
 }
 
 /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
@@ -66,11 +65,12 @@ a {
   font-family: 'Cabin Sketch', cursive !important;
   font-weight: 700 ;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 
 /*Creating an hovering effect if  the user hovers over the links*/
+
 
 .header-content--right--link {
   position: relative;
@@ -79,10 +79,6 @@ a {
   transition: color 0.3s, background-color 0.3s;
 }
 
-.header-content--right--link:hover {
-  color: #990001;
-  background-color: #f2f1ec;
-}
 
 .header-content--right--link::before {
   content: "";
@@ -102,15 +98,16 @@ a {
 .btn {
   font-family: 'Cabin Sketch', cursive !important;
   background-color: #fafafa;
-  border-style: hidden;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
   font-weight: 700 ;
+  margin-right: 20px;
 }
 
 .btn:hover {
@@ -135,15 +132,7 @@ a {
 
 /* add a custom arrow */
 .btn.dropdown-toggle::after {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #333;
-  border-left: 0;
-  border-top: 0;
-  transform: rotate(45deg);
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
+display: none;
 }
 
 .btn.dropdown-toggle:hover::after {
@@ -176,7 +165,7 @@ a {
 
 .dropdown-menu a {
   font-family: 'Cabin Sketch', cursive !important;
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   padding: 5px 10px;
   color: black;
   text-decoration: none;
@@ -211,13 +200,30 @@ a {
   background-color: #f2f1ec;
 }
 
+svg {
+  margin-top: -5px;
+}
+
+
+.header-content {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.header-content--start{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
 /*End of index link ref styling - end of navigation bar styles*/
 
 
 /*Start of the styling for the footer container found on the index page*/
 
 footer {
-  
+
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -326,9 +332,8 @@ h1 {
   align-items: center;
   background-color: #fff;
   padding: 10px;
-  border: 0.5px solid black;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 50px;
 }
 
 .search-form input {
@@ -352,20 +357,22 @@ h1 {
   outline: none;
   background-color: white;
   color: #000000;
-  font-size: 1.6rem;
   padding: 0 10px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 #search-button-custom:hover {
   background-color: #f2f1ec;
-  color: #990001;
+  color: #0077ff;
+  border-radius: 50%;
 }
 
 .search-form input::placeholder {
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: 'Roboto-mono', monospace;
+  font-size: 1.5rem ;
   color: #000000;
-  font-weight: 700;
+ font-weight: 500 !important;
 }
 
 .search-results {
@@ -394,9 +401,8 @@ h1 {
   height: 800px;
   width: 1200px;
   overflow: hidden; /* Prevents the inner content from overflowing. */
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;  
 }
 
 .carousel {
@@ -433,3 +439,182 @@ h1 {
 
 /*End of the styling for the Carousel container found on the index page*/
 
+
+/*Start of the styling for the redesigned home page  container found on the index page*/
+
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  height: 400px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 50%;
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 1s ease-in-out;
+
+  justify-content: right;
+
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/70% 60% 30% 40%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.logo {
+  width: 400px;
+  height: 400px;
+  margin-left: 30px !important;
+}
+
+.website-name {
+  position: relative;
+  display: flex;
+  font-family: 'Cabin Sketch', cursive !important;
+  color: black;
+  font-size: 4.5rem !important;
+}
+
+.pioneer-information-container {
+  margin-top: 10px;
+  -webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.border-seperation-container{
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 1400px;
+  height: 900px;
+  border-radius: 10px;
+  
+}
+
+
+.mac-menu {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #f2f1ec;
+  width: 12%;
+  
+}
+
+.menu-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;;
+}
+
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+
+.menu-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin: 5px;
+}
+
+.red {
+  background-color: #ff5f57;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+
+/* CSS */
+.button-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-11:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
