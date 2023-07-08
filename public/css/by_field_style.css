@@ -1,18 +1,11 @@
 body,
 html {
-  zoom: 80%;
+  zoom: 85%;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-color: #dcd9d4;
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-  background-blend-mode: screen;
+
 }
 
 #body {
