@@ -1,7 +1,18 @@
 <%- include('partials/headers/searchResults_header') %>
 <div class="content-container">
     <h1>Search Results</h1>
-    <h2><%= totalPioneers %> Results found</h2>
+    <% if (totalPioneers === 0) { %>
+        <h2>No Results Found</h2>
+    <% } else { %>
+        <h2><%= totalPioneers %> Results found</h2>
+    <% } %>
+    <% if (totalPioneers === 0) { %>
+        <div class="result-container">
+            <div class="zero-results-image-container">
+                <img src="/images/zero_results.webp" alt="Zero Results" class="zero-results-image">
+            </div>
+        </div>
+        <% } else { %>
     <div class = "result-container">
         <% pioneers.forEach(function(pioneer){ %>
             <div class="pioneer-container">
@@ -19,6 +30,7 @@
             </div>
         <% }); %>
     </div>
+    <% } %>
 </div>
 <div class="pagination-container" style="display: flex; justify-content: center; box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;" >
     <ul class="pagination" style="list-style-type: none; display: flex;">
@@ -27,4 +39,5 @@
         <% } %>
     </ul>
 </div>
+
 <%- include('partials/footers/searchResults_footer.ejs') %>
