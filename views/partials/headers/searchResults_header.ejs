@@ -157,6 +157,60 @@
         </a>
       </div>
       <div class="header-content--right">
+
+
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle dropdown"
+            type="button"
+            id="dropdownMenu2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+          <ul class="dropdown-menu search" aria-labelledby="dropdownMenu2">
+            <div class="search-bar">
+              <li class="search-list">
+                <form
+                  action="/search"
+                  method="post"
+                  class="search-form"
+                  id="searchForm"
+                >
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search for a Pioneer"
+                    autocomplete="off"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="submit-search"
+                    id="search-button-custom"
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </li>
+            </div>
+         
+          </ul>
+        </div>
+
+
         <!--Drop Down Menu for expanded Functionlities starts here-->
         <div class="dropdown">
           <button
@@ -190,7 +244,7 @@
             </li>
           </ul>
         </div>
-        <!--Drop Down Menu for expanded Functionlities starts here-->
+        <!--Drop Down Menu for expanded Functionlities ends here-->
         <a href="/" class="header-content--right--link">
           <button class="btn btn-secondary dropdown-toggle dropdown" type="button"
         >
