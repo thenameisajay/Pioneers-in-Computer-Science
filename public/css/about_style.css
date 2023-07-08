@@ -232,6 +232,9 @@ footer {
   background-color: #000000;
   color: white;
   height: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__content {
