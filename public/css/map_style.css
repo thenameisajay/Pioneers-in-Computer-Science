@@ -427,12 +427,15 @@ h1 {
 
 
 .map {
+  display: flex;
   position: relative;
   justify-content: center;
+  align-self: center;
   position: relative;
-  margin: 50px auto;
-  width: 90%;
-  height: 800px;
+ margin-top: 20px;
+ margin-left: 50px;
+  width: 95%;
+  height: 870px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
