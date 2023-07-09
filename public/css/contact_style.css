@@ -294,10 +294,11 @@ footer {
   flex: 1;
   flex-direction: row;
   position: relative;
-  margin-top: 100px;
+  margin-top: 200px;
   background-color: #000000;
   color: white;
   height: auto;
+
 }
 
 .footer__content {
