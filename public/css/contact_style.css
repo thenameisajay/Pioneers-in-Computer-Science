@@ -5,8 +5,8 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
- overflow-x: hidden;
- height: 100vh;
+ 
+
 }
 
 #body {
@@ -289,18 +289,15 @@ svg {
 /*Start of the styling for the footer container found on the index page*/
 
 footer {
-  
+
   display: flex;
   flex: 1;
   flex-direction: row;
-  position: fixed;
+  position: relative;
+  margin-top: 100px;
   background-color: #000000;
   color: white;
   height: auto;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-
 }
 
 .footer__content {
