@@ -27,26 +27,42 @@
   </div>
   <div class="map" id="map">
     <script>
-          var map = L.map('map').setView([0, 0], 1);
-      var markers = L.markerClusterGroup(); //create a new marker cluster group
-
-
-      L.tileLayer('https://maptiles.p.rapidapi.com/en/map/v1/{z}/{x}/{y}.png?rapidapi-key=f420ee1c73msh1dc16433996c2ecp1729f8jsndbe334e09787', {
-        attribution: 'Tiles &copy: <a href="https://www.maptilesapi.com/">MapTiles API</a>, Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19,
-        minZoom: 3,
+      //    var map = L.map('map').setView([0, 0], 1);
+      //var markers = L.markerClusterGroup(); //create a new marker cluster group
+      const key = '4LVoQOOFqzmr8j6XqQ9Y';
+      const map = L.map('map').setView([49.2125578, 16.62662018], 3); //starting position
+      L.tileLayer(`https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${key}`,{ //style URL
+        tileSize: 512,
+        zoomOffset: -1,
+        minZoom: 1,
+        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        crossOrigin: true
       }).addTo(map);
+    
+// You should replace coordinates with the latitude and longitude of the place you want to add marker to
+var marker = L.marker([51.5, -0.09]).addTo(map);
 
-      <% pioneers.forEach(function(pioneer) { %>
-        var marker = L.marker([<%= pioneer.latitude %>, <%= pioneer.longitude %>]);
-        marker.bindPopup("<b><%= pioneer.name %></b>");
-         // Redirect to /pioneer/<%= pioneer.name %> when the popup is clicked
-
-        markers.addLayer(marker); //add the marker to the cluster group
-      <% }); %>
+// You can add a pop-up to the marker as well. This is optional.
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
 
-      map.addLayer(markers); //add the cluster group to the map
+
+      // L.tileLayer('https://api.maptiler.com/maps/basic-4326/?key=4LVoQOOFqzmr8j6XqQ9Y#1.0/23.73047/11.42578, {
+      //   attribution: 'Tiles &copy: <a href="https://www.maptilesapi.com/">MapTiles API</a>, Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      //   maxZoom: 19,
+      //   minZoom: 3,
+      // }).addTo(map);
+
+      // <% pioneers.forEach(function(pioneer) { %>
+      //   var marker = L.marker([<%= pioneer.latitude %>, <%= pioneer.longitude %>]);
+      //   marker.bindPopup("<b><%= pioneer.name %></b>");
+      //    // Redirect to /pioneer/<%= pioneer.name %> when the popup is clicked
+
+      //   markers.addLayer(marker); //add the marker to the cluster group
+      // <% }); %>
+
+
+      // map.addLayer(markers); //add the cluster group to the map
     </script>
   </div>
 </div>
