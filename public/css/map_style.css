@@ -11,7 +11,6 @@ html {
   transition: opacity 2s ease-in-out;
 }
 
-
 /* Header content starts here - Basically navigation bar*/
 
 .logo {
@@ -277,102 +276,163 @@ svg {
 
 /*End of the search function on the navbar except home all pages have it*/
 
-
 /*End of index link ref styling - end of navigation bar styles*/
-
-
 
 /*Start of the styling for the footer container found on the index page*/
 
 footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  position: relative;
+  margin-top: 100px;
+  background-color: #000000;
+  color: white;
+  height: auto;
+}
 
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    position: relative;
-    margin-top: 100px;
-    background-color: #000000;
-    color: white;
-    height: auto;
-  }
-  
-  .footer__content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-  }
-  
-  .column-container {
-    display: flex;
-    justify-content: space-between; /* This will add space between your columns */
-  }
-  
-  .column-container-1 {
-    position: relative;
-    margin-top: 100px;
-  }
-  
-  .column-1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  .column-container-2 {
-    position: relative;
-    margin-top: 100px;
-  }
-  
-  .column-2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  footer h2 {
-    position: relative;
-    font-family: 'Cabin Sketch', cursive !important;
-    color: white;
-    font-size: 2.3rem !important;
-    text-align: left;
-    margin-left: 25px;
-    margin-top: 30px;
-  }
-  
-  footer li {
-    position: relative;
-    font-family: 'Cabin Sketch', cursive !important;
-    color: white;
-    font-size: 1.2rem !important;
-    text-align: left;
-    margin-left: 50px;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  /*End of the styling for the footer container found on the index page*/
-  /*Start of the content styling which includes TBC*/
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between; /* This will add space between your columns */
+}
+
+.column-container-1 {
+  position: relative;
+  margin-top: 100px;
+}
+
+.column-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.column-container-2 {
+  position: relative;
+  margin-top: 100px;
+}
+
+.column-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+footer h2 {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: white;
+  font-size: 2.3rem !important;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+footer li {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: white;
+  font-size: 1.2rem !important;
+  text-align: left;
+  margin-left: 50px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/*End of the styling for the footer container found on the index page*/
+/*Start of the content styling which includes TBC*/
 
 .content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    margin-top: 50px;
-    /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
-    margin-left: 50% auto;
-    margin-right: 50% auto;
-  }
-  
-  h1 {
-    position: relative;
-    font-family: 'Cabin Sketch', cursive !important;
-    color: black;
-    font-size: 5rem !important;
-    text-align: center;
-    margin: 50% auto;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  /* border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
+  margin-left: 50% auto;
+  margin-right: 50% auto;
+}
+
+h1 {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: black;
+  font-size: 5rem !important;
+  text-align: center;
+  margin: 50% auto;
+}
+
+.map-container {
+  position: relative;
+  width: 2000px;
+  height: 1000px;
+  margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 10px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  height: 70px;
+  width: 100%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.inner-icon-container {
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.icon-container p {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: black;
+  font-size: 3rem !important;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -9px;
+}
+
+.icon-container svg {
+  position: relative;
+  justify-content: center;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-top: 7px;
+  fill: #000;
+}
+
+
+.map {
+  position: relative;
+  justify-content: center;
+  position: relative;
+  margin: 50px auto;
+  width: 90%;
+  height: 800px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
