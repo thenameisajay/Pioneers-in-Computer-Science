@@ -652,3 +652,89 @@ padding-bottom:100px;
  border-left: 1px solid #e5e5e5;
   background-color:   #f2f1ec;
 }
+
+/*Media Queries*/
+
+  /* For mobile phones */
+
+  @media (max-width: 767px) {
+    /* Your CSS code for screens with a maximum width of 767px goes here */
+    .carousel-container {
+      height: 500px;
+      width: 100%;
+    }
+  
+    .carousel {
+      height: 100%;
+    }
+  
+    .carousel img {
+      height: 100%;
+    }
+  
+    .carousel h5 {
+      font-size: 2.5rem !important;
+      margin-top: -100px !important;
+    }
+  
+    .carousel p {
+      font-size: 1.2rem !important;
+    }
+  
+    .logo-container {
+      height: 300px;
+      width: 300px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .logo {
+      width: 300px;
+      height: 300px;
+      margin-left: 0px !important;
+    }
+  
+    .website-name {
+      font-size: 2.5rem !important;
+    }
+  
+    .pioneer-information-container {
+      margin-top: 10px;
+    }
+  
+    .border-seperation-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    .mac-menu {
+      width: 100%;
+      border-bottom: none;
+      padding: 0px;
+      margin-bottom: 50px;
+    }
+  
+    .menu-row {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .menu-column {
+      margin-right: 20px;
+    }
+  
+    .button-11 {
+      font-size: 1rem;
+    }
+  
+    .carousel-mac-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .mac-header {
+      padding-bottom: 50px;
+    }
+  }
+  
