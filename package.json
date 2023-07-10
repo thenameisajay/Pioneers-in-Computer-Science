@@ -32,7 +32,8 @@
     "leaflet.markercluster": "^1.5.3",
     "lodash": "^4.17.21",
     "mongoose": "^7.3.0",
-    "nodemon": "^1.14.9"
+    "nodemon": "^1.14.9",
+    "openai": "^3.3.0"
   },
   "engines": {
     "node": "16.9.1",
