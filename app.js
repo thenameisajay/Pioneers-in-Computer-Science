@@ -41,6 +41,7 @@ const mapRouter = require('./routes/map');
 
 
 
+
 // Using the routes
 app.use("/", homeRouter);
 app.use("/search", searchRouter);
@@ -57,6 +58,7 @@ app.use("/by_country_search", byCountrySearchRouter);
 app.use("/by_field", byFieldRouter);
 app.use("/by_field_search", byFieldSearchRouter);
 app.use("/map", mapRouter);
+
 app.use(catchAllRouter);
 
 
