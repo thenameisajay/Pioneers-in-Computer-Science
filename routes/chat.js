@@ -3,6 +3,7 @@ const router = express.Router();
 const Pioneer = require('../models/pioneer');
 const _ = require('lodash');
 const path = require('path');
+const Chat = require('../models/chat');
 
 
 // Initialising the chatgpt model with the backend.
@@ -40,6 +41,18 @@ router.post('/', async (req, res) => {
 
     const answer = response.data.choices[0].text.trim();
     res.send(answer);
+
+// Save all chat prompts and answers to the database
+   const chat = new Chat({
+        message: message,
+        answer: answer,
+   });
+
+chat.save().then(() => {
+    console.log("Chat Data has been saved to the database");
+   
+  }
+    ).catch((err) => console.log(err));
 });
 
 
