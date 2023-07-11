@@ -15,7 +15,8 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 router.post('/', async (req, res) => {
-    const { message } = req.body;
+    const message = req.body.message;
+    
 
     //List of phrases I want the AI to answer that is related to the database of pioneers,
     const relatedPhrases = [
@@ -64,6 +65,18 @@ router.post('/', async (req, res) => {
     
     // list of phrases I don't want the AI to answer
     const prohibitedPhrases = [
+      'what is your name',
+      'what\'s your name',
+      'what are you',
+      'who are you',
+      'what is your gender',
+      'what\'s your gender',
+      'what is your age',
+      'what\'s your age',
+      'what is your favorite color',
+      'what\'s your favorite color',
+      'what is your favorite food',
+      'how are we today',
       'how are you', 
       'where are you', 
       'what are you doing',

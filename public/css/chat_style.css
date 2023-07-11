@@ -227,7 +227,7 @@ footer {
   display: flex;
   flex: 1;
   flex-direction: row;
-  position: absolute;
+  position: relative;
   margin-top: 100px;
   background-color: #000000;
   color: white;
@@ -388,9 +388,9 @@ footer li {
   width: 100%;
   position: relative;
   margin-top: 50px;
-  border: 5px solid #990001; /* For - Refernce : to see the content container - will be removed after development. */
   margin-left: 50% auto;
   margin-right: 50% auto;
+  height: 100%;
 }
 
 .content-container h1 {
@@ -422,7 +422,7 @@ header {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 1.5rem;
   color: black;
-font-weight: 600;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -438,4 +438,138 @@ font-weight: 600;
   system: cyclic;
   symbols: "\1F6F8" "\1F47D" "\1F47E" "\1F30C" "\1F680" "\1F30D" "\2604" "\1F320" "\1F52D" "\2B50" "\1FA90" ;
   suffix: " ";
+}
+
+.chat-container {
+  position: relative;
+  width: 1500px;
+  height: 600px;
+  margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 10px;
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  height: 70px;
+  width: 100%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.inner-icon-container {
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.icon-container p {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: black;
+  font-size: 3rem !important;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -9px;
+}
+
+.icon-container svg {
+  position: relative;
+  justify-content: center;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-top: 7px;
+  fill: #000;
+}
+
+/* Make a terminal based theme for SKY */
+.terminal-container{
+  background-color: black;
+  width: 100%;
+  flex-grow: 1; /* Added */
+  overflow-y: auto; /* Added - to make it scrollable if content is larger than the container */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.terminal-container p {
+  color: rgb(5, 255, 5);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+  margin-left: 20px;
+  margin-top: 20px;
+  overflow: hidden; /* Ensure the content is not visible until animation starts */
+  border-right: 2px solid; /* Cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 
+    typing 3s steps(40, end),
+    blink .75s step-end infinite;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.message-form input[type="text"] {
+  font-family: 'Roboto Mono', monospace;
+  background-color: black;
+  color: rgb(5, 255, 5);
+  padding: 10px;
+  border: 3px solid rgb(5, 255, 5);
+  border-radius: 10px;
+}
+
+.message-form button[type="submit"] {
+  font-family: 'Roboto Mono', monospace;
+  background-color: black;
+  color: rgb(5, 255, 5);
+  padding: 10px;
+  border: 3px solid rgb(5, 255, 5);
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.chat-form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat-form input {
+  height : 100%;
+  width: 100%;}
+
+.chat-form button  {
+  height : 50%;
+  width: 50%;
 }

@@ -39,7 +39,50 @@
   </header>
   <div class="chat-container">
     <!-- This is where the backend meets the frontend, to put plainly This is where the magic happens. -->
+    <div class="icon-container">
+        <div class="inner-icon-container">
+          <p>_</p>
+        </div>
+        <div class="inner-icon-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-app"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"
+            />
+          </svg>
+        </div>
+        <div class="inner-icon-container">
+          <p>X</p>
+        </div>
+      </div>
+      <div class = "terminal-container">
+        <p class = "intro-p"> SKY >> Hi I am SKY, Your personal assistant. I'm trained to answer about the pioneers of computer science.</p>
+    <div class = "backend-message-container">
+        
+    </div>
+<div class="chat-form">
+        <form method="post" action="/chat" class = "message-form">
+          <input
+            type="text"
+            name="message"
+            id="question"
+            placeholder="Ask me anything"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn">Ask Me!</button>
+        
+        </form>
+        </div>
+      </div>
   </div>
+ 
   <div class="note-container">
     <h2>NOTE:</h2>
     <ul>
