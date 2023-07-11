@@ -121,6 +121,8 @@ chat.save().then(() => {
    
   }
     ).catch((err) => console.log(err));
+}).get('/', async (req, res) => {
+  res.render(path.join(__dirname, '../views/chat.ejs'));
 });
 
 
