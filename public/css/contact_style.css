@@ -293,11 +293,12 @@ footer {
   display: flex;
   flex: 1;
   flex-direction: row;
-  position: relative;
-  margin-top: 200px;
   background-color: #000000;
   color: white;
   height: auto;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
 
 }
 
