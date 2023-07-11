@@ -995,6 +995,7 @@ svg {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
+  margin-top: 10px;
 }
 
 .button-17:hover {
