@@ -16,16 +16,84 @@ const openai = new OpenAIApi(configuration);
 
 router.post('/', async (req, res) => {
     const { message } = req.body;
+
+    //List of phrases I want the AI to answer that is related to the database of pioneers,
+    const relatedPhrases = [
+      'How many Pioneers are there in the database?',
+      'What\'s the count of Pioneers in the database?',
+      'What is the total number of Pioneers in the database?',
+      'Could you tell me the number of Pioneers in the database?',
+      'How many Pioneers do we have in the database?',
+      'Can you provide the total of Pioneers in the database?',
+      'What\'s the Pioneer count in the database?',
+      'Tell me the total Pioneers present in the database?',
+      'Count of Pioneers in the database?',
+      'What\'s the total count of Pioneers registered in the database?',
+      'Provide the quantity of Pioneers in our database.',
+      'Can you count the Pioneers in the database for me?',
+      'Do you know the total number of Pioneers we have in the database?',
+      'What\'s the number of Pioneers listed in the database?',
+      'I\'d like to know the quantity of Pioneers in the database.',
+      'What are the total Pioneers recorded in our database?',
+      'How many entries of Pioneers do we have in the database?',
+      'What is the count of Pioneers entries in the database?',
+      'Show me the number of Pioneers in our database.',
+      'Find out the total Pioneers in the database.',
+      'Can you inform me about the quantity of Pioneers in the database?',
+      'How many Pioneers data entries exist in the database?',
+      'Reveal the total count of Pioneers in the database.',
+      'Do we know the total Pioneers in our database?',
+      'How many Pioneers are recorded in the database?'
+  ];
+  
+    const includesRelatedPhrase = relatedPhrases.some(phrase => message.toLowerCase().includes(phrase.toLowerCase()));
+
+
+    if (includesRelatedPhrase) {
+      let count = 0;
+      try {
+          const pioneers = await Pioneer.find();
+          count = pioneers.length;
+          return res.send(`There are ${count} pioneers in the database.`);
+      } catch(err) {
+          console.log(err);
+      }
+      
+    }
+
     
-    // list of phrases we don't want the AI to answer
-    const prohibitedPhrases = ['how are you', 'where are you', 'what are you doing'];
+    // list of phrases I don't want the AI to answer
+    const prohibitedPhrases = [
+      'how are you', 
+      'where are you', 
+      'what are you doing',
+      'Are you a male or female',
+      'how do you do',
+      'how\'s it going',
+      'how are things',
+      'how are you feeling today',
+      'where can I find you',
+      'where are you located',
+      'where might you be',
+      'where are you now',
+      'what are you up to',
+      'what are you working on',
+      'what is happening on your end',
+      'what\'s your current task',
+      'what\'s your gender',
+      'are you male or female',
+      'can you tell me your gender',
+      'are you of male or female gender',
+      'how are we today ?'
+  ];
+  
     
     // check if the message includes any of the prohibited phrases
-    const includesProhibitedPhrase = prohibitedPhrases.some(phrase => message.toLowerCase().includes(phrase));
+     const includesProhibitedPhrase = prohibitedPhrases.some(phrase => message.toLowerCase().includes(phrase));
 
     // if it does, return a default response
     if (includesProhibitedPhrase) {
-        return res.send('I\'m sorry, I can\'t assist with that.');
+        return res.send('I\'m sorry, I can\'t assist with that. With great power comes great responsibility. Use me wisely.');
     }
     
     const response = await openai.createCompletion({
