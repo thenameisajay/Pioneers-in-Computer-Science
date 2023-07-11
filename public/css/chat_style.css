@@ -522,7 +522,7 @@ header {
   margin-top: 20px;
   overflow: hidden; /* Ensure the content is not visible until animation starts */
   border-right: 2px solid; /* Cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  
   animation: 
     typing 3s steps(40, end),
     blink .75s step-end infinite;

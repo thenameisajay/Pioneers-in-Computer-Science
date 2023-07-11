@@ -61,11 +61,17 @@
           <p>X</p>
         </div>
       </div>
-      <div class = "terminal-container">
-        <p class = "intro-p"> SKY >> Hi I am SKY, Your personal assistant. I'm trained to answer about the pioneers of computer science.</p>
-    <div class = "backend-message-container">
-        
+      <div class="terminal-container">
+        <% if (message == "" && answer == "") { %>
+            <p>SKY >> Hi, I am SKY, your personal assistant. I'm trained to answer questions about the pioneers of computer science.</p>
+        <% } else { %>
+            <div class="backend-message-container">
+                <p>USER >> <%= message %></p>
+                <p style="white-space: none;">SKY >> <%= answer %></p>
+            </div>
+        <% } %>
     </div>
+    
 <div class="chat-form">
         <form method="post" action="/chat" class = "message-form">
           <input

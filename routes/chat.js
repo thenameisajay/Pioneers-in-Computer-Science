@@ -16,7 +16,7 @@ const openai = new OpenAIApi(configuration);
 
 router.post('/', async (req, res) => {
     const message = req.body.message;
-    
+    let answer = '';
 
     //List of phrases I want the AI to answer that is related to the database of pioneers,
     const relatedPhrases = [
@@ -106,7 +106,9 @@ router.post('/', async (req, res) => {
 
     // if it does, return a default response
     if (includesProhibitedPhrase) {
-        return res.send('I\'m sorry, I can\'t assist with that. With great power comes great responsibility. Use me wisely.');
+      answer = 'I\'m sorry, I don\'t understand. Please ask me about pioneers of computer science.';
+        res.render(path.join(__dirname, '../views/chat.ejs'), {message: message, answer: answer});
+        
     }
     
     const response = await openai.createCompletion({
@@ -120,8 +122,8 @@ router.post('/', async (req, res) => {
         stop: [" Human:", " AI:"],
     });
 
-    const answer = response.data.choices[0].text.trim();
-    res.send(answer);
+     answer = response.data.choices[0].text.trim();
+    
 
 // Save all chat prompts and answers to the database
    const chat = new Chat({
@@ -134,8 +136,13 @@ chat.save().then(() => {
    
   }
     ).catch((err) => console.log(err));
+
+  // Send the message and response to the frontend
+  res.render(path.join(__dirname, '../views/chat.ejs'), {message: message, answer: answer});
+
+    
 }).get('/', async (req, res) => {
-  res.render(path.join(__dirname, '../views/chat.ejs'));
+  res.render(path.join(__dirname, '../views/chat.ejs'), {message: '', answer: ''});
 });
 
 
