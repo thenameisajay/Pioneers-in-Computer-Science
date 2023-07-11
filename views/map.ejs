@@ -34,15 +34,14 @@
               zoomOffset: -1,
               minZoom: 1,
               attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
-              crossOrigin: true
+              crossOrigin: true,
             }).addTo(map);
 
-
-
-      <% pioneers.forEach(function(pioneer) { %>
+            <% pioneers.forEach(function(pioneer) { %>
           var marker = L.marker([<%= pioneer.latitude %>, <%= pioneer.longitude %>]).addTo(map);
           marker.bindPopup("<b><a>Name: <a/></b><a> <%= pioneer.name %></a><b><a href='/pioneer/<%= pioneer.name %>'> More Info</a></b>");
         <% }); %>
+
     </script>
   </div>
 </div>
