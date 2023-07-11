@@ -44,7 +44,8 @@ router.post('/', async (req, res) => {
       'How many Pioneers data entries exist in the database?',
       'Reveal the total count of Pioneers in the database.',
       'Do we know the total Pioneers in our database?',
-      'How many Pioneers are recorded in the database?'
+      'How many Pioneers are recorded in the database?',
+      'How many pioneers are there on the website?'
   ];
   
     const includesRelatedPhrase = relatedPhrases.some(phrase => message.toLowerCase().includes(phrase.toLowerCase()));
@@ -55,7 +56,8 @@ router.post('/', async (req, res) => {
       try {
           const pioneers = await Pioneer.find();
           count = pioneers.length;
-          return res.send(`There are ${count} pioneers in the database.`);
+          answer = `There are ${count} pioneers in the database.`;
+          res.render(path.join(__dirname, '../views/chat.ejs'), {message: message, answer: answer});
       } catch(err) {
           console.log(err);
       }
@@ -124,6 +126,8 @@ router.post('/', async (req, res) => {
       });
   
       answer = response.data.choices[0]?.text.trim();
+        // Send the message and response to the frontend
+  res.render(path.join(__dirname, '../views/chat.ejs'), {message: message, answer: answer});
   } catch (error) {
       console.error('Failed to get response from OpenAI', error);
       // Respond with a meaningful error message or a default answer
@@ -144,8 +148,7 @@ chat.save().then(() => {
   }
     ).catch((err) => console.log(err));
 
-  // Send the message and response to the frontend
-  res.render(path.join(__dirname, '../views/chat.ejs'), {message: message, answer: answer});
+
 
     
 }).get('/', async (req, res) => {
