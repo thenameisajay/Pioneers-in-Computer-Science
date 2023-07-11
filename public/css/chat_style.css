@@ -392,3 +392,50 @@ footer li {
   margin-left: 50% auto;
   margin-right: 50% auto;
 }
+
+.content-container h1 {
+  font-family: 'Cabin Sketch', cursive !important;
+  font-size: 5rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-container h2{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  color: black;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container p {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.5rem;
+  color: black;
+font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.note-container ul li {
+  font-family: 'Pangolin', cursive;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 20px;
+  list-style-type: space-counter;
+}
+
+@counter-style space-counter {
+  system: cyclic;
+  symbols: "\1F6F8" "\1F47D" "\1F47E" "\1F30C" "\1F680" "\1F30D" "\2604" "\1F320" "\1F52D" "\2B50" "\1FA90" ;
+  suffix: " ";
+}
