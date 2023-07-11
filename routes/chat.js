@@ -111,18 +111,25 @@ router.post('/', async (req, res) => {
         
     }
     
-    const response = await openai.createCompletion({
-        model: "text-davinci-003",
-        prompt: `The following is a conversation with an AI assistant specialized in pioneers of computer science. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: ${message}\nAI:`,
-        temperature: 0.9,
-        max_tokens: 150,
-        top_p: 1,
-        frequency_penalty: 0,
-        presence_penalty: 0.6,
-        stop: [" Human:", " AI:"],
-    });
-
-     answer = response.data.choices[0].text.trim();
+    try {
+      const response = await openai.createCompletion({
+          model: "text-davinci-003",
+          prompt: `The following is a conversation with an AI assistant specialized in pioneers of computer science. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: ${message}\nAI:`,
+          temperature: 0.9,
+          max_tokens: 150,
+          top_p: 1,
+          frequency_penalty: 0,
+          presence_penalty: 0.6,
+          stop: [" Human:", " AI:"],
+      });
+  
+      answer = response.data.choices[0]?.text.trim();
+  } catch (error) {
+      console.error('Failed to get response from OpenAI', error);
+      // Respond with a meaningful error message or a default answer
+      answer = 'Sorry, I am currently experiencing issues. Please try again later.';
+  }
+  
     
 
 // Save all chat prompts and answers to the database
