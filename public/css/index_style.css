@@ -656,85 +656,158 @@ padding-bottom:100px;
 /*Media Queries*/
 
   /* For mobile phones */
+/* For mobile phones */
 
-  @media (max-width: 767px) {
-    /* Your CSS code for screens with a maximum width of 767px goes here */
-    .carousel-container {
-      height: 500px;
-      width: 100%;
-    }
-  
-    .carousel {
-      height: 100%;
-    }
-  
-    .carousel img {
-      height: 100%;
-    }
-  
-    .carousel h5 {
-      font-size: 2.5rem !important;
-      margin-top: -100px !important;
-    }
-  
-    .carousel p {
-      font-size: 1.2rem !important;
-    }
-  
-    .logo-container {
-      height: 300px;
-      width: 300px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-  
-    .logo {
-      width: 300px;
-      height: 300px;
-      margin-left: 0px !important;
-    }
-  
-    .website-name {
-      font-size: 2.5rem !important;
-    }
-  
-    .pioneer-information-container {
-      margin-top: 10px;
-    }
-  
-    .border-seperation-container {
-      width: 100%;
-      height: auto;
-    }
-  
-    .mac-menu {
-      width: 100%;
-      border-bottom: none;
-      padding: 0px;
-      margin-bottom: 50px;
-    }
-  
-    .menu-row {
-      flex-direction: column;
-      margin-bottom: 20px;
-    }
-  
-    .menu-column {
-      margin-right: 20px;
-    }
-  
-    .button-11 {
-      font-size: 1rem;
-    }
-  
-    .carousel-mac-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .mac-header {
-      padding-bottom: 50px;
-    }
+@media (max-width: 767px) {
+  body,
+  html {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
   }
-  
+
+.header-content{
+ flex :1;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+}
+
+.header-content--start{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.website-name{
+  font-size: 2rem !important;
+  text-align: center;
+}
+
+.header-content--right{
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.btn {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.btn svg {
+  margin : 0;
+  height: 40px;
+  width: 40px;
+ 
+}
+
+.hide-text {
+  display: none;
+}
+
+.content-container{
+  flex:-1;
+  position: relative;
+  margin-top: 145px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo-container{
+  display: flex;
+  flex : 0;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  margin-top: 20px;
+  height: 200px;
+  align-items: center;
+}
+
+.logo {
+  padding: 0;
+  height: 180px;
+  width: 180px;
+  margin-left : -2px !important;
+ justify-content: center;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  margin-top:40px;
+  width: 200px;
+  height: 50px;
+}
+
+.search-form{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.search-form input{
+  width: 300px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.search-form input::placeholder {
+  font-family: "Roboto-mono", monospace;
+  font-size: 1rem; /* Change the font size here */
+  color: #000000;
+  font-weight: 500 !important;
+}
+
+.pioneer-information-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.pioneer-information-container h1{
+  font-size: 2rem !important;
+  text-align: center;
+}
+
+
+
+
+
+}
