@@ -494,9 +494,9 @@ h1 {
 .website-name {
   position: relative;
   display: flex;
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: 'Cabin Sketch', cursive ;
   color: black;
-  font-size: 3.5rem !important;
+  font-size: 3rem ;
 }
 
 .pioneer-information-container {
