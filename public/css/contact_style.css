@@ -297,8 +297,8 @@ footer {
   color: white;
   height: auto;
   width: 100%;
-  bottom: 0;
-  position: absolute;
+   margin-top: 100px;
+  position: relative;
 
 }
 
