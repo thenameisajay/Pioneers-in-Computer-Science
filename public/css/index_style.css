@@ -874,3 +874,35 @@ footer li {
 }
 
 }
+
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  html,
+  body {
+    margin: 0;
+    zoom: 80%;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 30px;
+  }
+
+
+
+}
