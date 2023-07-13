@@ -887,8 +887,7 @@ footer li {
 
 
 /* For laptops and desktops */
-@media (min-width: 1025px) {
-
+@media (min-width: 1025px) and (max-width: 1280px) {
 html,body{
   overflow-x: hidden !important;
 }
