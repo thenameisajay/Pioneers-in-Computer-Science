@@ -879,29 +879,66 @@ footer li {
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  html,
-  body {
-    margin: 0;
-    zoom: 80%;
-    width: 100%;
-    overflow-x: hidden;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-  }
+  
 
-  .header-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 30px;
-  }
+
+
+}
+
+
+/* For laptops and desktops */
+@media (min-width: 1025px) {
+
+html,body{
+  overflow-x: hidden !important;
+}
+
+
+.website-name{
+  margin-top: 10px;
+  font-size: 3rem !important;
+  text-align: center;
+}
+
+
+.header-content--right{
+  margin: 0;
+  padding: 0;
+  margin-right: -100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.btn-secondary.dropdown-toggle.dropdown{
+  flex: 99;
+  height: 60px;
+  width: 155px;
+  font-size: 1.5rem;
+  margin:0;
+  padding: 0;
+}
+
+.btn.btn-secondary.dropdown-toggle.dropdown.chat-button{
+  font-size: 1.15rem;
+  padding: 10px;
+
+}
+
+.btn.btn-secondary.dropdown-toggle.dropdown.chat-button svg {
+  margin-left: -5px;
+}
+
+
+svg {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
 
 
 
