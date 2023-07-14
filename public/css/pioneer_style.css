@@ -11,7 +11,6 @@ html {
   transition: opacity 2s ease-in-out;
 }
 
-
 /* Header content starts here - Basically navigation bar*/
 
 .logo {
@@ -277,76 +276,11 @@ svg {
 
 /*End of the search function on the navbar except home all pages have it*/
 
-
 /*End of index link ref styling - end of navigation bar styles*/
 /*Start of the styling for the footer container found on the index page*/
-
-footer {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  position: relative;
-  margin-top: 100px;
-  background-color: #000000;
-  color: white;
-  height: auto;
-}
-
-.footer__content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-.column-container {
-  display: flex;
-  justify-content: space-between; /* This will add space between your columns */
-}
-
-.column-container-1 {
-  position: relative;
-  margin-top: 100px;
-}
-
-.column-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.column-container-2 {
-  position: relative;
-  margin-top: 100px;
-}
-
-.column-2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-footer h2 {
-  position: relative;
-  font-family: "Cabin Sketch", cursive !important;
-  color: white;
-  font-size: 2.3rem !important;
-  text-align: left;
-  margin-left: 25px;
-  margin-top: 30px;
-}
-
-footer li {
-  position: relative;
-  font-family: "Cabin Sketch", cursive !important;
-  color: white;
-  font-size: 1.2rem !important;
-  text-align: left;
-  margin-left: 50px;
-  justify-content: space-between;
-  margin-top: 10px;
+footer .logo {
+  height: 200px;
+  width: 200px;
 }
 
 /*End of the styling for the footer container found on the index page*/

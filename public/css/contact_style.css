@@ -5,14 +5,11 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
- 
-
 }
 
 #body {
   transition: opacity 2s ease-in-out;
 }
-
 
 /* Header content starts here - Basically navigation bar*/
 
@@ -36,13 +33,12 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  
 }
 
 /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
 a {
-  font-family: 'Cabin Sketch', cursive !important;
-  font-weight: 700 ;
+  font-family: "Cabin Sketch", cursive !important;
+  font-weight: 700;
   color: black;
   font-size: 2rem;
   text-decoration: none;
@@ -50,14 +46,12 @@ a {
 
 /*Creating an hovering effect if  the user hovers over the links*/
 
-
 .header-content--right--link {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
 }
-
 
 .header-content--right--link::before {
   content: "";
@@ -75,9 +69,10 @@ a {
 }
 
 .btn {
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
   text-decoration: none;
@@ -85,7 +80,7 @@ a {
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
-  font-weight: 700 ;
+  font-weight: 700;
   margin-right: 20px;
 }
 
@@ -111,7 +106,7 @@ a {
 
 /* add a custom arrow */
 .btn.dropdown-toggle::after {
-display: none;
+  display: none;
 }
 
 .btn.dropdown-toggle:hover::after {
@@ -143,7 +138,7 @@ display: none;
 }
 
 .dropdown-menu a {
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: "Cabin Sketch", cursive !important;
   font-size: 1.4rem !important;
   padding: 5px 10px;
   color: black;
@@ -152,7 +147,7 @@ display: none;
   text-decoration: none;
   align-items: center;
   text-align: center;
-  font-weight: 700 ;
+  font-weight: 700;
 }
 
 .dropdown-menu a:hover {
@@ -183,12 +178,12 @@ svg {
   margin-top: -5px;
 }
 
-
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
-.header-content--start{
+.header-content--start {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -241,7 +236,7 @@ svg {
   width: 80%;
 }
 
-.search-form input{
+.search-form input {
   margin-top: 25px;
 }
 .search-form input[type="text"]::placeholder {
@@ -282,86 +277,15 @@ svg {
 
 /*End of the search function on the navbar except home all pages have it*/
 
-
 /*End of index link ref styling - end of navigation bar styles*/
 
-
 /*Start of the styling for the footer container found on the index page*/
-
-footer {
-
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  background-color: #000000;
-  color: white;
-  height: auto;
-  width: 100%;
-   margin-top: 100px;
-  position: relative;
-
-}
-
-.footer__content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-.column-container {
-  display: flex;
-  justify-content: space-between; /* This will add space between your columns */
-}
-
-.column-container-1 {
-  position: relative;
-  margin-top: 100px;
-}
-
-.column-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.column-container-2 {
-  position: relative;
-  margin-top: 100px;
-}
-
-.column-2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-footer h2 {
-  position: relative;
-  font-family: 'Cabin Sketch', cursive !important;
-  color: white;
-  font-size: 2.3rem !important;
-  text-align: left;
-  margin-left: 25px;
-  margin-top: 30px;
-}
-
-footer li {
-  position: relative;
-  font-family: 'Cabin Sketch', cursive !important;
-  color: white;
-  font-size: 1.2rem !important;
-  text-align: left;
-  margin-left: 50px;
-  justify-content: space-between;
-  margin-top: 10px;
+footer .logo {
+  height: 200px;
+  width: 200px;
 }
 
 /*End of the styling for the footer container found on the index page*/
-
-
 
 /*Start of the styling for the contact form found on the contact page*/
 
@@ -376,7 +300,7 @@ footer li {
 }
 
 h1 {
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: "Cabin Sketch", cursive !important;
   font-size: 5rem !important;
   margin-top: -50px !important;
   margin-bottom: 20px !important;
@@ -547,7 +471,6 @@ textarea {
 
 /*End of the styling for the Contact Form Container*/
 
-
 /*Media Queries*/
 
 @media (max-width: 767px) {
@@ -566,188 +489,311 @@ textarea {
     overflow-x: hidden;
   }
 
-
-  .header-content{
-    flex :1;
+  .header-content {
+    flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
-     align-items: center;
-   }
-   
-   .header-content--start{
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-   }
+    align-items: center;
+  }
 
-   .logo {
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
     width: 120px;
     height: 120px;
     margin: 0;
     padding: 0;
     margin-top: -10px;
-   }
+  }
 
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
 
-.header-content--right{
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid black;
+  .btn {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .btn svg {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .content-container {
+    flex: -1;
+    position: relative;
+    margin-top: 170px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-container h1 {
+    text-align: center;
+    font-size: 3rem !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .content-container p {
+    text-align: center;
+    font-size: 1rem !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .form-container {
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .form-container form {
+    width: 80%;
+    padding: 0;
+    height: 100%;
+  }
+
+  .external-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-53 {
+    width: 300px;
+  }
+
+  .form-container {
+    background-color: none;
+  }
+
+  .footer-container {
+    position: relative;
+    height: 100%;
+    bottom: 0;
+  }
+
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    background-color: #000000;
+    color: white;
+    height: auto;
+    bottom: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .column-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .column-container-1 {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .column-container-2 {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .column-1,
+  .column-2 {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  footer h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  footer li {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 5px;
+  }
 }
 
-.btn {
-  margin: 0;
-  height: 50px;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  padding: 0;
-}
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    zoom: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
 
-.btn svg {
-  margin : 0;
-  height: 40px;
-  width: 40px;
- 
-}
+  .header-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
 
-.hide-text {
-  display: none;
-}
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.content-container{
-  flex:-1;
-  position: relative;
-  margin-top: 170px;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-container {
+    width: 800px;
+    position: relative;
+    height: 500px;
+  }
 
-}
+  .form-container {
+    padding-bottom: 20px;
+  }
 
-.content-container h1 {
-  text-align: center;
-  font-size: 3rem !important;
-  margin-top: 0px !important;
-  margin-bottom: 20px !important;
-}
+  .footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
 
-.content-container p {
-  text-align: center;
-  font-size: 1rem !important;
-  margin-top: 0px !important;
-  margin-bottom: 20px !important;
-}
+  footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    position: relative;
+    margin-top: 100px;
+    background-color: #000000;
+    color: white;
+    height: auto;
+  }
 
-.form-container {
-  margin-top: 0px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
 
-.form-container form {
-  width: 80%;
-  padding: 0;
-  height: 100%;
-}
+  .column-container {
+    display: flex;
+    justify-content: space-between; /* This will add space between your columns */
+  }
 
-.external-links-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .column-container-1 {
+    position: relative;
+    margin-top: 100px;
+  }
 
-.button-53{
-  width: 300px;
-}
+  .column-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-footer{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  margin-top: 50px;
-  background-color: #000000;
-  color: white;
-  height: auto;
-  bottom: 0;
-}
+  .column-container-2 {
+    position: relative;
+    margin-top: 100px;
+  }
 
-footer {
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  text-align: center;
-}
+  .column-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-.footer__content {
-  flex-direction: column;
-}
+  footer h2 {
+    position: relative;
+    font-family: "Cabin Sketch", cursive !important;
+    color: white;
+    font-size: 2.3rem !important;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
 
-.column-container {
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
- 
-}
-
-.column-container-1{
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-.column-container-2{
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-
-.column-1, .column-2 {
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-footer h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-left: 0;
-  margin-top: 15px;
-}
-
-footer li {
-  font-size: 1rem;
-  margin-left: 0;
-  margin-top: 5px;
-}
-
-
-
-
-
+  footer li {
+    position: relative;
+    font-family: "Cabin Sketch", cursive !important;
+    color: white;
+    font-size: 1.2rem !important;
+    text-align: left;
+    margin-left: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
 }

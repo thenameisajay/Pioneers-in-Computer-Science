@@ -5,13 +5,11 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
-
 }
 
 #body {
   transition: opacity 2s ease-in-out;
 }
-
 
 /* Header content starts here - Basically navigation bar*/
 
@@ -35,13 +33,12 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  
 }
 
 /*This css code is for the a-links to look more appeasing rather than standing out from the default.*/
 a {
-  font-family: 'Cabin Sketch', cursive !important;
-  font-weight: 700 ;
+  font-family: "Cabin Sketch", cursive !important;
+  font-weight: 700;
   color: black;
   font-size: 2rem;
   text-decoration: none;
@@ -49,14 +46,12 @@ a {
 
 /*Creating an hovering effect if  the user hovers over the links*/
 
-
 .header-content--right--link {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
 }
-
 
 .header-content--right--link::before {
   content: "";
@@ -74,9 +69,10 @@ a {
 }
 
 .btn {
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
   text-decoration: none;
@@ -84,7 +80,7 @@ a {
   display: inline-block;
   padding: 8px 12px;
   transition: color 0.3s, background-color 0.3s;
-  font-weight: 700 ;
+  font-weight: 700;
   margin-right: 20px;
 }
 
@@ -110,7 +106,7 @@ a {
 
 /* add a custom arrow */
 .btn.dropdown-toggle::after {
-display: none;
+  display: none;
 }
 
 .btn.dropdown-toggle:hover::after {
@@ -142,7 +138,7 @@ display: none;
 }
 
 .dropdown-menu a {
-  font-family: 'Cabin Sketch', cursive !important;
+  font-family: "Cabin Sketch", cursive !important;
   font-size: 1.4rem !important;
   padding: 5px 10px;
   color: black;
@@ -151,7 +147,7 @@ display: none;
   text-decoration: none;
   align-items: center;
   text-align: center;
-  font-weight: 700 ;
+  font-weight: 700;
 }
 
 .dropdown-menu a:hover {
@@ -182,12 +178,12 @@ svg {
   margin-top: -5px;
 }
 
-
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
-.header-content--start{
+.header-content--start {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -278,81 +274,6 @@ svg {
 }
 
 /*End of the search function on the navbar except home all pages have it*/
-
-
-/*End of index link ref styling - end of navigation bar styles*/
-
-/*Start of the styling for the footer container found on the index page*/
-
-footer {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  position: relative;
-  margin-top: 100px;
-  background-color: #000000;
-  color: white;
-  height: auto;
-}
-
-.footer__content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-.column-container {
-  display: flex;
-  justify-content: space-between; /* This will add space between your columns */
-}
-
-.column-container-1 {
-  position: relative;
-  margin-top: 100px;
-}
-
-.column-1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.column-container-2 {
-  position: relative;
-  margin-top: 100px;
-}
-
-.column-2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-footer h2 {
-  position: relative;
-  font-family: "Cabin Sketch", cursive !important;
-  color: white;
-  font-size: 2.3rem !important;
-  text-align: left;
-  margin-left: 25px;
-  margin-top: 30px;
-}
-
-footer li {
-  position: relative;
-  font-family: "Cabin Sketch", cursive !important;
-  color: white;
-  font-size: 1.2rem !important;
-  text-align: left;
-  margin-left: 50px;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-/*End of the styling for the footer container found on the index page*/
 
 /*Start of search results page styling*/
 
