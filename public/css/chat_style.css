@@ -526,7 +526,7 @@ header {
 
 /* Media Queries */
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   body,
   html {
     zoom: 100%;
@@ -543,7 +543,6 @@ header {
   }
 
   .header-content {
-  
     z-index: 1;
     flex: 1;
     width: 100%;
@@ -567,7 +566,6 @@ header {
     margin-top: -10px;
   }
 
-
   .header-content--right {
     margin: 0;
     padding: 0;
@@ -580,7 +578,6 @@ header {
     justify-content: center;
     border-bottom: 1px solid black;
   }
-
 
   .btn {
     margin: 0;
@@ -614,14 +611,12 @@ header {
     justify-content: center;
   }
   .content-container h1 {
-
     text-align: center;
-   
+
     font-size: 3rem !important;
     margin-top: 30px !important;
-    
   }
-  
+
   .chat-header svg {
     height: 50px;
     width: 50px;
@@ -634,73 +629,56 @@ header {
     margin-bottom: 20px !important;
   }
 
-  .content-container p{
+  .content-container p {
     font-size: 1rem;
     margin-bottom: 20px;
   }
 
-  .chat-container .icon-container{
+  .chat-container .icon-container {
     background-color: white;
   }
 
-.chat-container{
-  background-color: black;
-  position: relative;
-  width: 100%;
-  height: 800px;
-  margin: 50px auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-  border-radius: 10px;
-  display: flex; /* Added */
-  flex-direction: column; /* Added */
-}
+  .chat-container {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 10px;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+  }
 
+  .backend-message-container p {
+    font-size: 0.5rem;
+  }
 
+  .chat-form {
+    position: relative;
+    margin-top: 100px;
+  }
 
-.backend-message-container p{
-font-size: 0.5rem;
-}
+  .note-container {
+    flex: -1;
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.chat-form{
-position: relative;
-margin-top: 100px;
-}
+  .note-container h2 {
+    text-align: center;
+    font-size: 1.5rem !important;
+    margin-top: -10px !important;
+    margin-bottom: 20px !important;
+  }
 
-
-
-
-.note-container{
-  flex: -1;
-  position: relative;
-  margin-top: 50px;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.note-container h2 {
-  text-align: center;
-  font-size: 1.5rem !important;
-  margin-top: -10px !important;
-  margin-bottom: 20px !important;
-}
-
-
-.note-container ul li {
-font-size: 0.7rem;
-}
-
-
-
-
-
-
-
-
-
-
-
+  .note-container ul li {
+    font-size: 0.7rem;
+  }
 }
