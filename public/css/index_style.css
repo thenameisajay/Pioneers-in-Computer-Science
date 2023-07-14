@@ -1001,6 +1001,8 @@ width: 200px;
   height: 100%;
 }
 
+/* Bug : Footer is not responsive on tablet devices - to be fixed later */
+
 footer{
   display: flex;
   justify-content: center;
