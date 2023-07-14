@@ -435,3 +435,215 @@ h2 {
 .button-54:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
+
+
+/*Media Queries*/
+
+
+/*For Mobile Devices */
+@media (max-width: 767px) {
+  body,
+  html {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+
+  .header-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .btn {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .btn svg {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .content-container {
+    flex: -1;
+    position: relative;
+    margin-top: 170px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-container h1 {
+    text-align: center;
+    font-size: 3rem !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .content-container p {
+    text-align: center;
+    font-size: 1rem !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+.section-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  border-radius: 0px;
+  -webkit-animation: none;
+  animation: none;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+}
+
+  .section-container h2 {
+    font-size: 1.5rem !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .section-container p {
+    font-size: 1rem !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .objectives-list {
+    margin-right: 20px;
+  }
+
+  .objectives-list li {
+    font-size: 1rem !important;
+    margin-top: 0px !important;
+
+  }
+
+  .button-container {
+    flex: -1;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-54{
+    margin-bottom: 10px;
+  }
+
+
+
+
+}
+
+/*For Tablets */
+@media (min-width: 768px) and (max-width: 1024px){
+  html,
+  body {
+    zoom: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
+
+  .header-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+   .header h1 {
+    font-size: 3rem !important;
+    text-align: center;
+   }
+
+}
+
+/* For landscape of tablet devices */
+/*Not required it is responsive.*/
