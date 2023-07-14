@@ -114,7 +114,7 @@ router.post('/', async (req, res) => {
 
   try {
     const response = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "text-davinci-003", // Soon to be deprecated , change it later to "gpt-3.5-turbo-instinct"
       prompt: `The following is a conversation with an AI assistant specialized in pioneers of computer science. The assistant name is SKY (SMART KNOW-ALL YODA ) is helpful, creative, clever, and very friendly.\n\nHuman: ${message}\nAI:`,
       temperature: 0.9,
       max_tokens: 150,
