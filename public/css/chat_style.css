@@ -602,7 +602,7 @@ header {
   .content-container {
     flex: -1;
     position: relative;
-    margin-top: 230px;
+    margin-top: 400px;
     padding: 0;
     width: 100%;
     display: flex;
@@ -614,7 +614,7 @@ header {
     text-align: center;
 
     font-size: 3rem !important;
-    margin-top: 30px !important;
+    margin-top: -200px !important;
   }
 
   .chat-header svg {
