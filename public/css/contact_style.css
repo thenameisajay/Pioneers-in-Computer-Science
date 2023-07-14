@@ -490,6 +490,8 @@ textarea {
   }
 
   .header-content {
+  
+    z-index: 1;
     flex: 1;
     width: 100%;
     display: flex;
@@ -511,6 +513,7 @@ textarea {
     padding: 0;
     margin-top: -10px;
   }
+
 
   .header-content--right {
     margin: 0;
@@ -653,6 +656,8 @@ textarea {
   .form-container {
     padding-bottom: 20px;
   }
+
+ 
 
 }
 
