@@ -12,28 +12,6 @@ html {
   transition: opacity 2s ease-in-out;
 }
 
-/* Development Message header starts here - to be removed after website is completed */
-
-.header-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 30px;
-}
-
-.header-top p {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* You need to specify a height for vertical alignment. It can be any value depending on your design */
-}
-
-/* Development Message header ends here  - to be removed after website is completed*/
 
 /* Header content starts here - Basically navigation bar*/
 

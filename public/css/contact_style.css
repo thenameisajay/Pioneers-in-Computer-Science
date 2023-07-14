@@ -546,3 +546,208 @@ textarea {
 /*End of button styling for Github , mail and My own website */
 
 /*End of the styling for the Contact Form Container*/
+
+
+/*Media Queries*/
+
+@media (max-width: 767px) {
+  body,
+  html {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+
+  .header-content{
+    flex :1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+   }
+   
+   .header-content--start{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+   }
+
+
+.header-content--right{
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.btn {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.btn svg {
+  margin : 0;
+  height: 40px;
+  width: 40px;
+ 
+}
+
+.hide-text {
+  display: none;
+}
+
+.content-container{
+  flex:-1;
+  position: relative;
+  margin-top: 170px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.content-container h1 {
+  text-align: center;
+  font-size: 3rem !important;
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.content-container p {
+  text-align: center;
+  font-size: 1rem !important;
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.form-container {
+  margin-top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.form-container form {
+  width: 80%;
+  padding: 0;
+  height: 100%;
+}
+
+.external-links-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-53{
+  width: 300px;
+}
+
+footer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  background-color: #000000;
+  color: white;
+  height: auto;
+  bottom: 0;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer__content {
+  flex-direction: column;
+}
+
+.column-container {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.column-container-1{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.column-container-2{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+
+.column-1, .column-2 {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-left: 0;
+  margin-top: 15px;
+}
+
+footer li {
+  font-size: 1rem;
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+
+
+
+
+}
