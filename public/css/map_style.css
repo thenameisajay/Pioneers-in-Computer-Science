@@ -493,3 +493,78 @@ h1 {
 }
 
 }
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    zoom: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
+
+  .header-content {
+    flex: 1;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .website-name {
+    font-size: 3.5rem !important;
+    text-align: center;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-container {
+    width: 800px;
+    position: relative;
+    height: 500px;
+    padding-bottom: 0;
+  }
+  
+  .map-container {
+    width: 800px;
+    height: 500px;
+    margin-top: -200px;
+  } 
+
+  #map {
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+a {
+  font-size: 1rem;
+}
+}
+
+/*For landscape mode and desktop mode not required*/
+
+/*Note : There is a ui bug when the display is in landscape mode - the header is not sized properly.*/
