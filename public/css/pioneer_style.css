@@ -1134,21 +1134,24 @@ svg {
   }
 
   .page-navbar {
-    height: 200px;
+    display: none; /* Hide the navbar in mobile devices */
+    height: 100px;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .page-navbar .button-28 {
     font-size: 1.5rem;
-    height: 50px;
-    width: 50px;
+    height: 10px !important;
+    width: 30px !important;
     margin-bottom: 10px;
   }
   .button-28 svg {
     margin: 0;
     display: flex;
     margin-left: -5px;
+    height: 15px;
+    width: 15px;
   }
 
   .image-container {
