@@ -1043,3 +1043,238 @@ svg {
 }
 
 /*End of styling for the search by field button in the pioneer page*/
+
+
+/* Media Queries*/
+
+/* Mobile Devices */
+
+
+@media (max-width: 767px){
+
+  body,
+  html {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .header-content {
+  
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .btn {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .btn svg {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .content-container {
+    flex: -1;
+    position: relative;
+    margin-top: 220px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.page-navbar{
+  height: 200px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-navbar .button-28 {
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+.button-28 svg{
+  margin: 0;
+  display: flex;
+  margin-left: -5px;
+
+ 
+}
+
+  .image-container {
+    flex: -1;
+    position: relative;
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  h1{
+    font-size: 3rem !important;
+
+  }
+
+  .mac-menu{
+    display: none;
+  }
+
+  .housing-container{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+
+  .inner-container {
+    flex: -1;
+    position: relative;
+    margin-top: 0px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-container p {
+    font-size: 1.25rem;
+  }
+
+  .inner-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .inner-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container h4 {
+    font-size: 1.2rem;
+  }
+
+  .inner-container h5 {
+    font-size: 1rem;
+  }
+
+  .inner-container h6 {
+    font-size: 0.8rem;
+  }
+
+  .inner-container a {
+    font-size: 1.5rem;
+  }
+
+  .inner-container li {
+    font-size: 1.5rem;
+  }
+
+  .inner-container ul {
+    font-size: 1.5rem;
+  }
+
+  .inner-container ol {
+    font-size: 1.5rem;
+  }
+
+  .inner-container .button-53 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container .button-81 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container .button-47 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container .button-17 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container .button-59 {
+    font-size: 1.5rem;
+
+}
+}
