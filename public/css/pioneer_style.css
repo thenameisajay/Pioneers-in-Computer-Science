@@ -1273,7 +1273,6 @@ svg {
   }
 }
 
-
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   body,
@@ -1407,33 +1406,31 @@ svg {
     font-size: 3.5rem !important;
   }
 
-
-  .housing-container{
+  .housing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 800px;
   }
 
-  .mac-menu{
+  .mac-menu {
     display: none;
   }
 
- .inner-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  width: 100%;
-  padding-left: 80px;
-  padding-right: 80px;
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .inner-container h2 {
+    font-size: 2.5rem !important;
+  }
 
- }
- .inner-container h2{
-  font-size: 2.5rem !important;
- }
-
- .inner-container p{
-  font-size: 1.5rem;
- }
+  .inner-container p {
+    font-size: 1.5rem;
+  }
 }

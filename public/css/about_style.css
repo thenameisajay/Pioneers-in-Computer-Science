@@ -436,9 +436,7 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
-
 /*Media Queries*/
-
 
 /*For Mobile Devices */
 @media (max-width: 767px) {
@@ -456,7 +454,6 @@ h2 {
     align-items: center;
     overflow-x: hidden;
   }
-
 
   .header-content {
     flex: 1;
@@ -540,21 +537,21 @@ h2 {
     margin-bottom: 20px !important;
   }
 
-.section-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0;
-  border-radius: 0px;
-  -webkit-animation: none;
-  animation: none;
-  box-shadow: none;
-  border-bottom: 1px solid black;
-}
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 0px;
+    -webkit-animation: none;
+    animation: none;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+  }
 
   .section-container h2 {
     font-size: 1.5rem !important;
@@ -575,7 +572,6 @@ h2 {
   .objectives-list li {
     font-size: 1rem !important;
     margin-top: 0px !important;
-
   }
 
   .button-container {
@@ -590,17 +586,13 @@ h2 {
     justify-content: center;
   }
 
-  .button-54{
+  .button-54 {
     margin-bottom: 10px;
   }
-
-
-
-
 }
 
 /*For Tablets */
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
   html,
   body {
     zoom: 95%;
@@ -638,11 +630,10 @@ h2 {
     justify-content: center;
   }
 
-   .header h1 {
+  .header h1 {
     font-size: 3rem !important;
     text-align: center;
-   }
-
+  }
 }
 
 /* For landscape of tablet devices */

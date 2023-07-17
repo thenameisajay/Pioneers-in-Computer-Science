@@ -379,12 +379,10 @@ h1 {
 }
 /* End of the button that hold the alphabets styling*/
 
-
 /* Media Queries */
 /* For Mobile Devices */
 
-
-@media (max-width: 767px){
+@media (max-width: 767px) {
   body,
   html {
     zoom: 100%;
@@ -399,7 +397,6 @@ h1 {
     align-items: center;
     overflow-x: hidden;
   }
-
 
   .header-content {
     flex: 1;
@@ -457,35 +454,32 @@ h1 {
     display: none;
   }
 
-  .content-container{
+  .content-container {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 150px;
-
   }
 
-.search-container{
-  display: flex;
-  flex-direction: column;
-}
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
 
- h1 {
-  font-size: 3rem !important;
-  margin-top: 50px;
-  margin-bottom: 60px !important;
-}
+  h1 {
+    font-size: 3rem !important;
+    margin-top: 50px;
+    margin-bottom: 60px !important;
+  }
 
-.button-55{
-  height: 70px;
-  width: 300px;
+  .button-55 {
+    height: 70px;
+    width: 300px;
+  }
 }
-
-}
-
 
 /*For Tablets */
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
   html,
   body {
     zoom: 95%;
@@ -523,32 +517,32 @@ h1 {
     justify-content: center;
   }
 
- h1 {
+  h1 {
     font-size: 3.5rem !important;
     text-align: center;
     margin-bottom: 70px !important;
     margin-top: -20px !important;
-   }
+  }
 
-   .content-container{
+  .content-container {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 800px;
-   }
+  }
 
-   .search-container{
+  .search-container {
     justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 800px;
-   }
+  }
 
-   .button-55{
+  .button-55 {
     height: 70px;
     width: 300px;
-   }
+  }
 }
 
 /* For landscape of tablet devices */

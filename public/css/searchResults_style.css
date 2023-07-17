@@ -375,8 +375,7 @@ h3 {
   justify-content: center;
 }
 
-
-@media (max-width: 767px){
+@media (max-width: 767px) {
   body,
   html {
     zoom: 100%;
@@ -393,7 +392,6 @@ h3 {
   }
 
   .header-content {
-  
     z-index: 1;
     flex: 1;
     width: 100%;
@@ -449,82 +447,81 @@ h3 {
   .hide-text {
     display: none;
   }
-  .content-container{
+  .content-container {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 200px;
-
   }
 
-h1{
-  position: relative;
-  font-size: 3rem !important;
-  margin-bottom: 0px !important;
-}
+  h1 {
+    position: relative;
+    font-size: 3rem !important;
+    margin-bottom: 0px !important;
+  }
 
-h2{
-  display: flex;
- 
-  font-size: 0.8rem !important;
-  position: relative;
-  margin-top: 10px !important;
-}
+  h2 {
+    display: flex;
 
-.result-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
+    font-size: 0.8rem !important;
+    position: relative;
+    margin-top: 10px !important;
+  }
 
-.pioneer-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
-  width: 350px;
-}
+  .result-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 
-.pioneer-image-container{
-  height: 200px;
-  width: 150px;
-}
+  .pioneer-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    width: 350px;
+  }
 
-.pioneer-image{
-  height: 200px;
-  width: 150px;
-}
+  .pioneer-image-container {
+    height: 200px;
+    width: 150px;
+  }
 
-.pioneer-container p{
-  font-size: 1rem !important;
-}
+  .pioneer-image {
+    height: 200px;
+    width: 150px;
+  }
 
-.pioneer-container p a{
-  font-size: 1rem !important;
-}
+  .pioneer-container p {
+    font-size: 1rem !important;
+  }
 
-.zero-results-image-container{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 200px;
-  height: 200px;
-  width: 350px;
-}
+  .pioneer-container p a {
+    font-size: 1rem !important;
+  }
 
-.zero-results-image-container img {
-  height: 200px;
-  width: 350px;
-}
+  .zero-results-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 200px;
+    width: 350px;
+  }
 
+  .zero-results-image-container img {
+    height: 200px;
+    width: 350px;
+  }
 }
 
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-  html, body {
+  html,
+  body {
     zoom: 100%;
     width: 100vw;
     height: 100vh;
@@ -538,7 +535,6 @@ h2{
     overflow-x: hidden;
     overflow-y: scroll !important;
   }
-
 
   .header-content {
     z-index: 1;
@@ -568,79 +564,72 @@ h2{
     justify-content: center;
   }
 
-.content-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 250px;
+  .content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+  }
 
-}
+  h1 {
+    position: relative;
+    font-size: 3rem !important;
+    margin-bottom: 0px !important;
+  }
 
-h1{
-  position: relative;
-  font-size: 3rem !important;
-  margin-bottom: 0px !important;
-}
+  h2 {
+    font-size: 1.5rem !important;
+    position: relative;
+    margin-top: 10px !important;
+  }
 
-h2{
-  font-size: 1.5rem !important;
-  position: relative;
-  margin-top: 10px !important;
-}
+  .result-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+  }
 
-.result-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 700px;
- 
- }
+  .pioneer-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
 
- .pioneer-container{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 0px;
- }
-
-  .pioneer-image-container{
+  .pioneer-image-container {
     height: 200px;
     width: 150px;
   }
 
-  .pioneer-image{
+  .pioneer-image {
     height: 200px;
     width: 150px;
   }
 
-  .pioneer-container p{
+  .pioneer-container p {
     font-size: 1rem !important;
   }
 
-  .pioneer-container p a{
+  .pioneer-container p a {
     font-size: 1rem !important;
   }
 
-  .pioneer-container  h3{
+  .pioneer-container h3 {
     font-size: 2rem !important;
   }
-
 
   .pagination-container {
     display: flex;
     justify-content: center;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
     width: 100%; /* Set the width to full viewport */
     height: 50px; /* Define a height */
     z-index: 10; /* Ensure it's on top of other elements */
     position: relative; /* Consider a different position value if necessary */
   }
-  
-
-
-
 }
-

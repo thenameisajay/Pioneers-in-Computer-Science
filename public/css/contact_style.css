@@ -490,7 +490,6 @@ textarea {
   }
 
   .header-content {
-  
     z-index: 1;
     flex: 1;
     width: 100%;
@@ -605,7 +604,6 @@ textarea {
   .form-container {
     background-color: none;
   }
-
 }
 
 /* For tablets */
@@ -655,9 +653,6 @@ textarea {
   .form-container {
     padding-bottom: 20px;
   }
-
- 
-
 }
 
 /* For landscape of tablet devices */

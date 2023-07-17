@@ -822,7 +822,7 @@ h1 {
     overflow-x: hidden !important;
   }
 
-  .header-content{
+  .header-content {
     flex: 1;
     z-index: 99;
   }
