@@ -846,8 +846,8 @@ a:hover {
   color: black;
   cursor: pointer;
   display: inline-block;
-  font-family: "Luckiest Guy", cursive;
-  font-size: 1rem !important;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.25rem !important;
   line-height: normal;
   min-height: 60px !important;
   min-width: 0;
@@ -861,6 +861,7 @@ a:hover {
   touch-action: manipulation;
   width: 100%;
   will-change: transform;
+  font-weight: 600 !important;
 }
 
 .button-28:disabled {
@@ -908,9 +909,9 @@ svg {
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   height: 48px;
   justify-content: center;
   letter-spacing: 0.25px;
@@ -1001,9 +1002,9 @@ svg {
   cursor: pointer;
   display: inline-flex;
   fill: #000;
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Roboto Mono", monospace;
   font-size: 2rem;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   height: 48px;
   justify-content: center;
   letter-spacing: -0.8px;
