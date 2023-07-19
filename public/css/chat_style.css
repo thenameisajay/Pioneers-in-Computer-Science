@@ -653,13 +653,17 @@ header {
     margin-top: 20px;
   }
 
+  .terminal-container{
+    height: 300px;
+  }
+
   .backend-message-container p {
     font-size: 0.5rem;
   }
 
   .chat-form {
     position: relative;
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
   .note-container {
