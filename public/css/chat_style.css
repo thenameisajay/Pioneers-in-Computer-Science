@@ -580,7 +580,6 @@ header {
   .content-container {
     flex: -1;
     position: relative;
-
     padding: 0;
     width: 100%;
     display: flex;
@@ -590,7 +589,7 @@ header {
   }
   .content-container h1 {
     text-align: center;
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
 
   .chat-header {
@@ -604,7 +603,7 @@ header {
 
   .content-container h2 {
     text-align: center;
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     margin-top: -10px !important;
     margin-bottom: 20px !important;
   }
@@ -659,7 +658,7 @@ header {
   .note-container h2 {
     text-align: center;
     font-size: 1.5rem !important;
-    margin-top: -10px !important;
+    margin-top: 20px !important;
     margin-bottom: 20px !important;
   }
 
