@@ -604,6 +604,47 @@ textarea {
   .form-container {
     background-color: none;
   }
+
+ 
+ 
+ 
+  .search-form::placeholder{
+    font-size: 0.5rem;
+  }
+
+  .dropdown-menu.search{
+    width: 280px !important;
+    
+  }
+
+  .search-form input[type="text"] {
+    border: none;
+    margin-left: 40px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    width: 80%;
+  }
+  
+  .search-form input {
+    margin-left: 10px !important;
+  }
+  .search-form input[type="text"]::placeholder {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 1;
+    margin-left: -20px !important;
+  }
+  
+  .search-form button {
+    display: none;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: -70px !important;
+  }
+
 }
 
 /* For tablets */

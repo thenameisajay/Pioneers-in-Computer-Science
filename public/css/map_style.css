@@ -490,6 +490,44 @@ h1 {
     text-align: center;
     margin-top: -20px;
   }
+
+
+ 
+  .search-form::placeholder{
+    font-size: 0.5rem;
+  }
+
+  .dropdown-menu.search{
+    width: 280px !important;
+    
+  }
+
+  .search-form input[type="text"] {
+    border: none;
+    margin-left: 40px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    width: 80%;
+  }
+  
+  .search-form input {
+    margin-left: 30px !important;
+  }
+  .search-form input[type="text"]::placeholder {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 1;
+    margin-left: -100px !important;
+  }
+  
+  .search-form button {
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: -80px !important;
+  }
 }
 
 /* For tablets */
