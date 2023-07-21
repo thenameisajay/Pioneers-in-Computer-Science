@@ -38,7 +38,7 @@
                   d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
                 />
               </svg>
-            <span class="hide-text">Name</span> 
+              <span class="hide-text">Name</span>
             </button></a
           >
         </li>
@@ -134,35 +134,10 @@
                 <path
                   d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
                 />
-            </svg>
+              </svg>
               <span class="hide-text">Birth-Place</span>
             </button></a
           >
-        </li>
-        <li>
-          <a href="#pioneer-year">
-            <button class="button-28" role="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-clock-history"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"
-                />
-                <path
-                  d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"
-                />
-                <path
-                  d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
-                />
-              </svg>
-              <span class="hide-text">Century and Year</span>
-            </button>
-          </a>
         </li>
 
         <li>
@@ -257,9 +232,13 @@
       <div class="inner-container">
         <h2>Achievements</h2>
         <p><%= pioneer.achievement%></p>
+        <h2>Contributed Year</h2>
+        <p>Century: <strong><%= pioneer.century%></strong></p>
+        <p>Year: <strong><%= pioneer.year%></strong></p>
       </div>
     </div>
   </section>
+
   <section id="acm-classification">
     <div class="housing-container">
       <div class="mac-menu">
@@ -279,7 +258,7 @@
           classification; %> <% fields = fields.trim().replace(/['“”]/g, ''); %>
           <% console.log(fields) %>
           <a href="/by_field_search/<%= fields %>">
-            <button class="button-59" role="button"><%= fields %></button>
+            <button class="button-17" role="button"><%= fields %></button>
           </a>
           <% }); %> <% }); %> <% } %>
         </div>
@@ -354,20 +333,7 @@
       </div>
     </div>
   </section>
-  <section id="pioneer-year">
-    <div class="housing-container">
-      <div class="mac-menu">
-        <span class="menu-button red"></span>
-        <span class="menu-button yellow"></span>
-        <span class="menu-button green"></span>
-      </div>
-      <div class="inner-container">
-        <h2>Century and Year</h2>
-        <p>Century: <strong><%= pioneer.century%></strong></p>
-        <p>Year: <strong><%= pioneer.year%></strong></p>
-      </div>
-    </div>
-  </section>
+
   <section id="pioneer-more">
     <div class="housing-container">
       <div class="mac-menu">
@@ -379,14 +345,14 @@
         <h2>To Know More...</h2>
         <div class="button-container">
           <a href="<%= pioneer.wikiUrl %>">
-            <button class="button-53" role="button">
+            <button class="button-17" role="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
+                width="30"
+                height="30"
                 fill="currentColor"
                 class="bi bi-wikipedia"
-                viewBox="0 0 16 8"
+                viewBox="0 0 18 8"
               >
                 <path
                   d="M8.835 3.003c.828-.006 2.688 0 2.688 0l.033.03v.288c0 .08-.045.12-.133.12-.433.02-.522.063-.68.29-.087.126-.258.393-.435.694l-1.52 2.843-.043.089 1.858 3.801.113.031 2.926-6.946c.102-.28.086-.478-.044-.595-.132-.114-.224-.18-.563-.195l-.275-.014a.161.161 0 0 1-.096-.035.1.1 0 0 1-.046-.084v-.289l.042-.03h3.306l.034.03v.29c0 .078-.045.117-.133.117-.433.02-.754.113-.962.281a1.64 1.64 0 0 0-.488.704s-2.691 6.16-3.612 8.208c-.353.672-.7.61-1.004-.019A224.05 224.05 0 0 1 8.044 8.81c-.623 1.285-1.475 3.026-1.898 3.81-.411.715-.75.622-1.02.019-.45-1.065-1.131-2.519-1.817-3.982-.735-1.569-1.475-3.149-1.943-4.272-.167-.4-.293-.657-.412-.759-.12-.1-.368-.16-.746-.18C.069 3.429 0 3.395 0 3.341v-.303l.034-.03c.615-.003 3.594 0 3.594 0l.034.03v.288c0 .08-.05.118-.15.118l-.375.016c-.322.013-.483.11-.483.288 0 .083.034.217.109.4.72 1.753 3.207 6.998 3.207 6.998l.091.023 1.603-3.197-.32-.71L6.24 5.095s-.213-.433-.286-.577l-.098-.196c-.387-.77-.411-.82-.865-.88-.137-.017-.208-.035-.208-.102v-.304l.041-.03h2.853l.075.024v.303c0 .069-.05.104-.15.104l-.206.03c-.523.04-.438.254-.09.946l1.057 2.163 1.17-2.332c.195-.427.155-.534.074-.633-.046-.055-.202-.144-.54-.158l-.133-.015a.159.159 0 0 1-.096-.034.099.099 0 0 1-.045-.085v-.288l.041-.03Z"
@@ -397,7 +363,7 @@
           </a>
           <% if (pioneer.mactutorUrl && pioneer.mactutorUrl.trim() !== '') { %>
           <a href="<%= pioneer.mactutorUrl %>">
-            <button class="button-53" role="button">
+            <button class="button-17" role="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -435,7 +401,7 @@
             <% if (pioneer.image && pioneer.image.trim() !== '') { %>
             <li>
               <a href="<%= pioneer.image%>">
-                <button class="button-47" role="button">
+                <button class="button-17" role="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -458,7 +424,7 @@
             '') { %>
             <li>
               <a href="<%= pioneer.mactutorUrl %>">
-                <button class="button-47" role="button">
+                <button class="button-17" role="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"

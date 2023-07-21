@@ -593,10 +593,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 150px;
+  justify-content: center;
+  width: 250px;
   position: relative;
-  height: 170px;
+  height: 200px;
 }
 
 /* Start of the styling of the btn container - Which holds web references of the Pioneer*/
@@ -812,7 +812,7 @@ a:hover {
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.25rem !important;
+  font-size: 1.5rem !important;
   line-height: normal;
   min-height: 60px !important;
   min-width: 0;
@@ -866,7 +866,7 @@ svg {
 .button-17 {
   align-items: center;
   appearance: none;
-  background-color: #fff;
+  background-color: white;
   border-radius: 24px;
   border-style: none;
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
@@ -877,9 +877,9 @@ svg {
   display: inline-flex;
   fill: currentcolor;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  height: 48px;
+  height: 65px;
   justify-content: center;
   letter-spacing: 0.25px;
   line-height: normal;
@@ -897,7 +897,9 @@ svg {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
-  margin-top: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 .button-17:hover {
@@ -970,7 +972,7 @@ svg {
   display: inline-flex;
   fill: #000;
   font-family: "Roboto Mono", monospace;
-  font-size: 2.75rem !important;
+  font-size: 3rem !important;
   font-weight: 600 !important;
   height: 48px;
   justify-content: center;
