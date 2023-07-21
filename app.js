@@ -38,6 +38,8 @@ const chatRouter = require('./routes/chat');
 const disclaimerRouter = require('./routes/disclaimer');
 const takedownPolicyRouter = require('./routes/takedown_policy');
 const copyrightRouter = require('./routes/copyright');
+const accessibilityRouter = require('./routes/accessibility');
+
 
 
 
@@ -65,6 +67,7 @@ app.use("/chat", chatRouter);
 app.use("/disclaimer", disclaimerRouter);
 app.use("/takedown_policy", takedownPolicyRouter);
 app.use("/copyright", copyrightRouter);
+app.use("/accessibility", accessibilityRouter);
 app.use(catchAllRouter);
 
 

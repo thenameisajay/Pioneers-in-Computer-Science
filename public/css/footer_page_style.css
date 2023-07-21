@@ -328,10 +328,17 @@ h1 {
   text-align: center;
 }
 
-.content-container p{
+.content-container p {
   text-align: center;
   margin-left: 70px;
   margin-right: 70px;
+}
+
+a {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: bold;
+  font-size: big !important;
+  color: #006aff;
 }
 
 /* Media Queries */
@@ -490,5 +497,119 @@ h1 {
   a {
     font-size: 0.9rem !important;
   }
+}
+
+
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+  body,
+  html {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .header-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .btn {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .btn svg {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px !important;
+    width: 95%;
+    height: fit-content !important;
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+    margin-top: 50px;
+  }
+
+  .button-55 {
+    height: 70px;
+    width: 300px;
+  }
+
+  .search-form::placeholder {
+    font-size: 0.5rem;
+  }
+
+  .dropdown-menu.search {
+    width: 280px !important;
+  }
+
+
+
+
 
 }
