@@ -610,12 +610,21 @@ li {
     width: 20px !important;
   }
 
- 
 
+.takedown-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-
-
-
+.takedown-list li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 5px;
+}
 
 
 
