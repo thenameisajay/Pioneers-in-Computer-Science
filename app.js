@@ -39,6 +39,7 @@ const disclaimerRouter = require('./routes/disclaimer');
 const takedownPolicyRouter = require('./routes/takedown_policy');
 const copyrightRouter = require('./routes/copyright');
 const accessibilityRouter = require('./routes/accessibility');
+const privacyPolicyRouter = require('./routes/privacy_policy');
 
 
 
@@ -68,6 +69,7 @@ app.use("/disclaimer", disclaimerRouter);
 app.use("/takedown_policy", takedownPolicyRouter);
 app.use("/copyright", copyrightRouter);
 app.use("/accessibility", accessibilityRouter);
+app.use("/privacy_policy", privacyPolicyRouter);
 app.use(catchAllRouter);
 
 
