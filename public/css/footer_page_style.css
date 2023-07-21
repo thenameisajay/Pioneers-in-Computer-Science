@@ -482,4 +482,13 @@ h1 {
   p {
     font-size: 0.9rem !important;
   }
+
+  ul {
+    font-size: 0.9rem !important;
+  }
+
+  a {
+    font-size: 0.9rem !important;
+  }
+
 }

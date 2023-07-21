@@ -36,6 +36,8 @@ const byFieldSearchRouter = require('./routes/by_field_search');
 const mapRouter = require('./routes/map');
 const chatRouter = require('./routes/chat');
 const disclaimerRouter = require('./routes/disclaimer');
+const takedownPolicyRouter = require('./routes/takedown_policy');
+const copyrightRouter = require('./routes/copyright');
 
 
 
@@ -61,6 +63,8 @@ app.use("/by_field_search", byFieldSearchRouter);
 app.use("/map", mapRouter);
 app.use("/chat", chatRouter);
 app.use("/disclaimer", disclaimerRouter);
+app.use("/takedown_policy", takedownPolicyRouter);
+app.use("/copyright", copyrightRouter);
 app.use(catchAllRouter);
 
 
