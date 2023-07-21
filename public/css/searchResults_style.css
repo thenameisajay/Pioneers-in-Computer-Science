@@ -462,14 +462,14 @@ h3 {
 
   h2 {
     display: flex;
-    text-align: center;
+    text-align: center !important;
     word-wrap: break-word !important;
-    font-size: 0.65rem !important;
+    font-size: 1rem !important;
     position: relative;
     
     margin-top: 10px !important;
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
   }
 
   .result-container {
