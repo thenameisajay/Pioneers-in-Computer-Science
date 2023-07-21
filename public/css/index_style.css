@@ -44,6 +44,8 @@ a {
   text-decoration: none;
 }
 
+
+
 /*Creating an hovering effect if  the user hovers over the links*/
 
 .header-content--right--link {
@@ -825,6 +827,11 @@ h1 {
   .header-content {
     flex: 1;
     z-index: 99;
+  }
+
+  .hide-text{
+    word-wrap: normal;
+    font-size: 1.05rem;
   }
 
   .website-name {
