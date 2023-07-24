@@ -2,7 +2,7 @@
 <div class="content-container">
   <header class="chat-header">
     <h1>
-      Hiya I'm ECHO
+      Hiya I'm EVA
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="110"
@@ -16,7 +16,7 @@
         />
       </svg>
     </h1>
-    <h2>Electronic Chatbot for Help and Operations</h2>
+    <h2>Electronic Virtual Assistant</h2>
     <!-- <h2>Ask me anything you want to know about the world of Computer Science and its Pioneers </h2> -->
     <p>
       * Powered By CHATGPT
@@ -63,11 +63,11 @@
       </div>
       <div class="terminal-container">
         <% if (message == "" && answer == "") { %>
-            <p>ECHO >> Hi, I am ECHO, your personal assistant. I'm trained to answer questions about the pioneers of computer science.</p>
+            <p>EVA >> Hi, I am EVA, your personal assistant. I'm trained to answer questions about the pioneers of computer science.</p>
         <% } else { %>
             <div class="backend-message-container">
                 <p>USER >> <%= message %></p>
-                <p style="white-space: none;">ECHO >> <%= answer %></p>
+                <p style="white-space: none;">EVA >> <%= answer %></p>
             </div>
         <% } %>
     </div>
