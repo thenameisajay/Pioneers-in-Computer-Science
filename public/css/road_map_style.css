@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
+
 }
 
 #body {
@@ -379,19 +380,403 @@ h2 {
   position: relative;
   margin-top: 20px;
   margin-left: 50px;
-  width: 95%;
+  width: 97%;
   height: 870px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 
+.map::-webkit-scrollbar {
+  width: 1.15em;
+}
 
+.map::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin-block: 10px;
+}
 
+.map::-webkit-scrollbar-thumb {
+  background-color: black;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid #f2f2f2;
+}
 
+.map::-webkit-scrollbar-thumb:hover {
+  background-color:  #4267B2;
+}
 
+.alternate-container{
+  display: none;
+}
 
+.inner-icon-container.X {
+  display:flex;
+}
 
-/*Importing CSS code for the raodmap starts here.*/
+.inner-icon-container.X p {
+  margin-top: -4px;
+}
+
+/*Importing CSS code for the roadmap starts here.*/
 /* Credited to: januaryofmine, https://codepen.io/januaryofmine/pen/pYMLwg */
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.25rem "Roboto Mono", monospace;
+  font-weight: 600;
+  background: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.timeline ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: 	#4267B2;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #ffffff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background: #000000;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 850px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.timeline ul li div time {
+  
+  position: absolute;
+  background: #000000;
+  color: #ffffff;
+  width: 80px;
+  height: 30px;
+  top: -15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.timeline ul li div div {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+
+.timeline ul li div div p {
+  text-align: center;
+}
+
+.timeline ul li div .discovery {
+  margin-right: 10px;
+}
+
+.timeline ul li:nth-of-type(odd) > div {
+  left: 45px;
+}
+
+.timeline ul li:nth-of-type(even) > div {
+  left: -890px;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-of-type(odd) div {
+  transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+
+.timeline ul li:nth-of-type(even) div {
+  transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+
+/*Media Queries*/
+
+/* For mobile phones: */
+
+@media (max-width: 767px) {
+  body,
+  html {
+    zoom: 100%;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .header-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .website-name {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .btn {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .btn svg {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .content-container {
+    flex: -1;
+    position: relative;
+    margin-top: 145px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-container {
+    display: none;
+  }
+
+  .alternate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .content-container h1 {
+    font-size: 3rem !important;
+    margin-top: 50px;
+  }
+
+  .alternate-container p {
+    font-family: "Cabin Sketch", cursive !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+
+ 
+  .search-form::placeholder{
+    font-size: 0.5rem;
+  }
+
+  .dropdown-menu.search{
+    width: 280px !important;
+    
+  }
+
+  .search-form input[type="text"] {
+    border: none;
+    margin-left: 40px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    width: 80%;
+  }
+  
+  .search-form input {
+    margin-left: 30px !important;
+  }
+  .search-form input[type="text"]::placeholder {
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 1;
+    margin-left: -100px !important;
+  }
+  
+  .search-form button {
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: -80px !important;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    zoom: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
+
+  .header-content {
+    flex: 1;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden !important;
+  }
+
+  .header-content--start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .website-name {
+    font-size: 3.5rem !important;
+    text-align: center;
+  }
+
+  .header-content--right {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-container {
+    width: 800px;
+    position: relative;
+    height: 500px;
+    padding-bottom: 0;
+  }
+
+  .map-container {
+    width: 800px;
+    height: 500px;
+    margin-top: -200px;
+  }
+
+  #map {
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  .alternate-container{
+    display: none;
+  }
+}
+
+/*For landscape mode and desktop mode not required*/
+
+/*Note : There is a ui bug when the display is in landscape mode - the header is not sized properly.*/
