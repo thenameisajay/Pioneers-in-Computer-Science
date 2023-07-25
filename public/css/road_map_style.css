@@ -315,3 +315,83 @@ h2 {
   text-align: center;
   text-decoration-line: underline;
 }
+
+
+
+.map-container {
+  position: relative;
+  width: 2000px;
+  height: 1000px;
+  margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 10px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  height: 70px;
+  width: 100%;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.inner-icon-container {
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.icon-container p {
+  position: relative;
+  font-family: "Cabin Sketch", cursive !important;
+  color: black;
+  font-size: 3rem !important;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -9px;
+}
+
+.icon-container svg {
+  position: relative;
+  justify-content: center;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-top: 7px;
+  fill: #000;
+}
+
+.map {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 95%;
+  height: 870px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+
+
+
+
+
+/*Importing CSS code for the raodmap starts here.*/
+/* Credited to: januaryofmine, https://codepen.io/januaryofmine/pen/pYMLwg */
