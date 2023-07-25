@@ -6,10 +6,16 @@ const _ = require('lodash');
 
 
 router.get("/", (req, res) => {
-    res.render(path.join(__dirname, '../views/road_map.ejs'));
-    console.log("Road Map Page has been requested");
-    
-});
 
+ // Retrieve all pioneers (name,year,century,achievement) frpm the database
+ Pioneer.find({}).then(pioneers => {
+    // Sort the pioneers by year
+    pioneers = _.sortBy(pioneers, ['year']);
+    // Render the road map page and pass the pioneers data to it
+    res.render(path.join(__dirname, '../views/road_map.ejs'), { pioneers: pioneers });
+}).catch(err => {
+    console.log(err);
+});
+});
 
 module.exports = router;
