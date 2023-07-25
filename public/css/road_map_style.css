@@ -1,11 +1,15 @@
 body,
 html {
   zoom: 85%;
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
-
+  font: 1.25rem "Roboto Mono", monospace;
+  font-weight: 600;
+  background: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 #body {
@@ -433,14 +437,6 @@ h2 {
   box-sizing: border-box;
 }
 
-body {
-  font: 1.25rem "Roboto Mono", monospace;
-  font-weight: 600;
-  background: #ffffff;
-  color: #000000;
-  overflow-x: hidden;
-  padding-bottom: 50px;
-}
 
 .timeline ul li a{
   color: #000000;
