@@ -400,6 +400,15 @@ h1 {
     overflow-x: hidden;
   }
 
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+
   .header-content {
     flex: 1;
     width: 100%;

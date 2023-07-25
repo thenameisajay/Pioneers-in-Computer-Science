@@ -585,6 +585,16 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+  }
+
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
   }
 
   .website-name {
@@ -595,7 +605,7 @@ img {
   .header-content--right {
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -625,10 +635,9 @@ img {
     display: none;
   }
 
-  .content-container {
-    flex: -1;
-    position: relative;
-    margin-top: 145px;
+  .content-container {}
+  position: relative;
+    margin-top: 250px;
     padding: 0;
     width: 100%;
     display: flex;
