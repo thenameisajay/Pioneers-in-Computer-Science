@@ -523,8 +523,8 @@ h2 {
   display: flex;
   justify-content: start;
   padding: 10px;
-
   border-bottom: 2px solid #e5e5e5;
+  display:none; // mac buttons are disabled based on userfeedback.
 }
 
 .menu-button {
