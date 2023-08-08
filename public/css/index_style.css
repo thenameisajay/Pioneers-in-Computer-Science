@@ -552,6 +552,12 @@ h1 {
   background-color: #f2f1ec;
 }
 
+
+.website-name{
+  padding-top: 15px; // fix implemented based on the feedback.
+}
+
+
 /*Media Queries*/
 
 /* For mobile phones */
@@ -727,6 +733,7 @@ h1 {
     align-items: center;
     overflow-x: hidden !important;
   }
+
 
   .header-content--start {
     width: 100%;
