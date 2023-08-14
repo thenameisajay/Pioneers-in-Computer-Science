@@ -8,7 +8,7 @@ It was created by Ajay Pradeep Mahadeven as part of his dissertation project.
 <ul>
 <li> Clone the repository to your local machine or download the zip file. </li>
 <li> Open it in your suitable IDE or terminal. </li>
-<li> Run npm i to install node modules and dependencies </li>
+<li> Run <code> npm i </code> to install node modules and dependencies </li>
 <li> Run <code>  node app.js </code> or  <code> nodemon  app.js</code> to start the server </li>
 <li> Open localhost:3000  in your desired browser to see the website.</li>
 </ul>
