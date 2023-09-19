@@ -1,5 +1,12 @@
 # Pioneers-in-Computer-Science
 
+
+## Deployment:
+
+The website is deployed on Heroku and can be accessed at https://pics-usa-d37de900c431.herokuapp.com
+
+## GRADE: DISTINCTION 
+
 ## Description:
 
 This repository is the source code for the Pioneers in Computer Science website. The website is a collection of biographies of the most influential people in the field of Computer Science. This project was created for the CS5099 Dissertation module at the University of St Andrews as part of the MSc Software Engineering degree.
@@ -15,15 +22,12 @@ It was created by Ajay Pradeep Mahadeven as part of his dissertation project.
 <li> Open localhost:3000  in your desired browser to see the website.</li>
 </ul>
 
-## Deployment:
-
-The website is deployed on Heroku and can be accessed at https://pics-usa-d37de900c431.herokuapp.com
 
 ## Deployment Instructions:
 
 <ul>
-<li> Whichever platform you are using to deploy , remember to add the .env api keys (MongoDB & OpenAI) for the relevant places </li>
-<li> I have placed the pioneers data (pioneers.csv) in local storage , add it if you plan to deploy and change <code>process.env.MONGO_URL</code> in the config folder , file named <code> db.js </code> </li>
+<li> Whichever platform you are using to deploy, remember to add the .env API keys (MongoDB & OpenAI) for the relevant places </li>
+<li> I have placed the pioneers' data (pioneers.csv) in local storage, add it if you plan to deploy and change <code>process.env.MONGO_URL</code> in the config folder , file named <code> db.js </code> </li>
 <li> I have used MongoDB Atlas to store the data. You can use the same or any other database to store the data </li>
 <li> Install the project dependencies by running <code> npm i</code> </li>
 <li> Start command : <code> node app.js </code></li>
@@ -47,9 +51,9 @@ The website is deployed on Heroku and can be accessed at https://pics-usa-d37de9
 
 <ul>
 <li> User can view the list of all the pioneers in the database. </li>
-<li> Users can view the birth place of each pioneer. </li>
-<li> Users can chat with a chatbot (EVA), powered by chatgpt </li>
-<li> Users can browse  pioneers by name,country and field </li>
+<li> Users can view the birthplace of each pioneer. </li>
+<li> Users can chat with a chatbot (EVA), powered by ChatGPT </li>
+<li> Users can browse  pioneers by name, country and field </li>
 <li> Users have a feedback mechanism to provide feedback on the website (Contact Page) </li>
 <li> Users can also see the contributions of pioneers via vertical roadmap </li>
 <li> Users have the ability to further learn about the pioneers by navigating to the references </li>
@@ -80,5 +84,5 @@ This project would have not been possible without the help and support of the fo
 <li> M K Mahadeven (Father)</li>
 <li> Nagheshwari Mahadeven (Mother)</li>
 <li> K M Samyuktha (Sister)</li>
-<li> Krishnasamy V.M (Grandfather) <strong>Rest.In.Peace</strong></li>
+<li> Krishnasamy V.M (Grandfather) <strong>Rest In Peace</strong></li>
 </ul>
