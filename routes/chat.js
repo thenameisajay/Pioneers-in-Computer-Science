@@ -114,7 +114,7 @@ router.post('/', async (req, res) => {
 
   try {
     const response = await openai.createCompletion({
-      model: "gpt-3.5-turbo-instruct", // Soon to be deprecated on 2024-01-04 (Link: https\://platform.openai.com/docs/deprecations) , change it later to "gpt-3.5-turbo-instruct"
+      model: "gpt-3.5-turbo-instruct", // FROM TEXT-DA-VINCI-003 MODEL 
       prompt: `The following is a conversation with an AI assistant specialized in pioneersx of computer science AND i CAN ONLY STRICTLY TALK ABOUT COMPUTER SCIENCE AND PIONEERS OF COMPUTER SCIENCE. The assistant name is EVA (Electronic Virtual Assistant  ) is helpful, creative, clever, and very friendly.\n\nHuman: ${message}\nAI:`,
       temperature: 0.9,
       max_tokens: 150,
