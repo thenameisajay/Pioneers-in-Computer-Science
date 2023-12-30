@@ -1,6 +1,10 @@
 # Pioneers-in-Computer-Science
 
 
+<em>“A society grows great when old men plant trees in whose shade they shall never sit.” </em>
+## Dedicated to: 
+To my grandfather <strong> Krishnasamy V.M  </strong>, I owe everything to him, may he rest in peace.
+
 ## Deployment:
 
 The website is deployed on Heroku and can be accessed at https://pics-usa-d37de900c431.herokuapp.com
@@ -72,8 +76,8 @@ This project would have not been possible without the help and support of the fo
 <li> Prof Ronald Morrison </li>
 <li> Prof. Edmund Robertson (MacTutor Co-Creator) </li>
 <li> Prof. John O'Connor (MacTutor Co-Creator) </li>
-<li> Manish Mishra (Friend)</li>
-<li> Niharika Kumari (Friend)</li>
+<li> Manish Mishra </li>
+<li> Niharika Kumari </li>
 <li> Felix Brown (Friend)</li>
 <li> Kiran Baby(Friend)</li>
 <li> Shivang Sinha (Friend)</li>
