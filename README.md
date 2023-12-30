@@ -1,7 +1,7 @@
 # Pioneers-in-Computer-Science
 
 
-<em>“A society grows great when old men plant trees in whose shade they shall never sit.” </em>
+<em>"A society grows great when old men plant trees, the shade of which they know they will never sit in." </em>
 ## Dedicated to: 
 To my grandfather <strong> Krishnasamy V.M  </strong>, I owe everything to him, may he rest in peace.
 
