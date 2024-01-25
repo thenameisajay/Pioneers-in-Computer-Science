@@ -1,15 +1,16 @@
 # Pioneers-in-Computer-Science
 
-
 <em>"A society grows great when old men plant trees, the shade of which they know they will never sit in." </em>
-## Dedicated to: 
-To my grandfather <strong> Krishnasamy V.M  </strong>, I owe everything to him, may he rest in peace.
+
+## Dedicated to:
+
+To my grandfather <strong> Krishnasamy V.M </strong>, I owe everything to him, may he rest in peace.
 
 ## Deployment:
 
 The website is deployed on Heroku and can be accessed at https://pics-usa-d37de900c431.herokuapp.com
 
-## GRADE: DISTINCTION 
+## GRADE: DISTINCTION
 
 ## Description:
 
@@ -25,7 +26,6 @@ It was created by Ajay Pradeep Mahadeven as part of his dissertation project.
 <li> Run <code>  node app.js </code> or  <code> nodemon  app.js</code> to start the server </li>
 <li> Open localhost:3000  in your desired browser to see the website.</li>
 </ul>
-
 
 ## Deployment Instructions:
 

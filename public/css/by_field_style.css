@@ -50,7 +50,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .header-content--right--link::before {
@@ -71,7 +73,8 @@ a {
 .btn {
   font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
@@ -79,7 +82,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
   font-weight: 700;
   margin-right: 20px;
 }
@@ -179,7 +184,8 @@ svg {
 }
 
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
@@ -333,7 +339,8 @@ h1 {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 10px; /* adjust as needed */
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 12px;
   margin-top: -50px;
@@ -484,15 +491,12 @@ h1 {
     width: 300px;
   }
 
-
- 
-  .search-form::placeholder{
+  .search-form::placeholder {
     font-size: 0.5rem;
   }
 
-  .dropdown-menu.search{
+  .dropdown-menu.search {
     width: 280px !important;
-    
   }
 
   .search-form input[type="text"] {
@@ -503,7 +507,7 @@ h1 {
     color: black;
     width: 80%;
   }
-  
+
   .search-form input {
     margin-left: 30px !important;
   }
@@ -514,7 +518,7 @@ h1 {
     opacity: 1;
     margin-left: -100px !important;
   }
-  
+
   .search-form button {
     border: none;
     background: none;

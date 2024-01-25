@@ -4,7 +4,9 @@ html {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font: 1.25rem "Roboto Mono", monospace;
+  font:
+    1.25rem "Roboto Mono",
+    monospace;
   font-weight: 600;
   background: #ffffff;
   color: #000000;
@@ -55,7 +57,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .header-content--right--link::before {
@@ -76,7 +80,8 @@ a {
 .btn {
   font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
@@ -84,7 +89,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
   font-weight: 700;
   margin-right: 20px;
 }
@@ -184,7 +191,8 @@ svg {
 }
 
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
@@ -321,14 +329,14 @@ h2 {
   text-decoration-line: underline;
 }
 
-
-
 .map-container {
   position: relative;
   width: 2000px;
   height: 1000px;
   margin: 50px auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 10px;
 }
 
@@ -338,7 +346,8 @@ h2 {
   justify-content: right;
   height: 70px;
   width: 100%;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -351,7 +360,9 @@ h2 {
   flex-direction: row;
   height: 50px;
   width: 50px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -387,12 +398,13 @@ h2 {
   width: 97%;
   height: 870px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    overflow: auto;
-    overflow-x: hidden;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  overflow: auto;
+  overflow-x: hidden;
 }
-
 
 .map::-webkit-scrollbar {
   width: 1.15em;
@@ -412,15 +424,15 @@ h2 {
 }
 
 .map::-webkit-scrollbar-thumb:hover {
-  background-color:  #4267B2;
+  background-color: #4267b2;
 }
 
-.alternate-container{
+.alternate-container {
   display: none;
 }
 
 .inner-icon-container.X {
-  display:flex;
+  display: flex;
 }
 
 .inner-icon-container.X p {
@@ -430,19 +442,19 @@ h2 {
 /*Importing CSS code for the roadmap starts here.*/
 /* Credited to: januaryofmine, https://codepen.io/januaryofmine/pen/pYMLwg */
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.timeline ul li a{
+.timeline ul li a {
   color: #000000;
   text-decoration: none;
   font-size: 1.25rem;
-  color: 	#4267B2;
+  color: #4267b2;
 }
 
 .timeline ul li {
@@ -455,7 +467,7 @@ h2 {
 }
 
 .timeline ul li::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -464,7 +476,12 @@ h2 {
   height: 20px;
   z-index: 2;
   background: #000000;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .timeline ul li div {
@@ -473,14 +490,15 @@ h2 {
   width: 850px;
   padding: 20px;
   background: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 5px;
   display: flex;
   align-items: center;
 }
 
 .timeline ul li div time {
-  
   position: absolute;
   background: #000000;
   color: #ffffff;
@@ -501,9 +519,10 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
-
 
 .timeline ul li div div p {
   text-align: center;
@@ -541,14 +560,12 @@ h2 {
   opacity: 1;
 }
 
-
 img {
   width: 300px;
   height: 300px;
 }
 
-
-.alternate-container{
+.alternate-container {
   display: none;
 }
 
@@ -585,10 +602,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
-  
   .logo {
     width: 120px;
     height: 120px;
@@ -636,7 +651,7 @@ img {
   }
 
   .content-container {
-  position: relative;
+    position: relative;
     margin-top: 250px;
     padding: 0;
     width: 100%;
@@ -672,15 +687,12 @@ img {
     margin-top: -20px;
   }
 
-
- 
-  .search-form::placeholder{
+  .search-form::placeholder {
     font-size: 0.5rem;
   }
 
-  .dropdown-menu.search{
+  .dropdown-menu.search {
     width: 280px !important;
-    
   }
 
   .search-form input[type="text"] {
@@ -691,7 +703,7 @@ img {
     color: black;
     width: 80%;
   }
-  
+
   .search-form input {
     margin-left: 30px !important;
   }
@@ -702,17 +714,14 @@ img {
     opacity: 1;
     margin-left: -100px !important;
   }
-  
+
   .search-form button {
     border: none;
     background: none;
     outline: none;
     margin-left: -80px !important;
   }
-
 }
-
-
 
 /* For tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -778,9 +787,7 @@ img {
     width: 50%;
     margin-top: 50px;
   }
-
 }
-
 
 /*For landscape mode and desktop mode not required*/
 

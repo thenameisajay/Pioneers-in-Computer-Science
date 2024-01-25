@@ -51,7 +51,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .header-content--right--link::before {
@@ -72,7 +74,8 @@ a {
 .btn {
   font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
@@ -80,7 +83,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
   font-weight: 700;
   margin-right: 20px;
 }
@@ -180,7 +185,8 @@ svg {
 }
 
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
@@ -301,7 +307,7 @@ footer .logo {
 
 h1 {
   position: relative;
-  font-family: 'Koulen', cursive;
+  font-family: "Koulen", cursive;
   color: black;
   font-size: 5.5rem !important;
   text-align: center;
@@ -323,9 +329,9 @@ h1 {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
- text-align: center !important;
+  text-align: center !important;
   font-weight: 500;
   color: black;
 }
@@ -335,10 +341,9 @@ h1 {
   margin-top: 30px !important;
   -webkit-animation: tracking-in-contract-bck 1s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
-    -webkit-animation: bounce-in-top 1.1s both;
-    animation: bounce-in-top 1.1s both;
+  -webkit-animation: bounce-in-top 1.1s both;
+  animation: bounce-in-top 1.1s both;
 }
-
 
 .image-container {
   display: flex;
@@ -349,7 +354,8 @@ h1 {
   position: relative;
   margin-top: -20px;
   height: auto;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 5px;
   border: 1px solid #e5e5e5;
@@ -373,11 +379,10 @@ h1 {
 
 h2 {
   position: relative;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   color: black;
   font-size: 2.5rem !important;
   text-align: center;
-
 }
 
 /* Start Styling of the pioneer container - which includes the pioneer name, image and description*/
@@ -389,7 +394,8 @@ h2 {
   font-size: 2rem;
   text-align: center;
   margin: 0 250px 50px;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 5px;
   height: auto; /* Adjust the container either fixed or auto*/
@@ -524,7 +530,7 @@ h2 {
   justify-content: start;
   padding: 10px;
   border-bottom: 2px solid #e5e5e5;
-  display:none; // mac buttons are disabled based on userfeedback.
+  display: none; /* mac buttons are disabled based on userfeedback. */
 }
 
 .menu-button {
@@ -560,7 +566,11 @@ h2 {
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+  box-shadow:
+    1px 1px 0px 0px,
+    2px 2px 0px 0px,
+    3px 3px 0px 0px,
+    4px 4px 0px 0px,
     5px 5px 0px 0px;
   position: relative;
   user-select: none;
@@ -610,9 +620,21 @@ a:hover {
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-size: 1.5rem !important;
   font-weight: 900;
   justify-content: center;
@@ -676,9 +698,20 @@ a:hover {
   color: #0d172a;
   cursor: pointer;
   display: inline-block;
-  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    "Basier circle",
+    -apple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1;
@@ -714,7 +747,8 @@ a:hover {
   align-items: center;
   background: #ffffff;
   border: 0 solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   color: #000000;
@@ -777,10 +811,11 @@ a:hover {
   width: 100%;
   padding-bottom: 5px;
   margin-top: -50px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    height: auto;
-
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  height: auto;
 }
 
 .list-containers {
@@ -828,7 +863,6 @@ a:hover {
   will-change: transform;
   font-weight: 600 !important;
   margin-bottom: 10px;
-
 }
 
 .button-28:disabled {
@@ -869,8 +903,10 @@ svg {
   background-color: white;
   border-radius: 24px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
   color: #000000;
   cursor: pointer;
@@ -889,8 +925,10 @@ svg {
   position: relative;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition:
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms,
+    transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -916,7 +954,8 @@ svg {
 }
 
 .button-17:active {
-  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+  box-shadow:
+    0 4px 4px 0 rgb(60 64 67 / 30%),
     0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
@@ -927,27 +966,32 @@ svg {
 }
 
 .button-17:not(:disabled) {
-  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 .button-17:not(:disabled):hover {
-  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 2px 3px 0,
     rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
 }
 
 .button-17:not(:disabled):focus {
-  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
 .button-17:not(:disabled):active {
-  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 4px 4px 0,
     rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
 }
 
 .button-17:disabled {
-  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0 1px 3px 0,
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 /*End of styling for the search by country button in the pioneer page*/
@@ -1009,7 +1053,7 @@ svg {
 @media (min-width: 768px) {
   .button-59 {
     min-width: 170px;
-    font-size: 1rem   !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -1021,8 +1065,7 @@ svg {
 
 @media (max-width: 767px) {
   .button-59 {
-  
-    font-size: 1rem   !important;
+    font-size: 1rem !important;
   }
 
   .button-28 {
@@ -1040,7 +1083,7 @@ svg {
   .button-17 {
     font-size: 1rem !important;
   }
-  
+
   .button-54 {
     font-size: 1rem !important;
   }
@@ -1271,15 +1314,12 @@ svg {
     font-size: 1.5rem;
   }
 
-
- 
-  .search-form::placeholder{
+  .search-form::placeholder {
     font-size: 0.5rem;
   }
 
-  .dropdown-menu.search{
+  .dropdown-menu.search {
     width: 280px !important;
-    
   }
 
   .search-form input[type="text"] {
@@ -1290,7 +1330,7 @@ svg {
     color: black;
     width: 80%;
   }
-  
+
   .search-form input {
     margin-left: 30px !important;
   }
@@ -1301,7 +1341,7 @@ svg {
     opacity: 1;
     margin-left: -100px !important;
   }
-  
+
   .search-form button {
     border: none;
     background: none;
@@ -1471,9 +1511,7 @@ svg {
     font-size: 1.5rem;
   }
 
-#dropdownMenu2{
-  display: none;
-}
-
-
+  #dropdownMenu2 {
+    display: none;
+  }
 }

@@ -44,15 +44,15 @@ a {
   text-decoration: none;
 }
 
-
-
 /*Creating an hovering effect if  the user hovers over the links*/
 
 .header-content--right--link {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .header-content--right--link::before {
@@ -73,7 +73,8 @@ a {
 .btn {
   font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
@@ -81,7 +82,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
   font-weight: 700;
   margin-right: 20px;
 }
@@ -181,7 +184,8 @@ svg {
 }
 
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
@@ -238,7 +242,8 @@ h1 {
   align-items: center;
   background-color: #fff;
   padding: 10px;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 50px;
 }
@@ -308,8 +313,10 @@ h1 {
   height: 800px;
   width: 1200px;
   overflow: hidden; /* Prevents the inner content from overflowing. */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -361,7 +368,9 @@ h1 {
   margin-bottom: 50px;
   height: 400px;
   width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
   border-radius: 50%;
   -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
@@ -442,7 +451,8 @@ h1 {
 .border-seperation-container {
   display: flex;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   width: 1400px;
   height: 900px;
@@ -529,7 +539,8 @@ h1 {
 }
 
 .button-11:focus {
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0px 0.5px 1px rgba(0, 0, 0, 0.1),
     0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
@@ -552,11 +563,9 @@ h1 {
   background-color: #f2f1ec;
 }
 
-
-.website-name{
-  padding-top: 15px; // fix implemented based on the feedback.
+.website-name {
+  padding-top: 15px; /* fix implemented based on the feedback. */
 }
-
 
 /*Media Queries*/
 
@@ -734,7 +743,6 @@ h1 {
     overflow-x: hidden !important;
   }
 
-
   .header-content--start {
     width: 100%;
     display: flex;
@@ -836,7 +844,7 @@ h1 {
     z-index: 99;
   }
 
-  .hide-text{
+  .hide-text {
     word-wrap: normal;
     font-size: 1.05rem;
   }
@@ -883,5 +891,4 @@ h1 {
     height: 25px;
     margin-left: 10px;
   }
-
 }

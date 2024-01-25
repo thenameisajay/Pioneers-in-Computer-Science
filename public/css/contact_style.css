@@ -50,7 +50,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .header-content--right--link::before {
@@ -71,7 +73,8 @@ a {
 .btn {
   font-family: "Cabin Sketch", cursive !important;
   background-color: #fafafa;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   color: black;
   font-size: 2rem;
@@ -79,7 +82,9 @@ a {
   position: relative;
   display: inline-block;
   padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
   font-weight: 700;
   margin-right: 20px;
 }
@@ -179,7 +184,8 @@ svg {
 }
 
 .header-content {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
@@ -316,7 +322,8 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   height: 550px;
   width: 700px;
@@ -373,9 +380,21 @@ textarea {
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -605,16 +624,12 @@ textarea {
     background-color: none;
   }
 
- 
- 
- 
-  .search-form::placeholder{
+  .search-form::placeholder {
     font-size: 0.5rem;
   }
 
-  .dropdown-menu.search{
+  .dropdown-menu.search {
     width: 280px !important;
-    
   }
 
   .search-form input[type="text"] {
@@ -625,7 +640,7 @@ textarea {
     color: black;
     width: 80%;
   }
-  
+
   .search-form input {
     margin-left: 10px !important;
   }
@@ -636,7 +651,7 @@ textarea {
     opacity: 1;
     margin-left: -20px !important;
   }
-  
+
   .search-form button {
     display: none;
     border: none;
@@ -644,7 +659,6 @@ textarea {
     outline: none;
     margin-left: -70px !important;
   }
-
 }
 
 /* For tablets */

@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const Contact = require('../models/contact');  // assuming the models directory is at the root level
-const path = require('path');
+const Contact = require("../models/contact"); // assuming the models directory is at the root level
+const path = require("path");
 
 router.get("/", (req, res) => {
-  res.render(path.join(__dirname, '../views/contact.ejs'));
+  res.render(path.join(__dirname, "../views/contact.ejs"));
   console.log("Contact Page has been requested");
 });
 

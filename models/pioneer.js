@@ -20,8 +20,4 @@ const pioneerSchema = new mongoose.Schema({
 // Create a new model for the database
 const Pioneer = mongoose.model("Pioneer", pioneerSchema);
 
-
-
-
 module.exports = Pioneer;
-
