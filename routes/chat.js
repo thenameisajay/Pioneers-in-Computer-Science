@@ -143,14 +143,15 @@ router
         answer: answer,
       });
     } catch (error) {
-      console.error("Failed to get response from OpenAI", error);
+      const statusCode = error.statusCode;
+      console.error("Failed to get response from OpenAI", error.message);
+      const apiPolicyChanged =
+        "Sorry, I am currently experiencing issues. Please try again later. API usage policy has been changed by OpenAI (I'm working on a work-around for this).";
       // Respond with a meaningful error message or a default answer
-      answer =
-        "Sorry, I am currently experiencing issues. Please try again later. API usage policy has been changed by OpenAI(I'm working on a work-around for this).";
+      answer = error.message + statusCode;
       res.render(path.join(__dirname, "../views/chat.ejs"), {
         message: message,
-        answer:
-          "Sorry, I am currently experiencing issues.The API usage policy has been changed by OpenAI(I'm working on a work-around for this). Please try again later.",
+        answer: apiPolicyChanged,
       });
     }
 
