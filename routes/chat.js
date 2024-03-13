@@ -63,7 +63,12 @@ router
           answer: answer,
         });
       } catch (err) {
-        console.log(err);
+        console.error("Failed to get response from OpenAI", error);
+        return res.render(path.join(__dirname, "../views/chat.ejs"), {
+          message: message,
+          answer:
+            "Sorry, I am currently experiencing issues. Please try again later.",
+        });
       }
     }
 
@@ -141,7 +146,12 @@ router
       console.error("Failed to get response from OpenAI", error);
       // Respond with a meaningful error message or a default answer
       answer =
-        "Sorry, I am currently experiencing issues. Please try again later.";
+        "Sorry, I am currently experiencing issues. Please try again later. API usage policy has been changed by OpenAI(I'm working on a work-around for this).";
+      res.render(path.join(__dirname, "../views/chat.ejs"), {
+        message: message,
+        answer:
+          "Sorry, I am currently experiencing issues.The API usage policy has been changed by OpenAI(I'm working on a work-around for this). Please try again later.",
+      });
     }
 
     // Save all chat prompts and answers to the database
