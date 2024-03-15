@@ -144,7 +144,7 @@ router
       });
     } catch (error) {
       // API Billing Policy Change : https://community.openai.com/t/oai-api-switching-to-pre-paid-billing/659398
-      const statusCode = error.statusCode;
+      const statusCode = error.response.statusCode;
       console.error("Failed to get response from OpenAI", error.message);
       const apiPolicyChanged =
         "Sorry, I am currently experiencing issues. Please try again later. API billing policy has been changed by OpenAI (I'm working on a work-around for this).";
