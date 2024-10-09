@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 //Defining the schema for the chat data
 const chatSchema = new mongoose.Schema({
@@ -8,6 +8,6 @@ const chatSchema = new mongoose.Schema({
 });
 
 // Creating the database model
-const Chat = mongoose.model("Chat", chatSchema);
+const Chat = mongoose.model('Chat', chatSchema);
 
 module.exports = Chat;

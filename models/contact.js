@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const contactSchema = new mongoose.Schema({
   name: String,
@@ -8,6 +8,6 @@ const contactSchema = new mongoose.Schema({
 });
 
 // Creating the database model
-const Contact = mongoose.model("Contact", contactSchema);
+const Contact = mongoose.model('Contact', contactSchema);
 
 module.exports = Contact;

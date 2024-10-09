@@ -1,0 +1,31 @@
+# #!/bin/bash
+
+# echo '🔄 Running pre-commit checks: styling, linting, type-checking, and more.'
+
+# # Check Prettier standards
+# npm run check-format ||
+# (
+#     echo "⚠️ Prettier Check Failed. Please run $(npm run format), review the changes, and try committing again.";
+#     false;
+# )
+
+# # Check ESLint Standards
+# npm run lint ||
+# (
+#     echo '⚠️ ESLint Check Failed. Please address the issues listed above, add the changes, and try committing again.';
+#     false;
+# )
+
+
+
+# # If everything passes... Now we can commit - commented this code to be optional too much time
+# # echo '🚀 Code looks good. Proceeding with the build...'
+
+# # npm run build ||
+# # (
+# #     echo '❌ Build Failed. Please review the build errors above and make necessary corrections.';
+# #     false;
+# # )
+
+# # If everything passes... Now we can commit
+# echo '✅ All checks passed. Proceeding with the commit.'
