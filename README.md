@@ -1,4 +1,4 @@
-# Pioneers-in-Computer-Science
+# Pioneers-in-Computer-Science (1.0)
 
 <em>"A society grows great when old men plant trees, the shade of which they know they will never sit in." </em>
 
@@ -8,7 +8,7 @@ To my grandfather <strong> Krishnasamy V.M </strong>, I owe everything to him, m
 
 ## Deployment:
 
-The website is deployed on Heroku and can be accessed at https://pics-usa-d37de900c431.herokuapp.com
+This site is no longer deployed on Heroku. A replacement site is being built and will be deployed soon.
 
 ## GRADE: DISTINCTION
 
@@ -72,21 +72,21 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 This project would have not been possible without the help and support of the following people:
 
 <ul>
-<li> Prof. Dharini Balasubramaniam (Supervisor) </li>
+<li> Prof. Dharini Balasubramaniam  </li>
 <li> Prof Ronald Morrison </li>
-<li> Prof. Edmund Robertson (MacTutor Co-Creator) </li>
-<li> Prof. John O'Connor (MacTutor Co-Creator) </li>
+<li> Prof. Edmund Robertson  </li>
+<li> Prof. John O'Connor </li>
 <li> Manish Mishra </li>
 <li> Niharika Kumari </li>
-<li> Felix Brown (Friend)</li>
-<li> Kiran Baby(Friend)</li>
-<li> Shivang Sinha (Friend)</li>
-<li> Furkan Tekinay (Friend)</li>
-<li> Christobal (Friend)</li>
-<li> Gopichand Narra (Friend)</li>
-<li> Yusuf Farag (Friend)</li>
-<li> M K Mahadeven (Father)</li>
-<li> Nagheshwari Mahadeven (Mother)</li>
-<li> K M Samyuktha (Sister)</li>
-<li> Krishnasamy V.M (Grandfather) <strong>Rest In Peace</strong></li>
+<li> Felix Brown </li>
+<li> Kiran Baby</li>
+<li> Shivang Sinha </li>
+<li> Furkan Tekinay </li>
+<li> Christobal </li>
+<li> Gopichand Narra </li>
+<li> Yusuf Farag </li>
+<li> M K Mahadeven </li>
+<li> Nagheshwari Mahadeven</li>
+<li> K M Samyuktha</li>
+<li> Krishnasamy V.M </li>
 </ul>
